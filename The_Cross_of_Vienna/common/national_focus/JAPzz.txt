@@ -1,0 +1,1360 @@
+focus_tree={
+	id = JAP_zz
+	country={
+		factor=0
+		modifier={
+			add=10
+			tag=JAP
+		}
+	}
+	default=no
+	focus={
+		id = JAP_zz_0
+		icon = GFX_TCV_boss
+		x=18
+		y=0
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_1
+		icon = GFX_TCV_boss
+		x=14
+		y=1
+		prerequisite={ focus = JAP_zz_0}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_2
+		icon = GFX_TCV_boss
+		x=22
+		y=1
+		prerequisite={ focus = JAP_zz_0}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_3
+		icon = GFX_TCV_boss
+		x=22
+		y=2
+		prerequisite={ focus = JAP_zz_2}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_4
+		icon = GFX_TCV_boss
+		x=22
+		y=3
+		prerequisite={ focus = JAP_zz_3}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_5
+		icon = GFX_TCV_boss
+		x=21
+		y=4
+		prerequisite={ focus = JAP_zz_4}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_6
+		icon = GFX_TCV_boss
+		x=24
+		y=4
+		prerequisite={ focus = JAP_zz_4}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_7
+		icon = GFX_TCV_boss
+		x=17
+		y=4
+		prerequisite={ focus = JAP_zz_4}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_8
+		icon = GFX_TCV_boss
+		x=26
+		y=4
+		prerequisite={ focus = JAP_zz_4}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_9
+		icon = GFX_TCV_boss
+		x=17
+		y=5
+		prerequisite={ focus = JAP_zz_7}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_10
+		icon = GFX_TCV_boss
+		x=21
+		y=5
+		prerequisite={ focus = JAP_zz_5}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_11
+		icon = GFX_TCV_boss
+		x=24
+		y=5
+		prerequisite={ focus = JAP_zz_6}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_12
+		icon = GFX_TCV_boss
+		x=26
+		y=5
+		prerequisite={ focus = JAP_zz_8}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_13
+		icon = GFX_TCV_boss
+		x=26
+		y=6
+		prerequisite={ focus = JAP_zz_12}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_14
+		icon = GFX_TCV_boss
+		x=26
+		y=7
+		prerequisite={ focus = JAP_zz_13}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_15
+		icon = GFX_TCV_boss
+		x=26
+		y=8
+		prerequisite={ focus = JAP_zz_14}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_16
+		icon = GFX_TCV_boss
+		x=26
+		y=9
+		prerequisite={ focus = JAP_zz_15}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_17
+		icon = GFX_TCV_boss
+		x=26
+		y=10
+		prerequisite={ focus = JAP_zz_16}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_18
+		icon = GFX_TCV_boss
+		x=24
+		y=6
+		prerequisite={ focus = JAP_zz_11}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_19
+		icon = GFX_TCV_boss
+		x=24
+		y=7
+		prerequisite={ focus = JAP_zz_18}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_20
+		icon = GFX_TCV_boss
+		x=24
+		y=8
+		prerequisite={ focus = JAP_zz_19}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_21
+		icon = GFX_TCV_boss
+		x=24
+		y=9
+		prerequisite={ focus = JAP_zz_20}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_22
+		icon = GFX_TCV_boss
+		x=24
+		y=10
+		prerequisite={ focus = JAP_zz_21}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_23
+		icon = GFX_TCV_boss
+		x=24
+		y=11
+		prerequisite={ focus = JAP_zz_22}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_24
+		icon = GFX_TCV_boss
+		x=24
+		y=12
+		prerequisite={ focus = JAP_zz_23}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_25
+		icon = GFX_TCV_boss
+		x=24
+		y=13
+		prerequisite={ focus = JAP_zz_24}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_26
+		icon = GFX_TCV_boss
+		x=21
+		y=6
+		prerequisite={ focus = JAP_zz_10}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_27
+		icon = GFX_TCV_boss
+		x=22
+		y=7
+		prerequisite={ focus = JAP_zz_26}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_28
+		icon = GFX_TCV_boss
+		x=20
+		y=7
+		prerequisite={ focus = JAP_zz_26}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_29
+		icon = GFX_TCV_boss
+		x=20
+		y=8
+		prerequisite={ focus = JAP_zz_28}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_30
+		icon = GFX_TCV_boss
+		x=22
+		y=8
+		prerequisite={ focus = JAP_zz_27}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_31
+		icon = GFX_TCV_boss
+		x=20
+		y=9
+		prerequisite={ focus = JAP_zz_29}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_32
+		icon = GFX_TCV_boss
+		x=22
+		y=9
+		prerequisite={ focus = JAP_zz_30}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_33
+		icon = GFX_TCV_boss
+		x=22
+		y=10
+		prerequisite={ focus = JAP_zz_32}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_34
+		icon = GFX_TCV_boss
+		x=20
+		y=10
+		prerequisite={ focus = JAP_zz_31}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_35
+		icon = GFX_TCV_boss
+		x=20
+		y=11
+		prerequisite={ focus = JAP_zz_34}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_36
+		icon = GFX_TCV_boss
+		x=22
+		y=11
+		prerequisite={ focus = JAP_zz_33}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_37
+		icon = GFX_TCV_boss
+		x=19
+		y=12
+		prerequisite={ focus = JAP_zz_35}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_38
+		icon = GFX_TCV_boss
+		x=21
+		y=12
+		prerequisite={ focus = JAP_zz_35}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_39
+		icon = GFX_TCV_boss
+		x=21
+		y=13
+		prerequisite={ focus = JAP_zz_38}
+		prerequisite={ focus = JAP_zz_37}
+		prerequisite={ focus = JAP_zz_36}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_40
+		icon = GFX_TCV_boss
+		x=17
+		y=6
+		prerequisite={ focus = JAP_zz_9}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_41
+		icon = GFX_TCV_boss
+		x=17
+		y=7
+		prerequisite={ focus = JAP_zz_40}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_42
+		icon = GFX_TCV_boss
+		x=16
+		y=8
+		prerequisite={ focus = JAP_zz_41}
+		mutually_exclusive={ focus = JAP_zz_43 }
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_43
+		icon = GFX_TCV_boss
+		x=18
+		y=8
+		prerequisite={ focus = JAP_zz_41}
+		mutually_exclusive={ focus = JAP_zz_42 }
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_44
+		icon = GFX_TCV_boss
+		x=16
+		y=9
+		prerequisite={ focus = JAP_zz_42}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_45
+		icon = GFX_TCV_boss
+		x=18
+		y=9
+		prerequisite={ focus = JAP_zz_43}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_46
+		icon = GFX_TCV_boss
+		x=16
+		y=10
+		prerequisite={ focus = JAP_zz_44}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_47
+		icon = GFX_TCV_boss
+		x=18
+		y=10
+		prerequisite={ focus = JAP_zz_45}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_48
+		icon = GFX_TCV_boss
+		x=16
+		y=11
+		prerequisite={ focus = JAP_zz_46}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_49
+		icon = GFX_TCV_boss
+		x=18
+		y=11
+		prerequisite={ focus = JAP_zz_47}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_50
+		icon = GFX_TCV_boss
+		x=17
+		y=12
+		prerequisite={ focus = JAP_zz_49 focus=JAP_zz_48 }
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_51
+		icon = GFX_TCV_boss
+		x=14
+		y=2
+		prerequisite={ focus = JAP_zz_1}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_52
+		icon = GFX_TCV_boss
+		x=14
+		y=3
+		prerequisite={ focus = JAP_zz_51}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_53
+		icon = GFX_TCV_boss
+		x=14
+		y=4
+		prerequisite={ focus = JAP_zz_52}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_55
+		icon = GFX_TCV_boss
+		x=5
+		y=0
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_56
+		icon = GFX_TCV_boss
+		x=1
+		y=1
+		prerequisite={ focus = JAP_zz_55}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_57
+		icon = GFX_TCV_boss
+		x=5
+		y=1
+		prerequisite={ focus = JAP_zz_55}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_58
+		icon = GFX_TCV_boss
+		x=8
+		y=1
+		prerequisite={ focus = JAP_zz_55}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_59
+		icon = GFX_TCV_boss
+		x=0
+		y=2
+		prerequisite={ focus = JAP_zz_56}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_60
+		icon = GFX_TCV_boss
+		x=2
+		y=2
+		prerequisite={ focus = JAP_zz_56}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_61
+		icon = GFX_TCV_boss
+		x=4
+		y=2
+		prerequisite={ focus = JAP_zz_57}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_62
+		icon = GFX_TCV_boss
+		x=6
+		y=2
+		prerequisite={ focus = JAP_zz_57}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_63
+		icon = GFX_TCV_boss
+		x=8
+		y=2
+		prerequisite={ focus = JAP_zz_58}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_64
+		icon = GFX_TCV_boss
+		x=4
+		y=3
+		prerequisite={ focus = JAP_zz_63}
+		prerequisite={ focus = JAP_zz_62}
+		prerequisite={ focus = JAP_zz_61}
+		prerequisite={ focus = JAP_zz_60}
+		prerequisite={ focus = JAP_zz_59}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_65
+		icon = GFX_TCV_boss
+		x=33
+		y=0
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_66
+		icon = GFX_TCV_boss
+		x=30
+		y=1
+		prerequisite={ focus = JAP_zz_65}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_67
+		icon = GFX_TCV_boss
+		x=30
+		y=2
+		prerequisite={ focus = JAP_zz_66}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_68
+		icon = GFX_TCV_boss
+		x=30
+		y=3
+		prerequisite={ focus = JAP_zz_67}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_69
+		icon = GFX_TCV_boss
+		x=30
+		y=4
+		prerequisite={ focus = JAP_zz_68}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_70
+		icon = GFX_TCV_boss
+		x=30
+		y=5
+		prerequisite={ focus = JAP_zz_69}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_71
+		icon = GFX_TCV_boss
+		x=32
+		y=3
+		prerequisite={ focus = JAP_zz_73}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_72
+		icon = GFX_TCV_boss
+		x=34
+		y=3
+		prerequisite={ focus = JAP_zz_73}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_73
+		icon = GFX_TCV_boss
+		x=33
+		y=2
+		prerequisite={ focus = JAP_zz_74}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_74
+		icon = GFX_TCV_boss
+		x=33
+		y=1
+		prerequisite={ focus = JAP_zz_65}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_75
+		icon = GFX_TCV_boss
+		x=36
+		y=1
+		prerequisite={ focus = JAP_zz_65}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_76
+		icon = GFX_TCV_boss
+		x=36
+		y=2
+		prerequisite={ focus = JAP_zz_75}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_77
+		icon = GFX_TCV_boss
+		x=36
+		y=3
+		prerequisite={ focus = JAP_zz_76}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_78
+		icon = GFX_TCV_boss
+		x=36
+		y=4
+		prerequisite={ focus = JAP_zz_77}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+	focus={
+		id = JAP_zz_79
+		icon = GFX_TCV_boss
+		x=33
+		y=4
+		prerequisite={ focus = JAP_zz_72}
+		prerequisite={ focus = JAP_zz_71}
+		cost=10
+		ai_will_do={
+			factor=1
+		}
+		available_if_capitulated=yes
+		search_filters={
+			"TCV_JAP"
+		}
+		completion_reward={
+		}
+	}
+}

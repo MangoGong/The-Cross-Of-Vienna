@@ -1,0 +1,62 @@
+﻿capital = 282
+
+recruit_character = JAP_LuTianJun
+
+set_stability = 0.2 #baseline, THE EMPEROR PROTECTS
+set_war_support = 0.8
+
+set_research_slots = 4
+set_fuel_ratio = 1.0
+create_faction = 大东亚共荣圈
+add_to_faction = CHI 
+add_to_faction = FER
+add_to_faction = GXC
+add_to_faction = MEN
+add_to_faction = MAN
+add_to_faction = SHX
+add_to_faction = XSM
+add_to_faction = YUN
+add_to_faction = SCA
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	if = {
+		limit = {
+			has_dlc = "Waking the Tiger"
+		}
+		set_autonomy = {
+			target = FER
+			autonomous_state = autonomy_wtt_imperial_subject
+		}
+		else = {
+			set_autonomy = {
+				target = FER
+				autonomous_state = autonomy_dominion
+		}
+	}
+	}
+	else = {
+		puppet = FER
+	}
+}
+set_popularities = {
+	democratic = 6
+	fascism = 13
+	nazismus = 11
+	militarism = 52
+	neoliberalism = 5
+	parentsim = 13
+}
+set_politics = {
+	ruling_party = militarism #执政党的意识形态
+	last_election = "1932.11.8" #上次大选时间
+	election_frequency = 48 #大选间隔时间，单位：月
+	elections_allowed = no #是否有下次大选，no为没有，yes为有
+}
+add_ideas = {
+	XuRiDongSheng
+	RiYiFenLieDeJunDui
+	GongRongQuanDeZhuRen
+	CaiFaDeYinHuan
+}

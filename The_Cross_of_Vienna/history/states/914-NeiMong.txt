@@ -1,0 +1,24 @@
+state={
+	id=914
+	name="STATE_885"
+	provinces={
+		1723 1787 1853 4655 4729 4786 4856 7749 7752 7806 10558 10575 10632 10689 10704 12539 12612 12669 12686 
+	}
+	manpower=1
+	history={
+		owner = MEN
+		add_core_of = MON
+		add_core_of = MEN
+		add_claim_by = CHI
+		add_core_of = PRC
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	manpower=11000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	victory_points = {
+			12612 1 
+		}
+	local_supplies=0.000
+}

@@ -1,0 +1,13 @@
+ITA_ShenShiXinShi_category = { #审视形式
+	icon = TEST
+	picture = "GFX_ITA_d_ShenShiXinShi"
+	allowed = {
+		original_tag = ITA
+	}
+	visible = {
+		has_country_flag = ITA_ShenShiXinShi_b_flag
+	}
+	priority = { #国策决议位于最高位置
+		base = 10
+	}
+}

@@ -1,0 +1,213 @@
+focus_tree={
+	id = FRAjj
+	country = {
+		factor = 0
+		modifier = { 
+			add = 10
+			tag = FRA
+		}
+	}
+
+	default = no
+	
+	#持续性国策位置
+	continuous_focus_position = { x = 20 y = 1000 } #原数值{ x = 20 y = 1000 }
+
+	# 定义国策节点
+	focus = { # 第一个国策节点
+		id = FRA_reconstruction # 国策节点的唯一id
+		icon = GFX_TCV_boss
+		x = 6 # 国策节点的横坐标（相对于左上角）
+		y = 0 # 国策节点的纵坐标（相对于左上角）
+		cost = 10 # 国策节点的花费（以天为单位）
+		available_if_capitulated = yes # 国家投降后仍可选择此国策
+		prerequisite = { } #!!需要更改 先决条件：选举事件链结束
+		completion_reward = { # 完成奖励：增加稳定性和战争支持度
+			add_stability = 0.1
+			add_war_support = 0.1
+		}
+		ai_will_do = { factor = 1 } # AI会选择此国策的概率（1表示100%）
+	}
+	focus = { # 第二个国策节点
+		id = FRA_industrialization # 国策节点的唯一id
+		icon = GFX_TCV_boss
+		x = 3 # 国策节点的横坐标（相对于左上角）
+		y = 1 # 国策节点的纵坐标（相对于左上角）
+		cost = 10 # 国策节点的花费（以天为单位）
+		available_if_capitulated = yes # 国家投降后仍可选择此国策
+		prerequisite = { focus = FRA_reconstruction } # 先决条件：完成法兰西的重建国策
+		completion_reward = { # 完成奖励：开启一系列工业化决议
+			set_country_flag = FRA_industrialization_decision #!!!工业化决议需要制作
+		}
+		ai_will_do = { factor = 1 } # AI会选择此国策的概率（1表示100%）
+	}
+	focus = { # 第三个国策节点
+		id = FRA_dedication_spirit # 国策节点的唯一id
+		icon = GFX_TCV_boss
+		x = 9 # 国策节点的横坐标（相对于左上角）
+		y = 1 # 国策节点的纵坐标（相对于左上角）
+		cost = 10 # 国策节点的花费（以天为单位）
+		available_if_capitulated = yes # 国家投降后仍可选择此国策
+		prerequisite = { focus = FRA_reconstruction } # 先决条件：完成法兰西的重建国策
+		completion_reward = { # 完成奖励：给予一些生活消费品的buff
+			add_ideas = FRA_dedication_spirit_idea
+		}
+		ai_will_do = { factor = 1 } # AI会选择此国策的概率（1表示100%）
+	}
+		focus = { # 第四个国策节点
+		id = FRA_railway_network # 国策节点的唯一id
+		icon = GFX_TCV_boss
+		x = 1 # 国策节点的横坐标（相对于左上角）
+		y = 2 # 国策节点的纵坐标（相对于左上角）
+		cost = 10 # 国策节点的花费（以天为单位）
+		available_if_capitulated = yes # 国家投降后仍可选择此国策
+		prerequisite = { focus = FRA_industrialization } # 先决条件：完成迈向工业化国策
+		available = { has_government = democratic } # 可用条件：执政党为民主联盟
+		completion_reward = { # 完成奖励：在工业化决议中添加地区的铁路建设
+			set_country_flag = FRA_railway_network_decision
+		}
+		ai_will_do = { factor = 1 } # AI会选择此国策的概率（1表示100%）
+	}
+	focus = { # 第五个国策节点
+		id = FRA_airport_network # 国策节点的唯一id
+		icon = GFX_TCV_boss
+		x = 3 # 国策节点的横坐标（相对于左上角）
+		y = 2 # 国策节点的纵坐标（相对于左上角）
+		cost = 10 # 国策节点的花费（以天为单位）
+		available_if_capitulated = yes # 国家投降后仍可选择此国策
+		prerequisite = { focus = FRA_industrialization } # 先决条件：完成迈向工业化国策
+		available = { has_government = fascism } # 可用条件：执政党为复兴党
+		completion_reward = { # 完成奖励：在工业化决议中添加地区的空港基地建设
+			set_country_flag = FRA_airport_network_decision
+		}
+		ai_will_do = { factor = 1 } # AI会选择此国策的概率（1表示100%）
+	}
+	focus = { # 第六个国策节点
+		id = FRA_road_network # 国策节点的唯一id
+		icon = GFX_TCV_boss
+		x = 5 # 国策节点的横坐标（相对于左上角）
+		y = 2 # 国策节点的纵坐标（相对于左上角）
+		cost = 10 # 国策节点的花费（以天为单位）
+		available_if_capitulated = yes # 国家投降后仍可选择此国策
+		prerequisite = { focus = FRA_industrialization } # 先决条件：完成迈向工业化国策
+		available = { has_government = communism } # 可用条件：执政党为社会党
+		completion_reward = { # 完成奖励：在工业化决议中添加地区基础设施建设
+			set_country_flag = FRA_road_network_decision
+		}
+		ai_will_do = { factor = 1 } # AI会选择此国策的概率（1表示100%）
+	}
+	focus = { # 第七个国策节点
+    	id = FRA_look_at_entrepreneurs # 国策节点的唯一id
+		icon = GFX_TCV_boss
+		x = 7 # 国策节点的横坐标（相对于左上角）
+    	y = 2 # 国策节点的纵坐标（相对于左上角）
+    	cost = 10 # 国策节点的花费（以天为单位）
+    	available_if_capitulated = yes # 国家投降后仍可选择此国策
+    	prerequisite = { focus = FRA_dedication_spirit } # 先决条件：完成奉献精神国策
+    	available = { has_government = democratic } # 可用条件：执政党为民主联盟
+    	completion_reward = { # 完成奖励：给予生产效率上限的buff
+    	    add_ideas = FRA_look_at_entrepreneurs_idea
+    	}
+    	ai_will_do = { factor = 1 } # AI会选择此国策的概率（1表示100%）
+	}
+	focus = { # 第八个国策节点
+    	id = FRA_look_at_market # 国策节点的唯一id
+		icon = GFX_TCV_boss
+		x = 9 # 国策节点的横坐标（相对于左上角）
+    	y = 2 # 国策节点的纵坐标（相对于左上角）
+    	cost = 10 # 国策节点的花费（以天为单位）
+    	available_if_capitulated = yes # 国家投降后仍可选择此国策
+    	prerequisite = { focus = FRA_dedication_spirit } # 先决条件：完成奉献精神国策
+    	available = { has_government = fascism } # 可用条件：执政党为复兴党
+    	completion_reward = { # 完成奖励：给予生活消费品的buff
+    	    add_ideas = FRA_look_at_market_idea
+    	}
+    	ai_will_do = { factor = 1 } # AI会选择此国策的概率（1表示100%）
+	}
+	focus = { # 第九个国策节点
+	    id = FRA_look_at_workers # 国策节点的唯一id
+		icon = GFX_TCV_boss
+		x = 11 # 国策节点的横坐标（相对于左上角）
+	    y = 2 # 国策节点的纵坐标（相对于左上角）
+	    cost = 10 # 国策节点的花费（以天为单位）
+	    available_if_capitulated = yes # 国家投降后仍可选择此国策
+	    prerequisite = { focus = FRA_dedication_spirit } # 先决条件：完成奉献精神国策
+	    available = { has_government = communism } # 可用条件：执政党为社会党
+	    completion_reward = { # 完成奖励：给予生产效率增加的buff
+	        add_ideas = FRA_look_at_workers_idea
+	    }
+	    ai_will_do = { factor = 1 } # AI会选择此国策的概率（1表示100%）
+	}
+	focus = { # 第十个国策节点
+	    id = FRA_industrial_cities # 国策节点的唯一id
+		icon = GFX_TCV_boss
+		x = 3 # 国策节点的横坐标（相对于左上角）
+	    y = 3 # 国策节点的纵坐标（相对于左上角）
+	    cost = 10 # 国策节点的花费（以天为单位）
+	    available_if_capitulated = yes # 国家投降后仍可选择此国策
+	    #mutually_exclusive = { focus = FRA_control_entrepreneurs } # 互斥条件：不能同时选择控制企业国策
+	    prerequisite = { 
+		focus = FRA_railway_network
+		focus = FRA_airport_network 
+		focus = FRA_road_network 
+		} 
+		 # 先决条件：完成铁路网或空港网或公路网其中之一
+	    completion_reward = { # 完成奖励：在工业化决议中添加军用工厂、北部基建的建造
+	        set_country_flag = FRA_industrial_cities_decision
+	    }
+	    ai_will_do = { factor = 1 } # AI会选择此国策的概率（1表示100%）
+	}
+	focus = { # 第十一个国策节点
+	    id = FRA_control_entrepreneurs # 国策节点的唯一id
+		icon = GFX_TCV_boss
+		x = 7 # 国策节点的横坐标（相对于左上角）
+	    y = 3 # 国策节点的纵坐标（相对于左上角）
+	    cost = 10 # 国策节点的花费（以天为单位）
+	    available_if_capitulated = yes # 国家投降后仍可选择此国策
+	    #mutually_exclusive = { focus = FRA_industrial_cities } # 互斥条件：不能同时选择工业城镇国策
+	    prerequisite = { focus = FRA_look_at_entrepreneurs } # 先决条件：完成看向企业家国策
+	    completion_reward = { # 完成奖励：给予生产效率上限的buff
+	        add_ideas = FRA_control_entrepreneurs_idea
+	    }
+	    ai_will_do = { factor = 1 } # AI会选择此国策的概率（1表示100%）
+	}
+	focus = { # 第十二个国策节点
+	    id = FRA_tangible_hand # 国策节点的唯一id
+		icon = GFX_TCV_boss
+		x = 9 # 国策节点的横坐标（相对于左上角）
+	    y = 3 # 国策节点的纵坐标（相对于左上角）
+	    cost = 10 # 国策节点的花费（以天为单位）
+	    available_if_capitulated = yes # 国家投降后仍可选择此国策
+	    prerequisite = { focus = FRA_look_at_market } # 先决条件：完成看向市场国策
+	    completion_reward = { # 完成奖励：给予生活消费品的buff
+	        add_ideas = FRA_tangible_hand_idea
+	    }
+		ai_will_do = { factor = 1 } # AI会选择此国策的概率（1表示100%）
+	}
+	focus = { # 第十三个国策节点
+    	id = FRA_manage_unions # 国策节点的唯一id
+			icon = GFX_TCV_boss
+		x = 11 # 国策节点的横坐标（相对于左上角）
+    	y = 3 # 国策节点的纵坐标（相对于左上角）
+    	cost = 10 # 国策节点的花费（以天为单位）
+    	available_if_capitulated = yes # 国家投降后仍可选择此国策
+    	prerequisite = { focus = FRA_look_at_workers } # 先决条件：完成看向工人国策
+    	completion_reward = { # 完成奖励：给予生产效率增加的buff
+    	    add_ideas = FRA_manage_unions_idea
+    	}
+    	ai_will_do = { factor = 1 } # AI会选择此国策的概率（1表示100%）
+	}
+	focus = { # 第十四个国策节点
+	    id = FRA_agricultural_modernization # 国策节点的唯一id
+		icon = GFX_TCV_boss
+		x = 3 # 国策节点的横坐标（相对于左上角）
+	    y = 4 # 国策节点的纵坐标（相对于左上角）
+	    cost = 10 # 国策节点的花费（以天为单位）
+	    available_if_capitulated = yes # 国家投降后仍可选择此国策
+	    prerequisite = { focus = FRA_industrial_cities } # 先决条件：完成工业城镇国策
+	    completion_reward = { # 完成奖励：在工业化决议中添加民用工厂、南部基建的建造
+	        set_country_flag = FRA_agricultural_modernization_decision
+	    }
+	    ai_will_do = { factor = 1 } # AI会选择此国策的概率（1表示100%）
+	}
+}

@@ -1,0 +1,51 @@
+ideas = {
+	country = {
+		BuZhuFaZhan = { #补助发展
+			picture = ""
+		
+			allowed_civil_war = {
+				always = no
+			}
+		
+			cancel = { 
+				has_war = yes
+			}
+		
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = 0.1
+				MODIFIER_INDUSTRY_REPAIR_FACTOR = 0.05
+			}
+		}
+	}
+	country = {
+		XinLuoMaZhiMeng = { #新罗马之梦
+			picture = "gfx/interface/goals/ITA_ideas/ITA_XinLuoMaZhiMeng.dds"
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				political_power_gain = 0.8
+			}
+		}
+		YiDaLiWanSui = { #意大利万岁
+			picture = "gfx/interface/goals/ITA_ideas/ITA_YiDaLiWanSui.dds"
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				stability_factor = 0.3
+			}
+		}
+		WenBeiTuoAShi = { #翁贝托二世
+			picture = "gfx/interface/goals/ITA_ideas/ITA_WenBeiTuoAShi.dds"
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				army_morale_factor = 0.05
+			}
+		}
+	}
+}

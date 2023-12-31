@@ -1,0 +1,197 @@
+ITA_KaiFaNanBu_category = { #开发南部
+	ITA_KaiFa_1 = { #开发卡拉布里亚
+		icon = "" #决议的图标
+		fire_only_once = yes #是否为仅能进行一次的决议（默认no）
+		allowed = {
+			original_tag = ITA #满足内部条件，才允许进一步读取和检测这个决议（仅在读取存档和开局时检查）
+		}
+
+		on_map_mode = map_and_decisions_view #决议的显示方式（map_only指只在地图上显示，map_and_decisions_view既在地图上显示又在决议栏目里面显示。）
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 156 #该决议会出现在哪些state的上方，鼠标悬停/点击该决议后，哪些地块会出现高亮边框
+			}
+			highlight_color_while_active = 3 #点击激活决议后高亮边框的颜色（不设置则为白色）
+			highlight_color_before_active = 2 #悬停时高亮边框的颜色（不设置则为白色）
+		}
+
+		visible = {
+			has_country_flag = ITA_JingJi_b_flag
+		}
+
+		
+		cost = 20
+		days_remove = 20
+		
+		remove_effect = {
+			156 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 100 #ai点选这个决议的意愿
+		}
+	}
+	ITA_KaiFa_2 = { #开发坎帕尼亚
+		icon = "" #决议的图标
+		fire_only_once = yes #是否为仅能进行一次的决议（默认no）
+		allowed = {
+			original_tag = ITA #满足内部条件，才允许进一步读取和检测这个决议（仅在读取存档和开局时检查）
+		}
+
+		on_map_mode = map_and_decisions_view #决议的显示方式（map_only指只在地图上显示，map_and_decisions_view既在地图上显示又在决议栏目里面显示。）
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 117 #该决议会出现在哪些state的上方，鼠标悬停/点击该决议后，哪些地块会出现高亮边框
+			}
+			highlight_color_while_active = 3 #点击激活决议后高亮边框的颜色（不设置则为白色）
+			highlight_color_before_active = 2 #悬停时高亮边框的颜色（不设置则为白色）
+		}
+
+		visible = {
+			has_country_flag = ITA_JingJi_b_flag
+		}
+
+
+		cost = 20
+		days_remove = 20
+
+		remove_effect = {
+			117 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 100 #ai点选这个决议的意愿
+		}
+	}
+	ITA_KaiFa_3 = { #开发普利亚
+		icon = "" #决议的图标
+		fire_only_once = yes #是否为仅能进行一次的决议（默认no）
+		allowed = {
+			original_tag = ITA #满足内部条件，才允许进一步读取和检测这个决议（仅在读取存档和开局时检查）
+		}
+
+		on_map_mode = map_and_decisions_view #决议的显示方式（map_only指只在地图上显示，map_and_decisions_view既在地图上显示又在决议栏目里面显示。）
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 849 #该决议会出现在哪些state的上方，鼠标悬停/点击该决议后，哪些地块会出现高亮边框
+			}
+			highlight_color_while_active = 3 #点击激活决议后高亮边框的颜色（不设置则为白色）
+			highlight_color_before_active = 2 #悬停时高亮边框的颜色（不设置则为白色）
+		}
+
+		visible = {
+			has_country_flag = ITA_JingJi_b_flag
+		}
+
+
+		cost = 20
+		days_remove = 20
+
+		remove_effect = {
+			849 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 100 #ai点选这个决议的意愿
+		}
+	}
+	ITA_KaiFa_4 = { #开发西西里
+		icon = "" #决议的图标
+		fire_only_once = yes #是否为仅能进行一次的决议（默认no）
+		allowed = {
+			original_tag = ITA #满足内部条件，才允许进一步读取和检测这个决议（仅在读取存档和开局时检查）
+		}
+
+		on_map_mode = map_and_decisions_view #决议的显示方式（map_only指只在地图上显示，map_and_decisions_view既在地图上显示又在决议栏目里面显示。）
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 115 #该决议会出现在哪些state的上方，鼠标悬停/点击该决议后，哪些地块会出现高亮边框
+			}
+			highlight_color_while_active = 3 #点击激活决议后高亮边框的颜色（不设置则为白色）
+			highlight_color_before_active = 2 #悬停时高亮边框的颜色（不设置则为白色）
+		}
+
+		visible = {
+			has_country_flag = ITA_JingJi_b_flag
+		}
+
+
+		cost = 20
+		days_remove = 20
+
+		remove_effect = {
+			115 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 100 #ai点选这个决议的意愿
+		}
+	}
+	ITA_KaiFa_5 = { #开发撒丁
+		icon = "" #决议的图标
+		fire_only_once = yes #是否为仅能进行一次的决议（默认no）
+		allowed = {
+			original_tag = ITA #满足内部条件，才允许进一步读取和检测这个决议（仅在读取存档和开局时检查）
+		}
+
+		on_map_mode = map_and_decisions_view #决议的显示方式（map_only指只在地图上显示，map_and_decisions_view既在地图上显示又在决议栏目里面显示。）
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 114 #该决议会出现在哪些state的上方，鼠标悬停/点击该决议后，哪些地块会出现高亮边框
+			}
+			highlight_color_while_active = 3 #点击激活决议后高亮边框的颜色（不设置则为白色）
+			highlight_color_before_active = 2 #悬停时高亮边框的颜色（不设置则为白色）
+		}
+
+		visible = {
+			has_country_flag = ITA_JingJi_b_flag
+		}
+
+
+		cost = 20
+		days_remove = 20
+
+		remove_effect = {
+			114 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 100 #ai点选这个决议的意愿
+		}
+	}
+}

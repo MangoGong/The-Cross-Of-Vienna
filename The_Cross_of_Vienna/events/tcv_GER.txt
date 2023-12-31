@@ -1,0 +1,302 @@
+add_namespace = germany
+country_event = { #软弱不堪的自卫队
+	id = germany.1
+    picture = "GFX_TCV_news_event_GER_JunDui"
+    title = germany.1.t
+    desc = germany.1.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+	}
+
+    option = { 
+        name = germany.1.a
+        country_lock_all_division_template = yes
+	}
+}
+country_event = { #政府财政报告
+	id = germany.2
+    picture = "GFX_TCV_news_event_GER_DeGuoGuoHuiDaSha"
+    title = germany.2.t
+    desc = germany.2.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+	}
+
+    option = { 
+        name = germany.2.a
+	}
+}
+country_event = { #军队报告
+	id = germany.3
+    picture = "GFX_TCV_news_event_GER_JunDui"
+    title = germany.3.t
+    desc = germany.3.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+	}
+
+    option = { 
+        name = germany.3.a
+	}
+}
+country_event = { #议会报告
+	id = germany.4
+    picture = "GFX_TCV_news_event_GER_DeGuoGuoHuiDaSha"
+    title = germany.4.t
+    desc = germany.4.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+	}
+
+    option = { 
+        name = germany.4.a
+	}
+}
+country_event = { #总统
+	id = germany.5
+    picture = "GFX_TCV_news_event_GER_AdennaYanJiang"
+    title = germany.5.t
+    desc = germany.5.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+	}
+
+    option = { 
+        name = germany.5.a
+	}
+}
+country_event = { #元帅
+	id = germany.6
+    picture = "GFX_TCV_news_event_GER_longmeier"
+    title = germany.6.t
+    desc = germany.6.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+	}
+
+    option = { 
+        name = germany.6.a
+	}
+}
+country_event = { #宣传家
+	id = germany.7
+    picture = "GFX_TCV_news_event_GER_Gepeier"
+    title = germany.7.t
+    desc = germany.7.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+	}
+
+    option = { 
+        name = germany.7.a
+	}
+}
+country_event = { #气氛微妙的会议
+	id = germany.8
+    picture = "GFX_TCV_news_event_GER_DeGuoGuoHuiDaSha"
+    title = germany.8.t
+    desc = germany.8.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+	}
+
+    option = { 
+        name = germany.8.a
+        complete_national_focus = GER_3_001
+    }
+    option = { 
+        name = germany.8.b
+        complete_national_focus = GER_1_001
+    }
+    option = { 
+        name = germany.8.c
+        complete_national_focus = GER_2_001
+	}
+}
+country_event = { #隆美尔元帅
+	id = germany.9
+    picture = "GFX_TCV_news_event_GER_longmeier"
+    title = germany.9.t
+    desc = germany.9.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+	}
+
+    option = { 
+        name = germany.9.a
+        country_event = {id=germany.10 days=1}
+	}
+}
+country_event = { #三巨头的会晤
+	id = germany.10
+    picture = "GFX_TCV_news_event_GER_PiJiuGuan"
+    title = germany.10.t
+    desc = germany.10.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+	}
+
+    option = { 
+        name = germany.10.a
+	}
+}
+country_event = { #债务危机
+	id = germany.11
+    picture = "GFX_TCV_event_GER_CaiZhengWeiJi"
+    title = germany.11.t
+    desc = germany.11.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+	}
+
+    option = { 
+        name = germany.11.a
+	}
+}
+country_event = { #德意志的民主
+	id = germany.12
+    picture = "GFX_TCV_event_GER_DeYiZhiDeMingZhu"
+    title = germany.12.t
+    desc = germany.12.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+	}
+
+    option = { 
+        name = germany.12.a
+	}
+}
+country_event = { #政府总结
+	id = germany.13
+    picture = "GFX_TCV_news_event_GER_DeGuoGuoHuiDaSha"
+    title = germany.13.t
+    desc = germany.13.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+	}
+
+    option = { 
+        name = germany.13.a
+	}
+}
+
+
+##########################################################
+#                       决议事件                          #
+##########################################################
+
+
+country_event = { #政府总结决议：新年元旦
+	id = germany.14
+    picture = "GFX_TCV_e_GER_XinNian"
+    title = germany.14.t
+    desc = germany.14.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+	}
+
+    option = { 
+        name = germany.14.a
+	}
+}
+country_event = { #政府总结决议：审阅议会的总结
+	id = germany.15
+    picture = "GFX_TCV_e_GER_YiHuiDeWenJian"
+    title = germany.15.t
+    desc = germany.15.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+	}
+
+    option = { 
+        name = germany.15.a
+	}
+}
+country_event = { #政府总结决议：审阅军队的总结
+	id = germany.16
+    picture = "GFX_TCV_e_GER_JunDuiDeWenJian"
+    title = germany.16.t
+    desc = germany.16.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+	}
+
+    option = { 
+        name = germany.16.a
+	}
+}
+country_event = { #政府总结决议：审阅财政的总结
+	id = germany.17
+    picture = "GFX_TCV_e_GER_CaiZhenBuWenJian"
+    title = germany.17.t
+    desc = germany.17.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+	}
+
+    option = { 
+        name = germany.17.a
+	}
+}
+country_event = { #政府总结决议：一塌糊涂
+	id = germany.18
+    picture = "GFX_TCV_e_GER_YiTaHuTu"
+    title = germany.18.t
+    desc = germany.18.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+	}
+
+    option = { 
+        name = germany.18.a
+        set_country_flag = GER_ZhengFuZongJie_c_d_flag_1
+	}
+}
+country_event = { #政府总结决议：惨不忍睹
+	id = germany.19
+    picture = "GFX_TCV_e_GER_CanBuRenDu"
+    title = germany.19.t
+    desc = germany.19.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+	}
+
+    option = { 
+        name = germany.19.a
+        set_country_flag = GER_ZhengFuZongJie_c_d_flag_2
+	}
+}
+country_event = { #政府总结决议：逐梦？
+	id = germany.20
+    picture = "GFX_TCV_e_GER_ZhuMeng"
+    title = germany.20.t
+    desc = germany.20.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+	}
+
+    option = { 
+        name = germany.20.a
+        set_country_flag = GER_ZhengFuZongJie_c_d_flag_3
+	}
+}

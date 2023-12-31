@@ -1,0 +1,47 @@
+﻿capital = 16
+
+create_faction = 泛欧罗巴共同防御体系
+add_to_faction = FRA
+add_to_faction = GER
+add_to_faction = POL
+add_to_faction = HOL
+add_to_faction = BEL
+add_to_faction = AUS
+add_to_faction = CZE
+add_to_faction = LIT
+add_to_faction = LAT
+add_to_faction = EST
+add_to_faction = BLR
+add_to_faction = UKR
+add_to_faction = LUX
+add_to_faction = DEN
+set_research_slots = 5
+set_stability = 0.96
+set_popularities = {
+	democratic = 30
+	communism = 5
+	fascism = 5
+	neutrality = 5
+	anarchist = 1
+	economic = 23
+	nazismus = 2
+	militarism = 1
+	neoliberalism = 24
+	funism = 1
+	parentsim = 1
+	fantasim = 1
+	heliosim = 1
+}
+set_politics = {
+	ruling_party = neoliberalism #执政党的意识形态
+	last_election = "1932.11.8" #上次大选时间
+	election_frequency = 48 #大选间隔时间，单位：月
+	elections_allowed = yes #是否有下次大选，no为没有，yes为有
+}
+add_ideas = {
+	neizhanbianyuan
+	fenbenglixidezhimindiguo
+	jiduanhunluandezhnegfu
+	shijiedazhandeshenglizhe
+	daigaoleaiguozhuyijiaoyu
+}

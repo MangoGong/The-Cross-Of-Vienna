@@ -1,0 +1,34 @@
+ideas = {
+	country = {
+		ZuoPaiBeiZhenYa = {
+			on_add = {
+				add_popularity = {
+					ideology = communism
+					popularity = -0.05
+				}
+			}
+
+			picture = ""
+			
+			allowed_civil_war = {
+				always = no
+			}
+
+		}#左派被镇压
+		QiYeZhenZhiJiTuan = {
+			picture = ""
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			
+			modifier = {
+				resistance_growth = 0.02
+				political_power_factor = 0.1
+				consumer_goods_factor = 0.05
+			}
+
+		}#企业政治集团
+	}
+}

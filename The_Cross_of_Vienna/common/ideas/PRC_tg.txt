@@ -1,0 +1,39 @@
+ideas = {
+	country = {
+		AZhanDeShiBaiZhe = { #二战的失败者
+			picture = ""
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				conscription_factor = 0.01
+				monthly_population = 0.3
+			}
+		}
+		QuanMianFengSuo = { #全面封锁
+			picture = ""
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				research_speed_factor = -0.5
+				local_resources_factor = -0.1
+				industrial_capacity_factory = -0.3
+				production_speed_buildings_factor = -0.5
+			}
+		}
+		DongYaDeZuiHouBiLei = { #东亚的最后堡垒
+			picture = ""
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				stability_factor = -0.05
+				conscription_factor = 0.05
+				monthly_population = 0.5
+			}
+		}
+	}
+}

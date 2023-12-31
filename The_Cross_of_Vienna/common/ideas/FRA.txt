@@ -1,0 +1,84 @@
+ideas = {
+
+	country = {
+        neizhanbianyuan = {
+			
+        	allowed = {
+    		original_tag = FRA
+        	}
+
+    	   allowed_civil_war = { 
+	        	}
+
+	        removal_cost = -1
+	
+	        modifier = {
+			}	
+		}
+		fenbenglixidezhimindiguo = {
+			
+        	allowed = {
+    		original_tag = FRA
+        	}
+
+    	   allowed_civil_war = { 
+	        	}
+
+	        removal_cost = -1
+	
+	        modifier = {
+				stability_factor = -0.2
+				MODIFIER_POLITICAL_POWER_COST = 0.2			
+			}	
+		}
+		jiduanhunluandezhnegfu = {
+			
+        	allowed = {
+    		original_tag = FRA
+        	}
+
+    	   allowed_civil_war = { 
+	        	}
+
+	        removal_cost = -1
+	
+	        modifier = {
+				stability_factor = -0.5
+				MODIFIER_INDUSTRIAL_CAPACITY_FACTOR = -0.2
+				MODIFIER_POLITICAL_POWER_FACTOR = -0.3
+			}	
+		}
+		shijiedazhandeshenglizhe = {
+			
+        	allowed = {
+    		original_tag = FRA
+        	}
+
+    	   allowed_civil_war = { 
+	        	}
+
+	        removal_cost = -1
+	
+	        modifier = {
+				MODIFIER_LAND_DOCTRINE_COST_FACTOR = 1
+				MODIFIER_CONSCRIPTION_TOTAL_FACTOR = -0.005
+			}
+		}	
+		daigaoleaiguozhuyijiaoyu = {
+			
+        	allowed = {
+    		original_tag = FRA
+        	}
+
+    	   allowed_civil_war = { 
+	        	}
+
+	        removal_cost = -1
+	
+	        modifier = {
+				max_surrender_limit_offset = 0.5
+				MODIFIER_ARMY_ORG_FACTOR = 0.1
+			}
+		}	
+	}
+}

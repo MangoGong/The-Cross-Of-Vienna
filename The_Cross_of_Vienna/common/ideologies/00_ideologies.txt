@@ -1,0 +1,775 @@
+ideologies = {
+	
+	democratic = {
+	
+		types = {
+			
+			conservatism = {
+			}
+		
+			liberalism = {
+			}
+		
+			socialism = {
+			}
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+			"FACTION_NAME_DEMOCRATIC_2"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_4"
+			"FACTION_NAME_DEMOCRATIC_5"
+			"FACTION_NAME_DEMOCRATIC_6"
+		}
+		
+		color = { 0 0 255 }
+		
+		rules = {
+			can_create_collaboration_government = no
+			can_declare_war_on_same_ideology = no
+			can_force_government = yes
+			can_send_volunteers = no
+			can_puppet = no
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+		
+		can_host_government_in_exile = yes
+		
+		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.1
+		
+		modifiers = {
+			generate_wargoal_tension = 1.00
+			join_faction_tension = 0.80
+			lend_lease_tension = 0.50
+			send_volunteers_tension = 0.50
+			guarantee_tension = 0.25
+			annex_cost_factor = 0.5
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 20.0
+			airforce_intel_to_others = 5
+		}
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+		}
+		ai_democratic = yes # uses the democratic AI behaviour
+	}
+
+
+	communism = {
+		
+		types = {
+		
+			marxism = {
+			}
+			
+			leninism = {
+			}
+			
+			stalinism = {
+			}
+			
+			anti_revisionism = {
+			}
+			
+			anarchist_communism = {
+			}
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_COMMUNIST_1"
+			"FACTION_NAME_COMMUNIST_2"
+			"FACTION_NAME_COMMUNIST_3"
+			"FACTION_NAME_COMMUNIST_4"
+			"FACTION_NAME_COMMUNIST_5"
+		}
+		
+		color = { 255 0 0 }
+		
+		war_impact_on_world_tension = 0.75		#Commie less threatening
+		faction_impact_on_world_tension = 0.5
+		
+		ai_communist = yes # uses the commie AI behaviour
+		
+		rules = {
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = yes
+		}
+		
+		can_collaborate = yes
+		
+		modifiers = {
+			puppet_cost_factor = -0.3
+			civilian_intel_to_others = 10.0
+			army_intel_to_others = 7.5
+			navy_intel_to_others = 12.5
+			airforce_intel_to_others = 7.5
+			hidden_modifier = { join_faction_tension = -0.1 }
+		}
+		
+		faction_modifiers = {
+			
+		}
+
+	}
+
+	fascism = {
+	
+		types = {
+		
+			gen_nazism = {
+			}
+			
+			fascism_ideology = {
+			}
+			
+			falangism = {
+			}
+			
+			rexism = {
+			}
+
+			faxisi_gailiangpai = { #法西斯改良派
+
+			}
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_FASCIST_1"
+			"FACTION_NAME_FASCIST_2"
+			"FACTION_NAME_FASCIST_3"
+			"FACTION_NAME_FASCIST_4"
+			"FACTION_NAME_FASCIST_5"
+		}
+		
+		color = { 150 75 0 }
+		
+		war_impact_on_world_tension = 1.0			#evil!
+		faction_impact_on_world_tension = 1.0
+		
+		rules = {
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = yes
+		}
+		
+		can_collaborate = yes
+		
+		modifiers = {
+			justify_war_goal_when_in_major_war_time = -0.80
+			civilian_intel_to_others = 15.0
+			army_intel_to_others = 10.0
+			navy_intel_to_others = 10.0
+			airforce_intel_to_others = 10.0
+			hidden_modifier = { join_faction_tension = -0.1 }
+		}
+
+		ai_fascist = yes # uses the fascist AI behaviour
+	}
+	
+	neutrality = {
+	
+		types = {
+		
+			despotism  = {
+			}
+			
+			oligarchism  = {
+			}
+
+			moderatism = {
+			}
+			
+			centrism = {
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_NONALIGNED_1"
+			"FACTION_NAME_NONALIGNED_2"
+			"FACTION_NAME_NONALIGNED_3"
+			"FACTION_NAME_NONALIGNED_4"
+			"FACTION_NAME_NONALIGNED_5"
+		}
+		
+		color = { 124 124 124 }
+		
+		
+		war_impact_on_world_tension = 0.25		#no major danger
+		faction_impact_on_world_tension = 0.1
+		
+		rules = {
+			can_force_government = no
+			can_puppet = yes
+			can_send_volunteers = no
+		}
+		
+		modifiers = {
+			#increased_influence_factor = 0.3 #30% easier to influence
+			generate_wargoal_tension = 0.5
+			join_faction_tension = 0.4
+			lend_lease_tension = 0.4
+			send_volunteers_tension = 0.4
+			guarantee_tension = 0.4
+			drift_defence_factor = -0.3	
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 10.0
+			navy_intel_to_others = 20.0
+			airforce_intel_to_others = 10.0
+		}
+		
+		faction_modifiers = {
+		}
+
+		ai_neutral = yes # 
+	}
+
+	
+	economic = {
+		
+		types = {
+			SaiBoPengKeZhuYi = {
+
+			}
+			ancap = {
+				
+			}
+		}
+		
+		dynamic_faction_names = {
+			"自由捍卫同盟"
+			"资产捍卫联盟" # 当一个具有这种意识形态的ai创建一个阵营时，ai使用的阵营名称
+		}
+			
+		color = { 32 51 64 } # 代表该意识形态的RGB颜色。 这个颜色会出现在政党饼图或饼图附近。
+		
+		rules = { # 该意识形态的规则，值为(yes/no)
+						can_create_collaboration_government = yes # 创建合作政府
+			can_declare_war_on_same_ideology = yes # 对相同意识形态发起战争；非必要
+			can_force_government = no # 可以在和平协议中改变意识形态；必要
+			can_send_volunteers = yes # 派遣志愿军；必要
+			can_puppet = yes # 可以在和平协议中傀儡一个国家；必要
+			can_lower_tension = no # 在和平协议中降低世界紧张度；非必要
+			can_only_justify_war_on_threat_country = no # 只能对一个国家正当化战争；非必要
+			can_guarantee_other_ideologies = yes # 对其他意识形态保障独立；非必要
+		}
+	
+				can_host_government_in_exile = yes # 接待流亡政府
+		
+		war_impact_on_world_tension = 0 # 值范围-1到1 增加或减少这个国家制造的世界紧张度
+		faction_impact_on_world_tension = -1 # 值范围-1到1 增加或减少一个该意识形态阵营对世界紧张度的影响
+		
+		modifiers = { # 更多意识形态规则
+			generate_wargoal_tension = 0.5 # 正当化战争需要的世界紧张度 (0 to 1)
+			join_faction_tension = 0 # 加入一个阵营需要的世界紧张度 (0 to 1)
+			lend_lease_tension = 0 #租借法案需要的世界紧张度 (0 to 1)
+			send_volunteers_tension = 0.3 # 派遣志愿军需要的世界紧张度 (0 to 1)
+			guarantee_tension = 0.5 # 保障国家独立所需要的世界紧张度 (0 to 1)
+			take_states_cost_factor = 0.5 # 更改和平协议中获取地区的战争点数花费. 0.25将使使用成本提高25% (-1 to 1)
+			annex_cost_factor = 1 # 更改和平协议中完全吞并一个国家的战争点数花费. 0.5 将使使用成本提高50% (-1 to 1)
+			justify_war_goal_when_in_major_war_time = 0 # Changes the cost of justifying a war while in a major war（改变在重大战争中为战争辩护的成本）. 0.5 would 
+			drift_defence_factor = -0.5 # 意识形态的抵御力度 # 0.3 将会增加30%的意识形态抵御力度(-1 to 1)
+			puppet_cost_factor = -1 # 更改在和平协议中傀儡一个国家的战争点数花费 (-1 to 1)
+		}
+
+		can_be_boosted = yes # 传播自己的意识形态 (yes/no)
+		can_collaborate = yes #
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0 #对己方意识形态贸易
+		}
+		ai_democratic = yes # 决定了将使用哪种ai (democratic, communism, fascism, neutral or make a new one.)
+	}
+
+	anarchist = {
+		
+		types = {
+			AnNaQiGongChanZhuYi = {
+
+			}
+			AnNaQiHuZhuZhuYi = {
+
+			}
+		}
+		
+		dynamic_faction_names = {
+			"第四国际"
+			"第五国际"
+			"第六国际"
+			"第七国际" # 当一个具有这种意识形态的ai创建一个阵营时，ai使用的阵营名称
+		}
+			
+		color = { 100 0 0 } # 代表该意识形态的RGB颜色。 这个颜色会出现在政党饼图或饼图附近。
+		
+		rules = { # 该意识形态的规则，值为(yes/no)
+						can_create_collaboration_government = no # 创建合作政府
+			can_declare_war_on_same_ideology = no # 对相同意识形态发起战争；非必要
+			can_force_government = yes # 可以在和平协议中改变意识形态；必要
+			can_send_volunteers = yes # 派遣志愿军；必要
+			can_puppet = no # 可以在和平协议中傀儡一个国家；必要
+			can_lower_tension = yes # 在和平协议中降低世界紧张度；非必要
+			can_only_justify_war_on_threat_country = no # 只能对一个国家正当化战争；非必要
+			can_guarantee_other_ideologies = yes # 对其他意识形态保障独立；非必要
+		}
+	
+				can_host_government_in_exile = no # 接待流亡政府
+		
+		war_impact_on_world_tension = 1 # 值范围-1到1 增加或减少这个国家制造的世界紧张度
+		faction_impact_on_world_tension = 1 # 值范围-1到1 增加或减少一个该意识形态阵营对世界紧张度的影响
+		
+		modifiers = { # 更多意识形态规则
+			generate_wargoal_tension = 0 # 正当化战争需要的世界紧张度 (0 to 1)
+			join_faction_tension = 0 # 加入一个阵营需要的世界紧张度 (0 to 1)
+			lend_lease_tension = 0 #租借法案需要的世界紧张度 (0 to 1)
+			send_volunteers_tension = 0 # 派遣志愿军需要的世界紧张度 (0 to 1)
+			guarantee_tension = 0 # 保障国家独立所需要的世界紧张度 (0 to 1)
+			take_states_cost_factor = 1 # 更改和平协议中获取地区的战争点数花费. 0.25将使使用成本提高25% (-1 to 1)
+			annex_cost_factor = 1 # 更改和平协议中完全吞并一个国家的战争点数花费. 0.5 将使使用成本提高50% (-1 to 1)
+			justify_war_goal_when_in_major_war_time = 0 # Changes the cost of justifying a war while in a major war（改变在重大战争中为战争辩护的成本）. 0.5 would 
+			drift_defence_factor = -1 # 意识形态的抵御力度 # 0.3 将会增加30%的意识形态抵御力度(-1 to 1)
+			puppet_cost_factor = 0 # 更改在和平协议中傀儡一个国家的战争点数花费 (-1 to 1)
+		}
+
+		can_be_boosted = yes # 传播自己的意识形态 (yes/no)
+		can_collaborate = yes #
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 10.0 #对己方意识形态贸易
+		}
+		ai_communism = yes # 决定了将使用哪种ai (democratic, communism, fascism, neutral or make a new one.)
+	}
+	
+	nazismus = {
+		
+		types = {
+			NaCuiZhuYi = {
+
+			}
+		}
+		
+		dynamic_faction_names = {
+			"民族同盟" # 当一个具有这种意识形态的ai创建一个阵营时，ai使用的阵营名称
+		}
+			
+		color = { 20 0 20 } # 代表该意识形态的RGB颜色。 这个颜色会出现在政党饼图或饼图附近。
+		
+		rules = { # 该意识形态的规则，值为(yes/no)
+						can_create_collaboration_government = yes # 创建合作政府
+			can_declare_war_on_same_ideology = yes # 对相同意识形态发起战争；非必要
+			can_force_government = no # 可以在和平协议中改变意识形态；必要
+			can_send_volunteers = yes # 派遣志愿军；必要
+			can_puppet = yes # 可以在和平协议中傀儡一个国家；必要
+			can_lower_tension = no # 在和平协议中降低世界紧张度；非必要
+			can_only_justify_war_on_threat_country = no # 只能对一个国家正当化战争；非必要
+			can_guarantee_other_ideologies = no # 对其他意识形态保障独立；非必要
+		}
+	
+				can_host_government_in_exile = yes # 接待流亡政府
+		
+		war_impact_on_world_tension = 1 # 值范围-1到1 增加或减少这个国家制造的世界紧张度
+		faction_impact_on_world_tension = 1 # 值范围-1到1 增加或减少一个该意识形态阵营对世界紧张度的影响
+		
+		modifiers = { # 更多意识形态规则
+			generate_wargoal_tension = 0 # 正当化战争需要的世界紧张度 (0 to 1)
+			join_faction_tension = 0 # 加入一个阵营需要的世界紧张度 (0 to 1)
+			lend_lease_tension = 0 #租借法案需要的世界紧张度 (0 to 1)
+			send_volunteers_tension = 0 # 派遣志愿军需要的世界紧张度 (0 to 1)
+			guarantee_tension = 0 # 保障国家独立所需要的世界紧张度 (0 to 1)
+			take_states_cost_factor = -0.5 # 更改和平协议中获取地区的战争点数花费. 0.25将使使用成本提高25% (-1 to 1)
+			annex_cost_factor = -0.5 # 更改和平协议中完全吞并一个国家的战争点数花费. 0.5 将使使用成本提高50% (-1 to 1)
+			justify_war_goal_when_in_major_war_time = 0 # Changes the cost of justifying a war while in a major war（改变在重大战争中为战争辩护的成本）. 0.5 would 
+			drift_defence_factor = 0.3 # 意识形态的抵御力度 # 0.3 将会增加30%的意识形态抵御力度(-1 to 1)
+			puppet_cost_factor = -1 # 更改在和平协议中傀儡一个国家的战争点数花费 (-1 to 1)
+		}
+
+		can_be_boosted = yes # 传播自己的意识形态 (yes/no)
+		can_collaborate = yes #
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0 #对己方意识形态贸易
+		}
+		ai_fascism = yes # 决定了将使用哪种ai (democratic, communism, fascism, neutral or make a new one.)
+	}
+
+	militarism = {
+		
+		types = {
+			JunGuoZhuYi = {
+
+			}
+			GaiLiangFaXiSiZhuYi = { #改良法西斯主义
+
+			}
+		}
+		
+		dynamic_faction_names = {
+			"1" # 当一个具有这种意识形态的ai创建一个阵营时，ai使用的阵营名称
+		}
+			
+		color = { 100 50 100 } # 代表该意识形态的RGB颜色。 这个颜色会出现在政党饼图或饼图附近。
+		
+		rules = { # 该意识形态的规则，值为(yes/no)
+						can_create_collaboration_government = yes # 创建合作政府
+			can_declare_war_on_same_ideology = yes # 对相同意识形态发起战争；非必要
+			can_force_government = no # 可以在和平协议中改变意识形态；必要
+			can_send_volunteers = yes # 派遣志愿军；必要
+			can_puppet = yes # 可以在和平协议中傀儡一个国家；必要
+			can_lower_tension = no # 在和平协议中降低世界紧张度；非必要
+			can_only_justify_war_on_threat_country = no # 只能对一个国家正当化战争；非必要
+			can_guarantee_other_ideologies = no # 对其他意识形态保障独立；非必要
+		}
+	
+				can_host_government_in_exile = yes # 接待流亡政府
+		
+		war_impact_on_world_tension = 0 # 值范围-1到1 增加或减少这个国家制造的世界紧张度
+		faction_impact_on_world_tension = 0 # 值范围-1到1 增加或减少一个该意识形态阵营对世界紧张度的影响
+		
+		modifiers = { # 更多意识形态规则
+			generate_wargoal_tension = 0 # 正当化战争需要的世界紧张度 (0 to 1)
+			join_faction_tension = 0 # 加入一个阵营需要的世界紧张度 (0 to 1)
+			lend_lease_tension = 0 #租借法案需要的世界紧张度 (0 to 1)
+			send_volunteers_tension = 0 # 派遣志愿军需要的世界紧张度 (0 to 1)
+			guarantee_tension = 0 # 保障国家独立所需要的世界紧张度 (0 to 1)
+			take_states_cost_factor = -1 # 更改和平协议中获取地区的战争点数花费. 0.25将使使用成本提高25% (-1 to 1)
+			annex_cost_factor = -1 # 更改和平协议中完全吞并一个国家的战争点数花费. 0.5 将使使用成本提高50% (-1 to 1)
+			justify_war_goal_when_in_major_war_time = 0 # Changes the cost of justifying a war while in a major war（改变在重大战争中为战争辩护的成本）. 0.5 would 
+			drift_defence_factor = -0.5 # 意识形态的抵御力度 # 0.3 将会增加30%的意识形态抵御力度(-1 to 1)
+			puppet_cost_factor = 0 # 更改在和平协议中傀儡一个国家的战争点数花费 (-1 to 1)
+		}
+
+		can_be_boosted = no # 传播自己的意识形态 (yes/no)
+		can_collaborate = yes #
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0 #对己方意识形态贸易
+		}
+		ai_fascism = yes # 决定了将使用哪种ai (democratic, communism, fascism, neutral or make a new one.)
+	}
+	neoliberalism = {
+		
+		types = {
+			ZiYouMaoYiZhuYi = {
+
+			}
+			ZiYouZhuYi = {
+
+			}
+		}
+		
+		dynamic_faction_names = {
+			"自由捍卫同盟"
+			"资产捍卫联盟" # 当一个具有这种意识形态的ai创建一个阵营时，ai使用的阵营名称
+		}
+			
+		color = { 128 134 255 } # 代表该意识形态的RGB颜色。 这个颜色会出现在政党饼图或饼图附近。
+		
+		rules = { # 该意识形态的规则，值为(yes/no)
+						can_create_collaboration_government = yes # 创建合作政府
+			can_declare_war_on_same_ideology = yes # 对相同意识形态发起战争；非必要
+			can_force_government = yes # 可以在和平协议中改变意识形态；必要
+			can_send_volunteers = yes # 派遣志愿军；必要
+			can_puppet = yes # 可以在和平协议中傀儡一个国家；必要
+			can_lower_tension = yes # 在和平协议中降低世界紧张度；非必要
+			can_only_justify_war_on_threat_country = no # 只能对一个国家正当化战争；非必要
+			can_guarantee_other_ideologies = yes # 对其他意识形态保障独立；非必要
+		}
+	
+				can_host_government_in_exile = yes # 接待流亡政府
+		
+		war_impact_on_world_tension = -1 # 值范围-1到1 增加或减少这个国家制造的世界紧张度
+		faction_impact_on_world_tension = -1 # 值范围-1到1 增加或减少一个该意识形态阵营对世界紧张度的影响
+		
+		modifiers = { # 更多意识形态规则
+			generate_wargoal_tension = 0.5 # 正当化战争需要的世界紧张度 (0 to 1)
+			join_faction_tension = 0.5 # 加入一个阵营需要的世界紧张度 (0 to 1)
+			lend_lease_tension = 0.2 #租借法案需要的世界紧张度 (0 to 1)
+			send_volunteers_tension = 0.5 # 派遣志愿军需要的世界紧张度 (0 to 1)
+			guarantee_tension = 0.5 # 保障国家独立所需要的世界紧张度 (0 to 1)
+			take_states_cost_factor = 1 # 更改和平协议中获取地区的战争点数花费. 0.25将使使用成本提高25% (-1 to 1)
+			annex_cost_factor = 1 # 更改和平协议中完全吞并一个国家的战争点数花费. 0.5 将使使用成本提高50% (-1 to 1)
+			justify_war_goal_when_in_major_war_time = 0 # Changes the cost of justifying a war while in a major war（改变在重大战争中为战争辩护的成本）. 0.5 would 
+			drift_defence_factor = 0 # 意识形态的抵御力度 # 0.3 将会增加30%的意识形态抵御力度(-1 to 1)
+			puppet_cost_factor = -1 # 更改在和平协议中傀儡一个国家的战争点数花费 (-1 to 1)
+		}
+
+		can_be_boosted = yes # 传播自己的意识形态 (yes/no)
+		can_collaborate = yes #
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.2 #对己方意识形态贸易
+		}
+		ai_democratic = yes # 决定了将使用哪种ai (democratic, communism, fascism, neutral or make a new one.)
+	}
+	social = {
+		
+		types = {
+			SheHuiMingZhuZhuYi = {
+
+			}
+			SheHuiZhuYi = {
+
+			}
+		}
+		
+		dynamic_faction_names = {
+			"1" # 当一个具有这种意识形态的ai创建一个阵营时，ai使用的阵营名称
+		}
+			
+		color = { 255 43 149 } # 代表该意识形态的RGB颜色。 这个颜色会出现在政党饼图或饼图附近。
+		
+		rules = { # 该意识形态的规则，值为(yes/no)
+						can_create_collaboration_government = yes # 创建合作政府
+			can_declare_war_on_same_ideology = yes # 对相同意识形态发起战争；非必要
+			can_force_government = yes # 可以在和平协议中改变意识形态；必要
+			can_send_volunteers = yes # 派遣志愿军；必要
+			can_puppet = yes # 可以在和平协议中傀儡一个国家；必要
+			can_lower_tension = yes # 在和平协议中降低世界紧张度；非必要
+			can_only_justify_war_on_threat_country = no # 只能对一个国家正当化战争；非必要
+			can_guarantee_other_ideologies = yes # 对其他意识形态保障独立；非必要
+		}
+	
+				can_host_government_in_exile = yes # 接待流亡政府
+		
+		war_impact_on_world_tension = -0.5 # 值范围-1到1 增加或减少这个国家制造的世界紧张度
+		faction_impact_on_world_tension = -0.5 # 值范围-1到1 增加或减少一个该意识形态阵营对世界紧张度的影响
+		
+		modifiers = { # 更多意识形态规则
+			generate_wargoal_tension = 0.5 # 正当化战争需要的世界紧张度 (0 to 1)
+			join_faction_tension = 0.5 # 加入一个阵营需要的世界紧张度 (0 to 1)
+			lend_lease_tension = 0.2 #租借法案需要的世界紧张度 (0 to 1)
+			send_volunteers_tension = 0.5 # 派遣志愿军需要的世界紧张度 (0 to 1)
+			guarantee_tension = 0.5 # 保障国家独立所需要的世界紧张度 (0 to 1)
+			take_states_cost_factor = 1 # 更改和平协议中获取地区的战争点数花费. 0.25将使使用成本提高25% (-1 to 1)
+			annex_cost_factor = 1 # 更改和平协议中完全吞并一个国家的战争点数花费. 0.5 将使使用成本提高50% (-1 to 1)
+			justify_war_goal_when_in_major_war_time = 0 # Changes the cost of justifying a war while in a major war（改变在重大战争中为战争辩护的成本）. 0.5 would 
+			drift_defence_factor = 0 # 意识形态的抵御力度 # 0.3 将会增加30%的意识形态抵御力度(-1 to 1)
+			puppet_cost_factor = -1 # 更改在和平协议中傀儡一个国家的战争点数花费 (-1 to 1)
+		}
+
+		can_be_boosted = yes # 传播自己的意识形态 (yes/no)
+		can_collaborate = yes #
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.5 #对己方意识形态贸易
+		}
+		ai_democratic = yes # 决定了将使用哪种ai (democratic, communism, fascism, neutral or make a new one.)
+	}
+	
+	funism = {
+		
+		types = {
+			LeZiZhuYi = {
+
+			}
+			RiZiZhuYi = {
+
+			}
+		}
+		
+		dynamic_faction_names = {
+			"乐" # 当一个具有这种意识形态的ai创建一个阵营时，ai使用的阵营名称
+		}
+			
+		color = { 255 255 255 } # 代表该意识形态的RGB颜色。 这个颜色会出现在政党饼图或饼图附近。
+		
+		rules = { # 该意识形态的规则，值为(yes/no)
+						can_create_collaboration_government = yes # 创建合作政府
+			can_declare_war_on_same_ideology = yes # 对相同意识形态发起战争；非必要
+			can_force_government = yes # 可以在和平协议中改变意识形态；必要
+			can_send_volunteers = yes # 派遣志愿军；必要
+			can_puppet = yes # 可以在和平协议中傀儡一个国家；必要
+			can_lower_tension = yes # 在和平协议中降低世界紧张度；非必要
+			can_only_justify_war_on_threat_country = no # 只能对一个国家正当化战争；非必要
+			can_guarantee_other_ideologies = yes # 对其他意识形态保障独立；非必要
+		}
+	
+				can_host_government_in_exile = yes # 接待流亡政府
+		
+		war_impact_on_world_tension = 0 # 值范围-1到1 增加或减少这个国家制造的世界紧张度
+		faction_impact_on_world_tension = 0 # 值范围-1到1 增加或减少一个该意识形态阵营对世界紧张度的影响
+		
+		modifiers = { # 更多意识形态规则
+			generate_wargoal_tension = 0 # 正当化战争需要的世界紧张度 (0 to 1)
+			join_faction_tension = 0 # 加入一个阵营需要的世界紧张度 (0 to 1)
+			lend_lease_tension = 0 #租借法案需要的世界紧张度 (0 to 1)
+			send_volunteers_tension = 0 # 派遣志愿军需要的世界紧张度 (0 to 1)
+			guarantee_tension = 0 # 保障国家独立所需要的世界紧张度 (0 to 1)
+			take_states_cost_factor = 0 # 更改和平协议中获取地区的战争点数花费. 0.25将使使用成本提高25% (-1 to 1)
+			annex_cost_factor = 0 # 更改和平协议中完全吞并一个国家的战争点数花费. 0.5 将使使用成本提高50% (-1 to 1)
+			justify_war_goal_when_in_major_war_time = 0 # Changes the cost of justifying a war while in a major war（改变在重大战争中为战争辩护的成本）. 0.5 would 
+			drift_defence_factor = 0 # 意识形态的抵御力度 # 0 将会增加30%的意识形态抵御力度(-1 to 1)
+			puppet_cost_factor = 0 # 更改在和平协议中傀儡一个国家的战争点数花费 (-1 to 1)
+		}
+
+		can_be_boosted = no # 传播自己的意识形态 (yes/no)
+		can_collaborate = yes #
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0 #对己方意识形态贸易
+		}
+		ai_fascism = yes # 决定了将使用哪种ai (democratic, communism, fascism, neutral or make a new one.)
+	}
+	parentsim = {
+		
+		types = {
+			JiaZhangZhiDuCai = {
+
+			}
+			DaJiaZhangZHuYi = {
+
+			}
+		}
+		
+		dynamic_faction_names = {
+			"1" # 当一个具有这种意识形态的ai创建一个阵营时，ai使用的阵营名称
+		}
+			
+		color = { 50 0 0 } # 代表该意识形态的RGB颜色。 这个颜色会出现在政党饼图或饼图附近。
+		
+		rules = { # 该意识形态的规则，值为(yes/no)
+						can_create_collaboration_government = yes # 创建合作政府
+			can_declare_war_on_same_ideology = yes # 对相同意识形态发起战争；非必要
+			can_force_government = yes # 可以在和平协议中改变意识形态；必要
+			can_send_volunteers = yes # 派遣志愿军；必要
+			can_puppet = yes # 可以在和平协议中傀儡一个国家；必要
+			can_lower_tension = yes # 在和平协议中降低世界紧张度；非必要
+			can_only_justify_war_on_threat_country = no # 只能对一个国家正当化战争；非必要
+			can_guarantee_other_ideologies = yes # 对其他意识形态保障独立；非必要
+		}
+	
+				can_host_government_in_exile = yes # 接待流亡政府
+		
+		war_impact_on_world_tension = 0 # 值范围-1到1 增加或减少这个国家制造的世界紧张度
+		faction_impact_on_world_tension = 0 # 值范围-1到1 增加或减少一个该意识形态阵营对世界紧张度的影响
+		
+		modifiers = { # 更多意识形态规则
+			generate_wargoal_tension = 0 # 正当化战争需要的世界紧张度 (0 to 1)
+			join_faction_tension = 0 # 加入一个阵营需要的世界紧张度 (0 to 1)
+			lend_lease_tension = 0 #租借法案需要的世界紧张度 (0 to 1)
+			send_volunteers_tension = 0 # 派遣志愿军需要的世界紧张度 (0 to 1)
+			guarantee_tension = 0 # 保障国家独立所需要的世界紧张度 (0 to 1)
+			take_states_cost_factor = 0 # 更改和平协议中获取地区的战争点数花费. 0.25将使使用成本提高25% (-1 to 1)
+			annex_cost_factor = 0 # 更改和平协议中完全吞并一个国家的战争点数花费. 0.5 将使使用成本提高50% (-1 to 1)
+			justify_war_goal_when_in_major_war_time = 0 # Changes the cost of justifying a war while in a major war（改变在重大战争中为战争辩护的成本）. 0.5 would 
+			drift_defence_factor = 0 # 意识形态的抵御力度 # 0 将会增加30%的意识形态抵御力度(-1 to 1)
+			puppet_cost_factor = 0 # 更改在和平协议中傀儡一个国家的战争点数花费 (-1 to 1)
+		}
+
+		can_be_boosted = yes # 传播自己的意识形态 (yes/no)
+		can_collaborate = yes #
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0 #对己方意识形态贸易
+		}
+		ai_communism = yes # 决定了将使用哪种ai (democratic, communism, fascism, neutral or make a new one.)
+    }
+	fantasim = {
+		
+		types = {
+
+		}
+		
+		dynamic_faction_names = {
+			"2" # 当一个具有这种意识形态的ai创建一个阵营时，ai使用的阵营名称
+		}
+			
+		color = { 255 130 205 } # 代表该意识形态的RGB颜色。 这个颜色会出现在政党饼图或饼图附近。
+		
+		rules = { # 该意识形态的规则，值为(yes/no)
+						can_create_collaboration_government = yes # 创建合作政府
+			can_declare_war_on_same_ideology = no # 对相同意识形态发起战争；非必要
+			can_force_government = yes # 可以在和平协议中改变意识形态；必要
+			can_send_volunteers = yes # 派遣志愿军；必要
+			can_puppet = yes # 可以在和平协议中傀儡一个国家；必要
+			can_lower_tension = yes # 在和平协议中降低世界紧张度；非必要
+			can_only_justify_war_on_threat_country = no # 只能对一个国家正当化战争；非必要
+			can_guarantee_other_ideologies = yes # 对其他意识形态保障独立；非必要
+		}
+	
+				can_host_government_in_exile = yes # 接待流亡政府
+		
+		war_impact_on_world_tension = 0 # 值范围-1到1 增加或减少这个国家制造的世界紧张度
+		faction_impact_on_world_tension = 0 # 值范围-1到1 增加或减少一个该意识形态阵营对世界紧张度的影响
+		
+		modifiers = { # 更多意识形态规则
+			generate_wargoal_tension = 1 # 正当化战争需要的世界紧张度 (0 to 1)
+			join_faction_tension = 1 # 加入一个阵营需要的世界紧张度 (0 to 1)
+			lend_lease_tension = 1 #租借法案需要的世界紧张度 (0 to 1)
+			send_volunteers_tension = 1 # 派遣志愿军需要的世界紧张度 (0 to 1)
+			guarantee_tension = 1 # 保障国家独立所需要的世界紧张度 (0 to 1)
+			take_states_cost_factor = 0 # 更改和平协议中获取地区的战争点数花费. 0.25将使使用成本提高25% (-1 to 1)
+			annex_cost_factor = 0 # 更改和平协议中完全吞并一个国家的战争点数花费. 0.5 将使使用成本提高50% (-1 to 1)
+			justify_war_goal_when_in_major_war_time = 0 # Changes the cost of justifying a war while in a major war（改变在重大战争中为战争辩护的成本）. 0.5 would 
+			drift_defence_factor = 1 # 意识形态的抵御力度 # 0 将会增加30%的意识形态抵御力度(-1 to 1)
+			puppet_cost_factor = 0 # 更改在和平协议中傀儡一个国家的战争点数花费 (-1 to 1)
+		}
+
+		can_be_boosted = no # 传播自己的意识形态 (yes/no)
+		can_collaborate = yes #
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 10 #对己方意识形态贸易
+		}
+		ai_democratic = yes # 决定了将使用哪种ai (democratic, communism, fascism, neutral or make a new one.)
+	}
+	heliosim = {
+		
+		types = {
+			TaiYangShengWuZhengFu = {
+
+			}
+			BoErBuTe = {
+
+			}
+		}
+		
+		dynamic_faction_names = {
+			"2" # 当一个具有这种意识形态的ai创建一个阵营时，ai使用的阵营名称
+		}
+			
+		color = { 0 60 20 } # 代表该意识形态的RGB颜色。 这个颜色会出现在政党饼图或饼图附近。
+		
+		rules = { # 该意识形态的规则，值为(yes/no)
+						can_create_collaboration_government = yes # 创建合作政府
+			can_declare_war_on_same_ideology = yes # 对相同意识形态发起战争；非必要
+			can_force_government = yes # 可以在和平协议中改变意识形态；必要
+			can_send_volunteers = yes # 派遣志愿军；必要
+			can_puppet = yes # 可以在和平协议中傀儡一个国家；必要
+			can_lower_tension = yes # 在和平协议中降低世界紧张度；非必要
+			can_only_justify_war_on_threat_country = no # 只能对一个国家正当化战争；非必要
+			can_guarantee_other_ideologies = yes # 对其他意识形态保障独立；非必要
+		}
+	
+				can_host_government_in_exile = yes # 接待流亡政府
+		
+		war_impact_on_world_tension = 1 # 值范围-1到1 增加或减少这个国家制造的世界紧张度
+		faction_impact_on_world_tension = 1 # 值范围-1到1 增加或减少一个该意识形态阵营对世界紧张度的影响
+		
+		modifiers = { # 更多意识形态规则
+			generate_wargoal_tension = 0 # 正当化战争需要的世界紧张度 (0 to 1)
+			join_faction_tension = 0 # 加入一个阵营需要的世界紧张度 (0 to 1)
+			lend_lease_tension = 0 #租借法案需要的世界紧张度 (0 to 1)
+			send_volunteers_tension = 0 # 派遣志愿军需要的世界紧张度 (0 to 1)
+			guarantee_tension = 0 # 保障国家独立所需要的世界紧张度 (0 to 1)
+			take_states_cost_factor = 0 # 更改和平协议中获取地区的战争点数花费. 0.25将使使用成本提高25% (-1 to 1)
+			annex_cost_factor = 0 # 更改和平协议中完全吞并一个国家的战争点数花费. 0.5 将使使用成本提高50% (-1 to 1)
+			justify_war_goal_when_in_major_war_time = 0 # Changes the cost of justifying a war while in a major war（改变在重大战争中为战争辩护的成本）. 0.5 would 
+			drift_defence_factor = -0.7 # 意识形态的抵御力度 # 0 将会增加30%的意识形态抵御力度(-1 to 1)
+			puppet_cost_factor = 0 # 更改在和平协议中傀儡一个国家的战争点数花费 (-1 to 1)
+		}
+
+		can_be_boosted = no # 传播自己的意识形态 (yes/no)
+		can_collaborate = yes #
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0 #对己方意识形态贸易
+		}
+		ai_democratic = yes # 决定了将使用哪种ai (democratic, communism, fascism, neutral or make a new one.)
+	}
+}

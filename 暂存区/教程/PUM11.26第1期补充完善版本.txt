@@ -1,0 +1,212 @@
+制作一个可玩的国家需要做以下操作。
+#1创建一个国家tag
+#2定义一个国家在地图上的颜色
+#3定义国家的历史文件
+#4民族精神，领导人
+#5制作对应的国策树
+
+
+
+#1。创建一个国家 /<你的模组>/common/country_tags 文件下创建属于自己的tag(建议直接复制原版文件然后添加)
+具体的文件格式
+tag名 = "countries/定义模型的文件(详细见p2)"
+例：
+
+SOV = "countries/Soviet Union.txt（把模型和颜色定义在这个文件）" 或者 SOV = "countries/EastEur.txt（这里定义了单独东欧模型的文件，国家颜色和模型分离）"
+
+###
+###补充：请注意，事实上countries/tag文件内部的国家颜色代码是完全没有任何用处的，我也不知道p社为啥还要写在里面，如果你要让它有用，需要在装rgb数值的花括号外面补一个“rgb”
+###然后它才是有用的，但是这里的颜色仍然有问题，它仅能染色国家，但是无法染色兵牌，会导致你在“兵牌颜色取决于国家颜色”的地图模式下所有兵牌都是灰色
+###因为这里只会提到一个color = { xx xx xx }（缺少rgb），而兵牌染色还需要color_ui
+###
+
+
+#2。创建好tag后就需要再创建他在地图上面的颜色和模型在<你的模组>/common/countries文件下创建
+定义模型的文件   或   定义以整个区域的模型文件和单独的颜色文件
+
+定义模型的文件的写法：
+graphical_culture = commonwealth_gfx（模型的名字，可以去原版同名文件夹具体查找相关的模型名字。）
+graphical_culture_2d = commonwealth_2d（模型的名字，可以去原版同名文件夹具体查找相关的模型名字。）
+color = { 64  160  167 } 定义这个国家的地图颜色
+
+例：位于 Hearts of Iron IV\common\countries\Soviet Union.txt
+
+graphical_culture = eastern_european_gfx
+graphical_culture_2d = eastern_european_2d
+
+color = { 125  13  24 }
+
+或者使用另外一种写法：
+   整个区域的模型文件
+	创建一个区域模型文件：EastEur.txt
+	填入模型文件
+           graphical_culture = commonwealth_gfx
+           graphical_culture_2d = commonwealth_2d
+
+   单独的颜色文件
+	创建一个区域模型文件：EastEur.txt
+	填入文件内容
+	tag名 = {
+		color = rgb { 134 157 55 }#rgb颜色
+		color_ui = rgb { 134 157 55 }#rgb颜色与上面一致#######补充：并不需要，有时候可以不一致，以便突出兵牌色泽
+	}
+	例：
+	SOV = {
+		color = rgb { 134 157 55 }
+		color_ui = rgb { 134 157 55 }
+	}
+
+
+#3。所谓的国家历史文件就是设定国家初始设定的文件初始国家精神等等，在<你的模组>/history/countries下创建（懒的话就直接复制原版文件改）。
+文件名格式 tag名 - 该国国名.txt 例：SOV - 苏联.txt 或 SOV - Soviet Union.txt
+接下来具体说说国家历史文件基本需要定义什么：
+	
+	capital = 121 #首都的地区ID
+	
+	oob = "SOV_1936" #部队文件
+	
+	set_politics = {#定义当前国家的执政党和大选。
+		ruling_party = communism #执政党的意识形态
+		last_election = "1932.11.8" #上次大选时间
+		election_frequency = 48 #大选间隔时间，单位：月
+		elections_allowed = no #是否有下次大选，no为没有，yes为有
+	}
+	
+	set_popularities = {#设定党派支持度
+		democratic= 100 
+	}#设定民主主义为100%具体的意识形态名称可以在<你的模组>\common\ideologies里找到PS,你也可以照着他们的写法复制黏贴改名就有自己的意识形态了。
+	
+	recruit_character = SOV_Stalin#设置领袖为这个，注意，这个命令不能放在最后一行，不然无法识别。####补充：注意这里是招募一个角色的代码，这里既能招募国家领导人，也能招募将领，一切游戏人物（间谍除外）均通过这里招募！
+	###补充：如果不得不将其写在最后一行，可以提行留一个空行即可。
+	
+	add_ideas = {#民族精神写在这里面
+		民族精神名
+		民族精神名		
+		民族精神名
+		###补充：你的国家开局时采取什么征兵/经济/贸易法案也在这里设定！各种法案的id位于common\ideas\_economic和_manpower（贸易和动员都在_economic）
+	}
+	
+	###补充：此外如果你希望让某些顾问开局就出于被任用的状态，可以直接把他们的代码写进add_ideas，不过更建议使用直截了当的activate_advisor = 角色id（但是不建议在该角色身兼多职时使用）
+	###明天会进行详细讲解
+
+
+现在我们已经设定好国家了，但是他不会一开始就在游戏里面出现，因为还没有定义这个国家拥有哪个州。在<你的模组>\history\states文件夹下面找到自己想要的州文件进入定义（这里的州直接复制原版过来。）
+    在文件中的
+    history={
+		owner = tag名
+		add_core_of = tag名
+    }#加上或更改这两个代码，以后具体会说是用来干嘛的。
+    例：
+    history={
+		owner = FRA
+		add_core_of = FRA
+    }
+
+
+#4。然后我们要整个领导人。新版的领导人在这个文件夹<你的模组>\common\characters中加入文件。
+具体格式如下：
+characters = {
+
+	领导人名（recruit_character会使用到）= {
+		name = 领导人名（建议和上面一致）
+		portraits = {#领导人图片的路径（与其他图片不同，它不需要额外注册）###补充：其实可以注册，影响不大，就是注册会比较麻烦而已
+			civilian = {
+				large = "gfx/leaders/ITA/Portrait_Italy_Gabriele_dAnnunzio.png"###补充：民政状态下此人的大头像
+			}
+		}
+		country_leader = {
+		    desc = 领导人的介绍
+			ideology = 意识形态#####补充！这里写的是子意识形态！
+		}
+	}
+
+}
+例：
+characters = {
+
+	ITA_Gabriele_dAnnunzio = {
+		name = ITA_Gabriele_dAnnunzio
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ITA/Portrait_Italy_Gabriele_dAnnunzio.png"
+			}
+		}
+		country_leader = {
+		    desc = POLITICS_GABRIELE_DANNUNZIO_DESC
+			ideology = Fascism_subtype
+		}
+	}
+
+}
+
+
+之后就是国家精神
+在<你的模组>\common\ideas创建国家精神文件
+格式
+ideas = {#说明这个文件是和民族精神有关的
+
+	country = {#民族精神区别于内阁还有其他的精神
+
+        民族精神id###补充：操作民族精神（如添加、移除、修正）时运用的id = {	
+			name = ###补充：民族精神本地化采用的名称，而且也是民族精神图片设定时锁定的名称！可写可不写，但是需要做多个同名精神用于逐步修正时请务必使用！
+			picture = 使用的图片名称###补充：某些情况下即使不写也能实现图标的出现，需要GFX的名称完美对应name
+			available = {}###补充：该精神在满足什么条件时可以存在，如果不满足立刻移除
+			cancel = {}###补充：该精神在什么条件被满足时立刻移除
+			on_add = {}###补充：当这个精神被添加（无论是国策、决议、还是手动选取——顾问和制造商）时，会触发的效果
+			on_remove = {}###补充：当这个精神通过任何手段被移除时会触发的效果
+			allowed = { always = yes }#什么情况下可以被使用（在国策添加的话这个填no）
+			modifier = {#正常修正效果，具体的修正可以查看wiki
+				political_power_factor = -0.1
+				stability_factor = -0.3
+				stability_weekly = -0.001
+			}
+			targeted_modifier = {###补充：针对特定tag的修正效果，需要写专门的target修正代码，于modifier使用的修正不能通用
+				tag = LEI
+				cic_to_target_factor = 0.12###例子意思为root将12%的民用工厂交付给lei这个tag使用
+			}
+	}
+}
+例：
+ideas = {
+	ITA_customs_union = {
+		allowed = {
+			always = no
+		}
+		picture = ITA_customs_union
+		modifier = {
+			political_power_factor = 0.03
+		}
+	}
+}
+
+民族精神的图片在<你的模组>\interface创建对应的注册文件，注册文件的后缀为gfx
+民族精神图片的具体定义格式：
+spriteTypes = { #说明这个文件是用来注册图片路径的
+
+####补充：这里有两种写法
+	写法1：SpriteType = {
+		name = "GFX_idea_GER_technological_country"#这里的格式是:GFX_idea_民族精神使用的图片名称
+		texturefile = "gfx/interface/ideas/GFX_GER_technological_country.dds"定义图片的位置（建议使用png文件）###补充：看个人需要，dds更流畅，png更高清但是可能导致卡顿！		
+	}
+	写法2：SpriteType = {
+		name = "GFX_idea_GER_technological_country"#这里的格式是:GFX_idea_民族精神的name（或id），如果这样写，那么该民族精神即使不写picture行也能获取图标
+		texturefile = "gfx/interface/ideas/GFX_GER_technological_country.dds"定义图片的位置（建议使用png文件）###补充：看个人需要，dds更流畅，png更高清但是可能导致卡顿！		
+	}
+}
+本地化
+<你的模组>\localisation\english 复制原版的一个yml文件（不要自己创建，因为识别不了）改名清空里面除了”l_english:“的内容，然后填写本地翻译：
+具体的格式：
+l_english:
+ 民族精神名:0"本地化内容"（需要英文的标点符号）
+ 民族精神名1:0"本地化内容"（需要英文的标点符号）
+例：
+l_english:
+ ITA_north_south_problem:0"南北问题"
+ ITA_travel:0"繁荣的旅游业"
+
+另外，本地化我强烈建议文案使用excel表进行填写。
+
+
+5#。国策树
+###补充：国策树明天与顾问一同进行精讲
+

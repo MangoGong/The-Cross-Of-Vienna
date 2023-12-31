@@ -1,0 +1,770 @@
+add_namespace = italy
+country_event = {
+	id = italy.1
+    picture = ""
+    title = italy.1.t
+    desc = italy.1.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+		
+	}
+
+    option = { 
+        name = italy.1.a
+		trigger = {
+			always = yes
+		}
+	}
+}	
+country_event = {#新年
+	id = italy.2
+    picture = "GFX_TCV_e_GER_XinNian"
+    title = italy.2.t
+    desc = italy.2.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+		
+	}
+
+    option = { 
+        name = italy.2.a
+		trigger = {
+			always = yes
+		}
+	}
+}	
+country_event = {#宴会！
+	id = italy.3
+	picture = "GFX_ITA_e_YanHui"
+	title = italy.3.t
+	desc = italy.3.d
+	is_triggered_only = yes
+	fire_only_once = yes 
+	immediate = { 
+
+	}
+
+	option = { 
+		name = italy.3.a
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+country_event = {#庆典
+	id = italy.4
+    picture = "GFX_ITA_e_YanHui"
+    title = italy.4.t
+    desc = italy.4.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+		
+	}
+    option = { 
+        name = italy.4.a
+		trigger = {
+			always = yes
+		}
+	}
+}	
+
+country_event = {#处理文件
+	id = italy.5
+    picture = "GFX_ITA_e_HuiYi"
+    title = italy.5.t
+    desc = italy.5.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+		
+	}
+    option = { 
+        name = italy.5.a
+		trigger = {
+			always = yes
+		}
+	}
+}	
+
+country_event = {#军队报告
+	id = italy.6
+    picture = "GFX_ITA_e_XianZhuang"
+    title = italy.6.t
+    desc = italy.6.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+		
+	}
+    option = { 
+        name = italy.6.a
+		trigger = {
+			always = yes
+		}
+	}
+}	
+
+country_event = {#政治报告
+	id = italy.7
+    picture = "GFX_ITA_e_JiXuMoSuoLiNiJinJi"
+    title = italy.7.t
+    desc = italy.7.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+		
+	}
+    option = { 
+        name = italy.7.a
+		trigger = {
+			always = yes
+		}
+	}
+}	
+
+country_event = {#现状
+	id = italy.8
+    picture = "GFX_ITA_e_ZhenZhiBaoGao"
+    title = italy.8.t
+    desc = italy.8.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+		
+	}
+    option = { 
+        name = italy.8.a
+		trigger = {
+			always = yes
+		}
+	}
+}	
+
+country_event = {#继续墨索里尼经济
+	id = italy.9
+    picture = "GFX_ITA_e_JiXuMoSuoLiNiJinJi"
+    title = italy.9.t
+    desc = italy.9.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+		
+	}
+    option = { 
+        name = italy.9.a
+		trigger = {
+			always = yes
+		}
+	}
+}	
+
+country_event = {#开放科技研究
+	id = italy.10
+    picture = "GFX_ITA_e_KeYanSuo"
+    title = italy.10.t
+    desc = italy.10.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+		
+	}
+    option = { 
+        name = italy.10.a
+		trigger = {
+			always = yes
+		}
+	}
+}	
+
+country_event = {#扩建罗马大学城
+	id = italy.11
+    picture = "GFX_ITA_e_LuoMaDaXue"
+    title = italy.11.t
+    desc = italy.11.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+		
+	}
+    option = { 
+        name = italy.11.a
+		trigger = {
+			always = yes
+		}
+	}
+}	
+
+country_event = {#会议
+	id = italy.13
+    picture = "GFX_ITA_e_HuiYi"
+    title = italy.13.t
+    desc = italy.13.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+		
+	}
+    option = { 
+        name = italy.13.a
+		trigger = {
+			always = yes
+		}
+	}
+}	
+
+country_event = {#外交
+	id = italy.13
+    picture = "GFX_ITA_e_WaiJiao"
+    title = italy.13.t
+    desc = italy.13.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+		set_country_flag = ITA_ShenShiXinShi_c_d_flag_1
+	}
+    option = { 
+        name = italy.13.a
+		trigger = {
+			always = yes
+		}
+	}
+}	
+
+country_event = {#经济
+	id = italy.14
+    picture = "GFX_ITA_e_KeYanSuo"
+    title = italy.14.t
+    desc = italy.14.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+		set_country_flag = ITA_ShenShiXinShi_c_d_flag_2
+	}
+    option = { 
+        name = italy.14.a
+		trigger = {
+			always = yes
+		}
+	}
+}	
+
+country_event = {#新的目标
+	id = italy.15
+    picture = "GFX_ITA_e_XinShiDaiDeYeWang"
+    title = italy.15.t
+    desc = italy.15.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+		
+	}
+    option = { 
+        name = italy.15.a
+		trigger = {
+			always = yes
+		}
+	}
+}	
+
+country_event = {#旧时代的余孽
+	id = italy.16
+    picture = "GFX_ITA_e_SaoDangShanLin"
+    title = italy.16.t
+    desc = italy.16.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+		
+	}
+    option = { 
+        name = italy.16.a
+		trigger = {
+			always = yes
+		}
+	}
+}	
+
+country_event = {#扫荡山林
+	id = italy.17
+    picture = "GFX_ITA_e_SaoDangShanLin"
+    title = italy.17.t
+    desc = italy.17.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+		
+	}
+    option = { 
+        name = italy.17.a
+		trigger = {
+			always = yes
+		}
+	}
+}	
+
+country_event = {#秘密会谈
+	id = italy.18
+    picture = "GFX_ITA_e_HuiYi"
+    title = italy.18.t
+    desc = italy.18.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+		
+	}
+    option = { 
+        name = italy.18.a
+		trigger = {
+			always = yes
+		}
+	}
+}	
+
+country_event = {#“民主”
+	id = italy.19
+    picture = "GFX_ITA_e_HuiYi"
+    title = italy.19.t
+    desc = italy.19.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+		
+	}
+    option = { 
+        name = italy.19.a
+		trigger = {
+			always = yes
+		}
+		country_event = {
+			id = italy.20
+			days = 1
+		}
+	}
+}	
+
+country_event = {#混乱
+	id = italy.20
+    picture = "GFX_ITA_e_HuiYi"
+    title = italy.20.t
+    desc = italy.20.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+		
+	}
+    option = { 
+        name = italy.20.a
+		trigger = {
+			always = yes
+		}
+		set_country_flag = ITA_YiHuiKaiShe_flag
+	}
+}	
+
+country_event = {#两个人
+	id = italy.21
+    picture = "GFX_ITA_e_HuiYi"
+    title = italy.21.t
+    desc = italy.21.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+		
+	}
+    option = { 
+        name = italy.21.a
+		trigger = {
+			always = yes
+		}
+		country_event = { 
+			id = italy.22
+			days = 1
+		}
+	}
+}	
+
+country_event = {#争吵
+	id = italy.22
+    picture = "GFX_ITA_e_HuiYi"
+    title = italy.22.t
+    desc = italy.22.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+		
+	}
+    option = { 
+        name = italy.22.a
+		trigger = {
+			always = yes
+		}
+		country_event = { 
+			id = italy.23
+			days = 1
+		}
+	}
+}	
+
+country_event = {#极权与民主
+	id = italy.23
+    picture = "GFX_ITA_e_HuiYi"
+    title = italy.23.t
+    desc = italy.23.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+		
+	}
+    option = { 
+        name = italy.23.a
+		trigger = {
+			always = yes
+		}
+		country_event = { 
+			id = italy.24
+			days = 1
+		}
+	}
+}	
+
+country_event = {#妥协
+	id = italy.24
+    picture = "GFX_ITA_e_HuiYi"
+    title = italy.24.t
+    desc = italy.24.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+		
+	}
+    option = { 
+        name = italy.24.a
+		trigger = {
+			always = yes
+		}
+	}
+}	
+
+country_event = {#十个条件
+	id = italy.25
+    picture = "GFX_ITA_e_HuiYi"
+    title = italy.25.t
+    desc = italy.25.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+		
+	}
+    option = { 
+        name = italy.25.a
+		trigger = {
+			always = yes
+		}
+	}
+	option = {
+		name = italy.25.b
+		trigger = {
+			always = yes
+		}
+	}
+}	
+
+country_event = {#法令
+	id = italy.26
+    picture = "GFX_ITA_e_HuiYi"
+    title = italy.26.t
+    desc = italy.26.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+		
+	}
+    option = { 
+        name = italy.26.a
+		trigger = {
+			always = yes
+		}
+	}
+}	
+
+country_event = {#会议
+	id = italy.27
+    picture = "GFX_ITA_e_HuiYi"
+    title = italy.27.t
+    desc = italy.27.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+		
+	}
+    option = { 
+        name = italy.27.a
+		trigger = {
+			always = yes
+		}
+	}
+}	
+
+country_event = {#我们的同盟
+	id = italy.28
+    picture = "GFX_ITA_e_DaHuiJieShu"
+    title = italy.28.t
+    desc = italy.28.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+		country_event = { 
+			id = italy.29
+			days = 3
+		}
+	}
+    option = { 
+        name = italy.28.a
+		trigger = {
+			always = yes
+		}
+	}
+}	
+
+country_event = {#大会开始
+	id = italy.29
+    picture = "GFX_ITA_e_DaHuiJieShu"
+    title = italy.29.t
+    desc = italy.29.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+		country_event = { 
+			id = italy.30
+			days = 3
+		}
+	}
+    option = { 
+        name = italy.29.a
+		trigger = {
+			always = yes
+		}
+	}
+}	
+
+country_event = {#总部位置
+	id = italy.30
+    picture = "GFX_ITA_e_DaHuiJieShu"
+    title = italy.30.t
+    desc = italy.30.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+		country_event = { 
+			id = italy.31
+			days = 3
+		}
+	}
+    option = { 
+        name = italy.30.a
+		trigger = {
+			always = yes
+		}
+		set_country_flag = {
+			flag = ITA_ZongBuWeiZhi_p_flag
+			value = 1
+		}
+	}
+	option = { 
+        name = italy.30.b
+		trigger = {
+			always = yes
+		}
+		set_country_flag = {
+			flag = ITA_ZongBuWeiZhi_p_flag
+			value = 2
+		}
+	}
+	option = { 
+        name = italy.30.c
+		trigger = {
+			always = yes
+		}
+		set_country_flag = {
+			flag = ITA_ZongBuWeiZhi_p_flag
+			value = 3
+		}
+	}
+	option = { 
+        name = italy.30.f
+		trigger = {
+			always = yes
+		}
+		set_country_flag = {
+			flag = ITA_ZongBuWeiZhi_p_flag
+			value = 4
+		}
+	}
+	option = { 
+        name = italy.30.e
+		trigger = {
+			always = yes
+		}
+		set_country_flag = {
+			flag = ITA_ZongBuWeiZhi_p_flag
+			value = 5
+		}
+	}
+}	
+
+country_event = {#叙利亚计划
+	id = italy.31
+    picture = "GFX_ITA_e_DaHuiJieShu"
+    title = italy.31.t
+    desc = italy.31.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+		country_event = { 
+			id = italy.32
+			days = 3
+		}
+	}
+    option = { 
+        name = italy.31.a
+		trigger = {
+			always = yes
+		}
+		set_country_flag = {
+			flag = ITA_XuLiYa_p_flag
+			value = 1
+		}
+	}
+	option = { 
+        name = italy.31.b
+		trigger = {
+			always = yes
+		}
+		set_country_flag = {
+			flag = ITA_XuLiYa_p_flag
+			value = 2
+		}
+	}
+	option = { 
+        name = italy.31.c
+		trigger = {
+			always = yes
+		}
+		set_country_flag = {
+			flag = ITA_XuLiYa_p_flag
+			value = 3
+		}
+	}
+	option = { 
+        name = italy.31.e
+		trigger = {
+			always = yes
+		}
+		set_country_flag = {
+			flag = ITA_XuLiYa_p_flag
+			value = 4
+		}
+	}
+}	
+
+country_event = {#苏伊士运河计划
+	id = italy.32
+    picture = "GFX_ITA_e_DaHuiJieShu"
+    title = italy.32.t
+    desc = italy.32.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+		country_event = { 
+			id = italy.33
+			days = 3
+		}
+	}
+    option = { 
+        name = italy.32.a
+		trigger = {
+			always = yes
+		}
+		set_country_flag = {
+			flag = ITA_SuYiShi_p_flag
+			value = 1
+		}
+	}
+	option = { 
+        name = italy.32.b
+		trigger = {
+			always = yes
+		}
+		set_country_flag = {
+			flag = ITA_SuYiShi_p_flag
+			value = 2
+		}
+	}
+	option = { 
+        name = italy.32.c
+		trigger = {
+			always = yes
+		}
+		set_country_flag = {
+			flag = ITA_SuYiShi_p_flag
+			value = 3
+		}
+	}
+}	
+
+country_event = {#摩洛哥计划
+	id = italy.33
+    picture = "GFX_ITA_e_DaHuiJieShu"
+    title = italy.33.t
+    desc = italy.33.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+		country_event = { 
+			id = italy.34
+			days = 3
+		}
+	}
+    option = { 
+        name = italy.33.a
+		trigger = {
+			always = yes
+		}
+		set_country_flag = {
+			flag = ITA_MoLuoGe_p_flag
+			value = 1
+		}
+	}
+	option = { 
+        name = italy.33.b
+		trigger = {
+			always = yes
+		}
+		set_country_flag = {
+			flag = ITA_MoLuoGe_p_flag
+			value = 2
+		}
+	}
+}	
+
+country_event = {#会议结束
+	id = italy.34
+    picture = "GFX_ITA_e_DaHuiJieShu"
+    title = italy.34.t
+    desc = italy.34.d
+	is_triggered_only = yes
+    fire_only_once = yes 
+	immediate = { 
+		
+	}
+    option = { 
+        name = italy.34.a
+		trigger = {
+			always = yes
+		}
+	}
+}	

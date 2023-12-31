@@ -1,0 +1,19 @@
+characters={
+	ITA_QiYaNuo = {
+		name = "ITA_QiYaNuo"
+		portraits={
+			civilian = {    #担任领导人时的头像
+				large="gfx/leaders/ITA/ITAQiYaNuo.png"
+			}
+		}
+
+		country_leader={   #领导人role（角色）
+			ideology = faxisi_gailiangpai
+			traits={ 
+				#国家领导人特质
+			}
+			expire="1980.1.1.1"
+			id = -1
+		}
+	}
+}

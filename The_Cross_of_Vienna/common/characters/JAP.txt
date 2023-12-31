@@ -1,0 +1,19 @@
+characters = {
+	JAP_LuTianJun = { #芦田均
+		name = "JAP_LuTianJun"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/JAPLuTianJun.png"
+			}
+		}
+		country_leader = {
+			ideology = GaiLiangFaXiSiZhuYi
+			id = -1
+			traits={ 
+				#国家领导人特质
+			}
+			expire="1980.1.1.1"
+		}
+		
+	}
+}

@@ -1,0 +1,159 @@
+ideas = {
+	country = {
+	 	## 国家级别的民族精神 
+	 	#FRA_industrialization_decision = {
+	 	## 工业化决议 
+		##picture = GFX_idea_generic_production # 图片 
+	 	#allowed = {
+	 	#	always = yes 
+		#} 
+		## 允许条件 
+		#modifier = {			 # 效果：增加建造速度和基建速度 
+		#	construction_speed_factor = 0.1 
+		#	infrastructure_construction_speed_factor = 0.1 
+		#} 
+		#cancel_if_invalid = no # 如果失效不取消
+
+		#} 
+
+		FRA_dedication_spirit_idea = {
+			 # 奉献精神 
+			 #picture = GFX_idea_generic_national_unity # 图片 
+			 allowed = {
+			 always = yes 
+		} 
+		# 允许条件 
+		modifier = {			 # 效果：减少生活消费品需求和工业研究时间 
+			consumer_goods_factor = -0.05 
+			industrial_research_speed_factor = -0.1 
+		} 
+		cancel_if_invalid = no # 如果失效不取消
+
+		} 
+
+		#FRA_railway_network_decision = {
+		#	 # 铁路网决议 
+		#	 #picture = GFX_idea_generic_railroad # 图片 
+		#	 allowed = {
+		#	 always = yes 
+		#} 
+		## 允许条件 
+		#modifier = {			 # 效果：增加铁路建设速度和铁路运输能力 
+		#	railroad_construction_speed_factor = 0.2
+		#	railroad_capacity_factor = 0.2 
+		#} 
+		#cancel_if_invalid = no # 如果失效不取消
+
+		#} 
+
+		#FRA_airport_network_decision = {
+		#	 # 空港网决议 
+		#	 #picture = GFX_idea_generic_air_base # 图片 
+		#	 allowed = {
+		#	 always = yes 
+		#} 
+		## 允许条件 
+		#modifier = {			 # 效果：增加空港建设速度和空军基地容量 
+		#	air_base_construction_speed_factor = 0.2 
+		#	air_base_capacity_factor = 0.2 
+		#} 
+		#cancel_if_invalid = no # 如果失效不取消
+#
+		#} 
+
+		#FRA_road_network_decision = {
+		#	 # 公路网决议 
+		#	 #picture = GFX_idea_generic_construct_infrastructure # 图片 
+		#	 allowed = {
+		#	 always = yes 
+		#} 
+		## 允许条件 
+		#modifier = {			 # 效果：增加基础设施建设速度和运输能力 
+		#	infrastructure_construction_speed_factor = 0.2 
+		#	supply_throughput_factor = 0.2 
+		#} 
+		#cancel_if_invalid = no # 如果失效不取消
+#
+		#} 
+
+		FRA_look_at_entrepreneurs_idea = {
+			 # 看向企业家
+			 #picture = GFX_idea_generic_production_efficiency_cap_2 # 图片
+        allowed = { always = yes } # 允许条件
+        modifier = { # 效果：增加生产效率上限
+            production_efficiency_cap_factor = 0.1
+        }
+        cancel_if_invalid = no # 如果失效不取消
+  		}
+
+  		FRA_look_at_market_idea = { # 看向市场
+  		    #picture = GFX_idea_generic_consumer_goods # 图片
+  		    allowed = { always = yes } # 允许条件
+  		    modifier = { # 效果：减少生活消费品需求和贸易法研究时间
+  		        consumer_goods_factor         = -0.05
+  		        trade_law_research_speed_factor = -0.1
+  		    }
+  		    cancel_if_invalid = no # 如果失效不取消
+  		}
+
+  		FRA_look_at_workers_idea = { # 看向工人
+  		    #picture = GFX_idea_generic_production_efficiency_2 # 图片
+  		    allowed = { always = yes } # 允许条件
+  		    modifier = { # 效果：增加生产效率增长和工业工人支持度
+  		        production_efficiency_growth_factor = 0.1
+  		        industrial_worker_support_factor    = 0.1
+  		    }
+  		    cancel_if_invalid = no # 如果失效不取消
+  		}
+  		#FRA_industrial_cities_decision = { # 工业城镇决议
+  		#    #picture = GFX_idea_generic_construct_mil_factory # 图片
+  		#    allowed = { always = yes } # 允许条件
+  		#    modifier = { # 效果：增加军用工厂建设速度和北部基建速度
+  		#        military_factory_construction_speed_factor   = 0.2
+  		#        northern_infrastructure_construction_speed_factor = 0.2
+  		#    }
+  		#    cancel_if_invalid = no # 如果失效不取消
+  		#}
+  		FRA_control_entrepreneurs_idea = { # 控制企业家
+  		    #picture = GFX_idea_generic_production_efficiency_cap_3 # 图片
+  		    allowed = { always = yes } # 允许条件
+  		    modifier = { # 效果：增加生产效率上限和企业家支持度，减少民主联盟支持度和复兴党支持度
+  		        production_efficiency_cap_factor   = 0.1
+  		        entrepreneur_support_factor        = 0.1
+  		        democratic_support_factor          = -0.1
+  		        fascist_support_factor             = -0.1
+  		    }
+  		    cancel_if_invalid = no # 如果失效不取消
+  		}
+  		FRA_tangible_hand_idea = { # 有形的手
+  		    #picture = GFX_idea_generic_consumer_goods_2 # 图片
+  		    allowed = { always = yes } # 允许条件
+			  modifier = { # 效果：减少生活消费品需求和政治研究时间，增加政治力量增长
+			  consumer_goods_factor         = -0.05
+			  political_research_speed_factor = -0.1
+			  political_power_gain_factor     = 0.1
+		  }
+		  cancel_if_invalid = no # 如果失效不取消
+		  }
+		  FRA_manage_unions_idea = { # 管理工会
+			  #picture = GFX_idea_generic_production_efficiency_3 # 图片
+			  allowed = { always = yes } # 允许条件
+			  modifier = { # 效果：增加生产效率增长和工会支持度，减少社会党支持度和民主联盟支持度
+				  production_efficiency_growth_factor = 0.1
+				  union_support_factor                = 0.1
+				  communist_support_factor            = -0.1
+				  democratic_support_factor           = -0.1
+			  }
+			  cancel_if_invalid = no # 如果失效不取消
+		  }
+		#  FRA_agricultural_modernization_decision = { # 农业现代化决议
+		#	  #picture = GFX_idea_generic_construct_civ_factory_2 # 图片
+		#	  allowed = { always = yes } # 允许条件
+		#	  modifier = { # 效果：增加民用工厂建设速度和南部基建速度
+		#		  civilian_factory_construction_speed_factor   = 0.2
+		#		  southern_infrastructure_construction_speed_factor = 0.2
+		#	  }
+		#	  cancel_if_invalid = no # 如果失效不取消
+		#  }
+	  }
+}

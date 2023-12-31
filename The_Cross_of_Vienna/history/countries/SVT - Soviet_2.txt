@@ -1,0 +1,16 @@
+﻿capital = 825
+set_research_slots = 2
+set_stability = 0.96
+set_popularities = {
+	communism = 100
+}
+set_politics = {
+	ruling_party = communism #执政党的意识形态
+	last_election = "1932.11.8" #上次大选时间
+	election_frequency = 48 #大选间隔时间，单位：月
+	elections_allowed = no #是否有下次大选，no为没有，yes为有
+}
+declare_war_on = {
+	target = SOV
+	type = annex_everything
+}

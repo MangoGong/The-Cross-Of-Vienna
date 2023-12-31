@@ -1,0 +1,18 @@
+﻿capital = 615
+
+set_research_slots = 2
+set_stability = 0.09
+set_war_support = 0.02
+set_popularities = {
+	fascism = 13
+	nazismus = 11
+	militarism = 52
+	neoliberalism = 0
+	parentsim = 18
+}
+set_politics = {
+	ruling_party = militarism #执政党的意识形态
+	last_election = "1946.11.3" #上次大选时间
+	election_frequency = 48 #大选间隔时间，单位：月
+	elections_allowed = no #是否有下次大选，no为没有，yes为有
+}

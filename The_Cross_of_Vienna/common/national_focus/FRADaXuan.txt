@@ -1,0 +1,109 @@
+focus_tree = {
+	 id = FRA_election_focus_tree 
+	 country = {
+		 factor = 0 
+		 modifier = {
+			 add = 20 
+			 original_tag = FRA 
+			}
+		} 
+		default = no
+		focus = { # 国策的定义
+    		id = FRA_election_1962 # 国策的ID，不会在游戏中显示，只用于触发器和效果
+    		icon = GFX_goal_generic_political_debate # 国策的图标，需要在/Hearts of Iron IV/interface/*.gfx文件中定义，然后在gfx/interface/goals/文件夹中放置一个图片文件
+    		x = 0 # 国策在国策树中的横坐标，从左到右为0到31
+    		y = 0 # 国策在国策树中的纵坐标，从上到下为0到31
+    		cost = 10 # 国策的完成时间，以天为单位
+    		available_if_capitulated = yes # 国策是否可以在投降后继续进行
+    		prerequisite = {  } # 国策的前置条件，需要完成其他国策才能进行
+    		completion_reward = { # 国策的完成效果，可以添加各种效果
+        		add_stability = -0.1 # 减少0.1稳定度
+        		add_ideas = FRA_chaotic_government_idea # 添加民族精神：混乱的政府
+        		#country_event = france.1 # 触发国家事件：第五共和国的初次大选（法国）
+        		world_news_event = news.2 # 触发世界新闻事件：第五共和国的初次大选（全世界）
+			}
+	    	ai_will_do = { # AI的选择概率，可以添加各种条件和公式
+	    	    factor = 1 # 默认概率为1
+	    	}
+	}
+
+	focus = { # 国策的定义
+	    id = FRA_pompidou_speech # 国策的ID，不会在游戏中显示，只用于触发器和效果
+	    icon = GFX_goal_generic_major_speech # 国策的图标，需要在/Hearts of Iron IV/interface/*.gfx文件中定义，然后在gfx/interface/goals/文件夹中放置一个图片文件
+	    x = 1 # 国策在国策树中的横坐标，从左到右为0到31
+	    y = 0 # 国策在国策树中的纵坐标，从上到下为0到31
+	    cost = 7 # 国策的完成时间，以天为单位
+	    available_if_capitulated = yes # 国策是否可以在投降后继续进行
+	    prerequisite = { focus = FRA_election_1962 } # 国策的前置条件，需要完成其他国策才能进行
+	    completion_reward = { # 国策的完成效果，可以添加各种效果
+	        country_event = france.1 # 触发国家事件：蓬皮杜的演讲
+	    }
+	    ai_will_do = { # AI的选择概率，可以添加各种条件和公式
+	        factor = 1 # 默认概率为1
+	        modifier = { # 修改概率的条件
+	            add = 10 # 增加10倍概率
+	            has_government = democratic # 如果政府是民主主义
+	        }
+	    }
+	}
+
+	focus = { # 国策的定义
+	    id = FRA_chirac_speech # 国策的ID，不会在游戏中显示，只用于触发器和效果
+	    icon = GFX_goal_generic_major_speech # 国策的图标，需要在/Hearts of Iron IV/interface/*.gfx文件中定义，然后在gfx/interface/goals/文件夹中放置一个图片文件
+	    x = 2 # 国策在国策树中的横坐标，从左到右为0到31
+	    y = 0 # 国策在国策树中的纵坐标，从上到下为0到31
+	    cost = 7 # 国策的完成时间，以天为单位
+	    available_if_capitulated = yes # 国策是否可以在投降后继续进行
+	    prerequisite = { focus = FRA_election_1962 } # 国策的前置条件，需要完成其他国策才能进行
+	    completion_reward = { # 国策的完成效果，可以添加各种效果
+	        country_event = france.2 # 触发国家事件：希拉克的演讲
+		}
+		ai_will_do = { # AI的选择概率，可以添加各种条件和公式
+			factor = 1 # 默认概率为1
+			modifier = { # 修改概率的条件
+				add = 10 # 增加10倍概率
+				has_government = fascist # 如果政府是法西斯主义
+			}
+		}
+	}
+	
+	focus = { # 国策的定义
+		id = FRA_mitterrand_speech # 国策的ID，不会在游戏中显示，只用于触发器和效果
+		icon = GFX_goal_generic_major_speech # 国策的图标，需要在/Hearts of Iron IV/interface/*.gfx文件中定义，然后在gfx/interface/goals/文件夹中放置一个图片文件
+		x = 3 # 国策在国策树中的横坐标，从左到右为0到31
+		y = 0 # 国策在国策树中的纵坐标，从上到下为0到31
+		cost = 7 # 国策的完成时间，以天为单位
+		available_if_capitulated = yes # 国策是否可以在投降后继续进行
+		prerequisite = { focus = FRA_election_1962 } # 国策的前置条件，需要完成其他国策才能进行
+		completion_reward = { # 国策的完成效果，可以添加各种效果
+			country_event = france.3 # 触发国家事件：密特朗的演讲
+		}
+		ai_will_do = { # AI的选择概率，可以添加各种条件和公式
+			factor = 1 # 默认概率为1
+			modifier = { # 修改概率的条件
+				add = 10 # 增加10倍概率
+				has_government = communist # 如果政府是共产主义
+			}
+		}
+	}
+	
+	focus = { # 国策的定义
+		id = FRA_start_voting # 国策的ID，不会在游戏中显示，只用于触发器和效果
+		icon = GFX_goal_generic_political_debate_2 # 国策的图标，需要在/Hearts of Iron IV/interface/*.gfx文件中定义，然后在gfx/interface/goals/文件夹中放置一个图片文件
+		x = 4 # 国策在国策树中的横坐标，从左到右为0到31
+		y = 0 # 国策在国策树中的纵坐标，从上到下为0到31
+		cost = 10 # 国策的完成时间，以天为单位
+		available_if_capitulated = yes # 国策是否可以在投降后继续进行
+		prerequisite = { focus = FRA_pompidou_speech focus = FRA_chirac_speech focus = FRA_mitterrand_speech } # 国策的前置条件，需要完成其他国策才能进行
+		completion_reward = { # 国策的完成效果，可以添加各种效果
+			country_event = france.4 # 触发国家事件：民主主义者抗议
+			#country_event = france.7 # 触发国家事件：游行？斗殴？
+			country_event = france.5 # 触发国家事件：又一次暗杀……
+		}
+		ai_will_do = { # AI的选择概率，可以添加各种条件和公式
+			factor = 1 # 默认概率为1
+		}
+	}
+	
+	# 这里可以添加更多的国策，比如根据不同的选举结果来开启不同的分支
+}

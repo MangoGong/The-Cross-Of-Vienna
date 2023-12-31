@@ -1,0 +1,184 @@
+focus_tree = {
+	id = RUSzz
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SOV
+		}
+	}
+	default = no
+	focus = {
+		icon = GFX_TCV_boss
+		id = RUSzz_0
+		x = 1
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = {
+			"TCV_RUS"
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		icon = GFX_TCV_boss
+		id = RUSzz_1
+		x = 1
+		y = 1
+		prerequisite = {focus = RUSzz_0}
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = {
+			"TCV_RUS"
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		icon = GFX_TCV_boss
+		id = RUSzz_2
+		x = 0
+		y = 2
+		prerequisite = {focus = RUSzz_1}
+		mutually_exclusive = {focus = RUSzz_3 }
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = {
+			"TCV_RUS"
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		icon = GFX_TCV_boss
+		id = RUSzz_3
+		x = 2
+		y = 2
+		prerequisite = {focus = RUSzz_1}
+		mutually_exclusive = {focus = RUSzz_2 }
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = {
+			"TCV_RUS"
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		icon = GFX_TCV_boss
+		id = RUSzz_4
+		x = 0
+		y = 3
+		prerequisite = {focus = RUSzz_2}
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = {
+			"TCV_RUS"
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		icon = GFX_TCV_boss
+		id = RUSzz_5
+		x = 2
+		y = 3
+		prerequisite = {focus = RUSzz_3}
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = {
+			"TCV_RUS"
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		icon = GFX_TCV_boss
+		id = RUSzz_7
+		x = 0
+		y = 4
+		prerequisite = {focus = RUSzz_4 focus = RUSzz_5 }
+		mutually_exclusive = {focus = RUSzz_8 }
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = {
+			"TCV_RUS"
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		icon = GFX_TCV_boss
+		id = RUSzz_8
+		x = 2
+		y = 4
+		prerequisite = {focus = RUSzz_4 focus = RUSzz_5 }
+		mutually_exclusive = {focus = RUSzz_7 }
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = {
+			"TCV_RUS"
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		icon = GFX_TCV_boss
+		id = RUSzz_9
+		x = 0
+		y = 5
+		prerequisite = {focus = RUSzz_7}
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = {
+			"TCV_RUS"
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		icon = GFX_TCV_boss
+		id = RUSzz_10
+		x = 2
+		y = 5
+		prerequisite = {focus = RUSzz_8}
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = {
+			"TCV_RUS"
+		}
+		completion_reward = {
+		}
+	}
+}

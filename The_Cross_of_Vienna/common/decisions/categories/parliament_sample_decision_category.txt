@@ -1,0 +1,14 @@
+parliament_sample_category = {
+	icon = generic_political_actions #决议大类图标
+	
+	priority = 9
+
+	allowed = {
+		original_tag = ITA
+	}
+	visible = {
+		original_tag = ITA
+		has_country_flag = ITA_YiHuiKaiShe_flag
+	}
+	scripted_gui = parliament_sample_scripted_gui
+}

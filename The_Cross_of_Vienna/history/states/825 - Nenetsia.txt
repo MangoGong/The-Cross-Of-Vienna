@@ -1,0 +1,44 @@
+
+state = {
+	id = 825
+	name = "STATE_825" # Nenets
+	manpower = 21795
+	
+	state_category = rural
+	
+	resources = {
+		oil = 7 # was: 8
+	}
+
+	history = {
+		victory_points = {
+			11047 1 
+		}
+		owner = SVT
+		buildings = {
+			infrastructure = 1
+			12530 = {
+				naval_base = 1
+			}
+
+		}
+		add_core_of = SVT
+		add_core_of = SOV
+		SOV = {
+			set_province_controller = 6192
+			set_province_controller = 3147
+			set_province_controller = 10270
+			set_province_controller = 105
+			set_province_controller = 9205
+			set_province_controller = 11119
+			set_province_controller = 6040
+			set_province_controller = 198
+		}
+	}
+
+	provinces = {
+		105 198 3147 6040 6192 9205 10207 11119 12530 11047
+	}
+
+	local_supplies = 0.0 
+}

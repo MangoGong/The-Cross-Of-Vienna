@@ -1,0 +1,567 @@
+focus_tree = {
+	id  =  ITAzz
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ITA
+		}
+	}
+	default = no
+	focus = { #新年
+		id = ITAzz_0
+		icon = GFX_ITA_NewYear
+		x = 4
+		y = 0
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = {
+			"TCV_ITA"
+		}
+		completion_reward = {
+			country_event = { id = italy.4 }
+		}
+		select_effect = {
+			country_event = { id = italy.3 }
+		   #当你点选这个国策时会触发的效果
+		   #注意:如果这里写下任何效果,都会令这个国策变成不能手动取消的状态,一旦执行只能等待其完成
+		}
+
+	}
+	focus = { #我们的同盟
+		id = ITAzz_1
+		icon = GFX_ITA_WoMenDeTongMeng
+		x = 1
+		y = 1
+		prerequisite = {focus = ITAzz_0}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = {
+			"TCV_ITA"
+		}
+		completion_reward = {
+			add_political_power = 30
+		}
+		select_effect = {
+			country_event = { id = italy.28 }
+		}
+
+	}
+	focus = { #修建小亚细亚铁路
+		id = ITAzz_2
+		icon = GFX_ITA_XiuJianXiaoYaXiYaTieLu
+		x = 0
+		y = 4
+		prerequisite = {focus = ITAzz_4}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = {
+			"TCV_ITA"
+		}
+		completion_reward = {
+			TUR = {
+				every_core_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+		select_effect = {
+		   #当你点选这个国策时会触发的效果
+		   #注意:如果这里写下任何效果,都会令这个国策变成不能手动取消的状态,一旦执行只能等待其完成
+		}
+
+	}
+	focus = { #巴尔干补助发展
+		id = ITAzz_3
+		icon = GFX_ITA_BaeganBuZhuFaZhan
+		x = 2
+		y = 4
+		prerequisite = {focus = ITAzz_5}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = {
+			"TCV_ITA"
+		}
+		completion_reward = {
+			GRE = {
+				add_ideas = BuZhuFaZhan
+			}
+			BUL = {
+				add_ideas = BuZhuFaZhan
+			}
+			CRO = {
+				add_ideas = BuZhuFaZhan
+			}
+			SER = {
+				add_ideas = BuZhuFaZhan
+			}
+		}
+		select_effect = {
+		   #当你点选这个国策时会触发的效果
+		   #注意:如果这里写下任何效果,都会令这个国策变成不能手动取消的状态,一旦执行只能等待其完成
+		}
+
+	}
+	focus = { #修建巴尔干铁路
+		id = ITAzz_4
+		icon = GFX_ITA_XiuJianBaeganTieLu
+		x = 0
+		y = 3
+		prerequisite = {focus = ITAzz_8}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = {
+			"TCV_ITA"
+		}
+		completion_reward = {
+			GRE = {
+				every_core_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			CRO = {
+				every_core_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			BUL = {
+				every_core_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			SER = {
+				every_core_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+		select_effect = {
+		   #当你点选这个国策时会触发的效果
+		   #注意:如果这里写下任何效果,都会令这个国策变成不能手动取消的状态,一旦执行只能等待其完成
+		}
+	}
+	focus = { #小亚细亚补助发展
+		id = ITAzz_5
+		icon = GFX_ITA_XiaoYaXiYaBuZhu
+		x = 2
+		y = 3
+		prerequisite = {focus = ITAzz_8}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = {
+			"TCV_ITA"
+		}
+		completion_reward = {
+			TUR = {
+				add_ideas = BuZhuFaZhan
+			}
+		}
+		select_effect = {
+		   #当你点选这个国策时会触发的效果
+		   #注意:如果这里写下任何效果,都会令这个国策变成不能手动取消的状态,一旦执行只能等待其完成
+		}
+	}
+	
+	focus = { #修建阿非里加铁路
+		id = ITAzz_6
+		icon = GFX_ITA_XiuJianAfeilijiaTieLu
+		x = 0
+		y = 5
+		prerequisite = {focus = ITAzz_2}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = {
+			"TCV_ITA"
+		}
+		completion_reward = {
+			XiuJianAfeiLiJiaTieLu = yes
+		}
+		select_effect = {
+		   #当你点选这个国策时会触发的效果
+		   #注意:如果这里写下任何效果,都会令这个国策变成不能手动取消的状态,一旦执行只能等待其完成
+		}
+
+	}
+	focus = { #新世纪总结
+		id = ITAzz_7
+		icon = GFX_ITA_XinShiJiZongJie
+		x = 7
+		y = 1
+		prerequisite = {focus = ITAzz_0}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = {
+			"TCV_ITA"
+		}
+		completion_reward = {
+
+		}
+		select_effect = {
+			country_event = { id = italy.5 }
+			set_country_flag = ITA_XinShiJiZongJie_b_flag
+		   #当你点选这个国策时会触发的效果
+		   #注意:如果这里写下任何效果,都会令这个国策变成不能手动取消的状态,一旦执行只能等待其完成
+		}
+
+	}
+	focus = { #审视形势
+		id = ITAzz_10
+		icon = GFX_ITA_ShenShiXinShi
+		x = 5
+		y = 2
+		prerequisite = {focus = ITAzz_7}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = {
+			"TCV_ITA"
+		}
+		cancel = {
+			has_country_flag = ITA_ShenShiXinShi_out_flag
+		}
+		completion_reward = {
+		}
+		select_effect = {
+			country_event = { id = italy.12 }
+			set_country_flag = ITA_ShenShiXinShi_b_flag
+			set_country_flag = {
+				flag = ITA_ShenShiXinShi_out_flag
+				value = 0
+			}
+		   #当你点选这个国策时会触发的效果
+		   #注意:如果这里写下任何效果,都会令这个国策变成不能手动取消的状态,一旦执行只能等待其完成
+		}
+
+	}
+	focus = { #维持现状
+		id = ITAzz_11
+		icon = GFX_ITA_WeiChiXianZhuang
+		x = 9
+		y = 2
+		prerequisite = {focus = ITAzz_7}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = {
+			"TCV_ITA"
+		}
+		completion_reward = {
+			country_event = { id = italy.8 }
+		}
+		select_effect = {
+		   #当你点选这个国策时会触发的效果
+		   #注意:如果这里写下任何效果,都会令这个国策变成不能手动取消的状态,一旦执行只能等待其完成
+		}
+
+	}
+	focus = { #新时代的野望
+		id = ITAzz_12
+		icon = GFX_ITA_XinShiDaiDeYeWang
+		x = 4
+		y = 3
+		prerequisite = {focus = ITAzz_10}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = {
+			"TCV_ITA"
+		}
+		completion_reward = {
+			country_event = { id = italy.15 }
+		}
+		select_effect = {
+		   #当你点选这个国策时会触发的效果
+		   #注意:如果这里写下任何效果,都会令这个国策变成不能手动取消的状态,一旦执行只能等待其完成
+		}
+
+	}
+	focus = { #后面不想写注释了，自己鼠标放在id上按住ctrl看
+		id = ITAzz_13
+		icon = GFX_ITA_JiuShiDaiDeYuMie
+		x = 6
+		y = 3
+		prerequisite = {focus = ITAzz_10}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = {
+			"TCV_ITA"
+		}
+		completion_reward = {
+		}
+		select_effect = {
+			country_event = { id = italy.16 }
+			set_country_flag = ITA_JiuShiDaiDeYuMie_b_flag
+		   #当你点选这个国策时会触发的效果
+		   #注意:如果这里写下任何效果,都会令这个国策变成不能手动取消的状态,一旦执行只能等待其完成
+		}
+
+	}
+	focus = { #扫荡山林
+		id = ITAzz_14
+		icon = GFX_ITA_SaoDangShanLin
+		x = 6
+		y = 4
+		prerequisite = {focus = ITAzz_13}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = {
+			"TCV_ITA"
+		}
+		completion_reward = {
+			country_event = { id = italy.17 }
+		}
+		select_effect = {
+		   #当你点选这个国策时会触发的效果
+		   #注意:如果这里写下任何效果,都会令这个国策变成不能手动取消的状态,一旦执行只能等待其完成
+		}
+
+	}
+	focus = { #建立委员会
+		id = ITAzz_15
+		icon = GFX_ITA_JianLiWeiYuanHui
+		x = 4
+		y = 4
+		prerequisite = {focus = ITAzz_12}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = {
+			"TCV_ITA"
+		}
+		completion_reward = {
+			country_event = { id = italy.19 }
+		}
+		select_effect = {
+			country_event = { id = italy.18 }
+		   #当你点选这个国策时会触发的效果
+		   #注意:如果这里写下任何效果,都会令这个国策变成不能手动取消的状态,一旦执行只能等待其完成
+		}
+
+	}
+	focus = { #招揽外部党员
+		id = ITAzz_16
+		icon = GFX_ITA_ZhaoLanWaiBuDangYuan
+		x = 3
+		y = 5
+		prerequisite = {focus = ITAzz_15}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = {
+			"TCV_ITA"
+		}
+		completion_reward = {
+			country_event = { id = italy.25 }
+		}
+		select_effect = {
+			country_event = { id = italy.20 }
+		   #当你点选这个国策时会触发的效果
+		   #注意:如果这里写下任何效果,都会令这个国策变成不能手动取消的状态,一旦执行只能等待其完成
+		}
+
+	}
+	focus = {
+		id = ITAzz_17
+		icon = GFX_ITA_TingZhiPoHai
+		x = 5
+		y = 5
+		prerequisite = {focus = ITAzz_15}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = {
+			"TCV_ITA"
+		}
+		completion_reward = {
+			country_event = { id = italy.26 }
+		}
+		select_effect = {
+		   #当你点选这个国策时会触发的效果
+		   #注意:如果这里写下任何效果,都会令这个国策变成不能手动取消的状态,一旦执行只能等待其完成
+		}
+
+	}
+	focus = {
+		id = ITAzz_18
+		icon = GFX_ITA_ZenJiaMingZhuXiWei
+		x = 3
+		y = 6
+		prerequisite = {focus = ITAzz_16}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = {
+			"TCV_ITA"
+		}
+		completion_reward = {
+			country_event = { id = italy.27 }
+		}
+		select_effect = {
+		   #当你点选这个国策时会触发的效果
+		   #注意:如果这里写下任何效果,都会令这个国策变成不能手动取消的状态,一旦执行只能等待其完成
+		}
+
+	}
+	focus = { #继续墨索里尼经济
+		id = ITAzz_19
+		icon = GFX_ITA_JiXuMosuoliniJinJi
+		x = 9
+		y = 3
+		prerequisite = {focus = ITAzz_11}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = {
+			"TCV_ITA"
+		}
+		completion_reward = {
+			country_event = { id = italy.10 }
+		}
+		select_effect = {
+			country_event = { id = italy.9 }
+		   #当你点选这个国策时会触发的效果
+		   #注意:如果这里写下任何效果,都会令这个国策变成不能手动取消的状态,一旦执行只能等待其完成
+		}
+
+	}
+	focus = { #扩建罗马大学城
+		id = ITAzz_20
+		icon = GFX_ITA_KuoJianLuoMaDaXueChen
+		x = 8
+		y = 4
+		prerequisite = {focus = ITAzz_19}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = {
+			"TCV_ITA"
+		}
+		completion_reward = {
+			country_event = { id = italy.11 }
+		}
+		select_effect = {
+		   #当你点选这个国策时会触发的效果
+		   #注意:如果这里写下任何效果,都会令这个国策变成不能手动取消的状态,一旦执行只能等待其完成
+		}
+
+	}
+	focus = {
+		id = ITAzz_21
+		icon = GFX_ITA_NanFangGongYeHua
+		x = 10
+		y = 4
+		prerequisite = {focus = ITAzz_19}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = {
+			"TCV_ITA"
+		}
+		completion_reward = {
+			set_country_flag = ITA_JingJi_b_flag
+		}
+		select_effect = {
+		   #当你点选这个国策时会触发的效果
+		   #注意:如果这里写下任何效果,都会令这个国策变成不能手动取消的状态,一旦执行只能等待其完成
+		}
+
+	}
+	focus = {
+		id = ITAzz_8
+		icon  =  GFX_ITA_JiaQiangTongMengGuoLingDao
+		x = 1
+		y = 2
+		prerequisite = {focus = ITAzz_1}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = {
+			"TCV_ITA"
+		}
+		completion_reward = {
+			add_political_power = 30
+		}
+		select_effect = {
+		   #当你点选这个国策时会触发的效果
+		   #注意:如果这里写下任何效果,都会令这个国策变成不能手动取消的状态,一旦执行只能等待其完成
+		}
+
+	}
+}

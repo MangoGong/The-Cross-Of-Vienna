@@ -1,0 +1,64 @@
+ITA_ShenShiXinShi_category = { #审视形势
+	ITA_ShenShiXinShi_decision_0 = { #读条
+		icon = TEST
+		fire_only_once = yes
+		available = {
+			has_country_flag = ITA_ShenShiXinShi_c_d_flag_1
+			has_country_flag = ITA_ShenShiXinShi_c_d_flag_2
+		}
+		activation = {
+			has_country_flag = ITA_ShenShiXinShi_b_flag
+		}
+		days_mission_timeout = 15
+		is_good = no
+		cost = 10
+		complete_effect = {
+			complete_national_focus = ITAzz_10
+		}
+		selectable_mission = no 
+		timeout_effect = {
+			set_country_flag = {
+				flag = ITA_ShenShiXinShi_b_flag 
+				value = 0
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	ITA_ShenShiXinShi_decision_1 = { #审阅外交报告
+		cost = 5
+		fire_only_once = yes
+		allowed = {
+			original_tag = ITA
+		}
+		visible = {
+			
+		}
+		complete_effect = {
+			country_event = { id = italy.13 }
+		}
+		ai_will_do = {
+			base = 100  #ai点选这个决议的意愿
+		}
+		icon = TEST
+	}
+	ITA_ShenShiXinShi_decision_2 = { #审阅经济报告
+		cost = 5
+		fire_only_once = yes
+		allowed = {
+			original_tag = ITA
+		}
+		visible = {
+
+		}
+		complete_effect = {
+			country_event = { id = italy.14 }
+		}
+		ai_will_do = {
+			base = 100  #ai点选这个决议的意愿
+		}
+		icon = TEST
+	}
+
+}

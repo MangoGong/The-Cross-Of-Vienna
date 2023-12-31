@@ -1,0 +1,21 @@
+ideas = {
+	country = {
+		JunShiZhiCai = {
+			
+			picture = ""
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			cancel = { 
+				has_war = yes
+			}
+
+			on_add = {
+				country_lock_all_division_template = yes
+			}
+			
+		}#军事制裁1（不能转编制，训练新部队，解散部队）
+	}
+}

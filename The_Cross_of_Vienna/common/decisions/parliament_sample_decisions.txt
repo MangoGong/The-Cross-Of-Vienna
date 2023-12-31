@@ -1,0 +1,43 @@
+parliament_sample_category = {
+	open_parliament_gui = {
+		icon = generic_industry
+
+		visible = {
+			has_country_flag = ITA_YiHuiKaiShe_flag
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			SAMPLE_init_parliament = yes
+			set_country_flag = open_parliament_gui
+			SAMPLE_init_parliament = yes
+		}
+	}
+	ITA_DaHuiKaiMu_0 = { #读条
+		icon = TEST
+		fire_only_once = yes
+		available = {
+		}
+		visible = {
+			has_country_flag = ITA_YiHuiKaiShe_flag
+		}
+		activation = {
+			has_country_flag = ITA_YiHuiKaiShe_flag
+		}
+		days_mission_timeout = 180
+		is_good = yes
+		cost = 10
+		complete_effect = {
+		
+		}
+		selectable_mission = yes
+		timeout_effect = {
+
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+}

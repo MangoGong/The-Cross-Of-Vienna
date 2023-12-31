@@ -1,0 +1,26 @@
+ideas = {
+
+	country = {
+		
+		PiBeiDeJunDui = {
+			
+			picture = ""
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			cancel = { 
+				has_war = yes
+			}
+
+			modifier = {
+				army_morale_factor = -0.02
+				army_infantry_attack_factor = -0.1
+				army_speed_factor = -0.1
+				org_loss_when_moving = 0.01
+			}
+			
+		}#疲惫的军队
+	}
+}

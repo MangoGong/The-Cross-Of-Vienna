@@ -1,0 +1,44 @@
+ideas = {
+	country = {
+		ZhuangKuangHaoZhuan = {
+			
+			picture = ""
+
+			allowed_civil_war = {
+				always = yes
+			}
+		}#好转
+		ZhuangKuangShangShen = {
+			
+			picture = ""
+
+			allowed_civil_war = {
+				always = yes
+			}
+		}#上升
+		ZhuangKuangChiPin = {
+			
+			picture = ""
+
+			allowed_civil_war = {
+				always = yes
+			}
+		}#持平
+		ZhuangKuangXiaDie = {
+			
+			picture = ""
+
+			allowed_civil_war = {
+				always = yes
+			}
+		}#下跌
+		ZhuangKuangEHua = {
+			
+			picture = ""
+
+			allowed_civil_war = {
+				always = yes
+			}
+		}#恶化
+	}
+}

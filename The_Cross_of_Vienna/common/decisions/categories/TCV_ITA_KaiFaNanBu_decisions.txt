@@ -1,0 +1,13 @@
+ITA_KaiFaNanBu_category = { #开发南部
+	icon = TEST
+	picture = "GFX_ITA_d_NanBuGongYeHua"
+	allowed = {
+		original_tag = ITA
+	}
+	visible = {
+		has_country_flag = ITA_JingJi_b_flag
+	}
+	priority = { 
+		base = 5
+	}
+}

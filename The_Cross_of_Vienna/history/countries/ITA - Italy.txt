@@ -1,0 +1,60 @@
+﻿capital = 2
+
+set_research_slots = 5
+set_stability = 0.96
+create_faction = 环地中海同盟
+add_to_faction = CRO
+add_to_faction = SER
+add_to_faction = BUL
+add_to_faction = GRE
+add_to_faction = SPR
+add_to_faction = MEN
+add_to_faction = TUR
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Death or Dishonor"
+		}
+	}
+	set_autonomy = {
+		target = CRO
+		autonomous_state = autonomy_reichskommissariat
+	}
+	set_autonomy = {
+		target = SER
+		autonomous_state = autonomy_reichskommissariat
+	}
+	set_autonomy = {
+		target = GRE
+		autonomous_state = autonomy_reichskommissariat
+
+	}
+	else = {
+		puppet = CRO
+		puppet = SER
+		puppet = GRE
+	}
+}
+
+recruit_character = ITA_QiYaNuo
+
+set_popularities = {
+	democratic = 6
+	communism = 5
+	fascism = 52
+	nazismus = 11
+	militarism = 13
+	parentsim = 13
+}
+set_politics = {
+	ruling_party = fascism #执政党的意识形态
+	last_election = "1932.11.8" #上次大选时间
+	election_frequency = 48 #大选间隔时间，单位：月
+	elections_allowed = no #是否有下次大选，no为没有，yes为有
+}
+add_ideas = {
+	XinLuoMaZhiMeng
+	YiDaLiWanSui
+	WenBeiTuoAShi
+}

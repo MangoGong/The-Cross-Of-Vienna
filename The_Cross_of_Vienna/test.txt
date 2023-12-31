@@ -1,0 +1,84 @@
+ideas = {
+	country = {
+
+		FRA_dedication_spirit_idea = {
+			 # 奉献精神 
+			 picture = GFX_idea_generic_national_unity # 图片 
+			 allowed = {
+			 always = yes 
+		} 
+		# 允许条件 
+		modifier = {			 # 效果：减少生活消费品需求和工业研究时间 
+			consumer_goods_factor = -0.05 
+			industrial_research_speed_factor = -0.1 
+		} 
+		cancel_if_invalid = no # 如果失效不取消
+
+		} 
+
+
+		FRA_look_at_entrepreneurs_idea = {
+			 # 看向企业家
+			 picture = GFX_idea_generic_production_efficiency_cap_2 # 图片
+        allowed = { always = yes } # 允许条件
+        modifier = { # 效果：增加生产效率上限
+            production_efficiency_cap_factor = 0.1
+        }
+        cancel_if_invalid = no # 如果失效不取消
+  		}
+
+  		FRA_look_at_market_idea = { # 看向市场
+  		    picture = GFX_idea_generic_consumer_goods # 图片
+  		    allowed = { always = yes } # 允许条件
+  		    modifier = { # 效果：减少生活消费品需求和贸易法研究时间
+  		        consumer_goods_factor         = -0.05
+  		        trade_law_research_speed_factor = -0.1
+  		    }
+  		    cancel_if_invalid = no # 如果失效不取消
+  		}
+
+  		FRA_look_at_workers_idea = { # 看向工人
+  		    picture = GFX_idea_generic_production_efficiency_2 # 图片
+  		    allowed = { always = yes } # 允许条件
+  		    modifier = { # 效果：增加生产效率增长和工业工人支持度
+  		        production_efficiency_growth_factor = 0.1
+  		        industrial_worker_support_factor    = 0.1
+  		    }
+  		    cancel_if_invalid = no # 如果失效不取消
+  		}
+
+  		FRA_control_entrepreneurs_idea = { # 控制企业家
+  		    picture = GFX_idea_generic_production_efficiency_cap_3 # 图片
+  		    allowed = { always = yes } # 允许条件
+  		    modifier = { # 效果：增加生产效率上限和企业家支持度，减少民主联盟支持度和复兴党支持度
+  		        production_efficiency_cap_factor   = 0.1
+  		        entrepreneur_support_factor        = 0.1
+  		        democratic_support_factor          = -0.1
+  		        fascist_support_factor             = -0.1
+  		    }
+  		    cancel_if_invalid = no # 如果失效不取消
+  		}
+  		FRA_tangible_hand_idea = { # 有形的手
+  		    picture = GFX_idea_generic_consumer_goods_2 # 图片
+  		    allowed = { always = yes } # 允许条件
+			  modifier = { # 效果：减少生活消费品需求和政治研究时间，增加政治力量增长
+			  consumer_goods_factor         = -0.05
+			  political_research_speed_factor = -0.1
+			  political_power_gain_factor     = 0.1
+		  }
+		  cancel_if_invalid = no # 如果失效不取消
+		  }
+		  FRA_manage_unions_idea = { # 管理工会
+			  picture = GFX_idea_generic_production_efficiency_3 # 图片
+			  allowed = { always = yes } # 允许条件
+			  modifier = { # 效果：增加生产效率增长和工会支持度，减少社会党支持度和民主联盟支持度
+				  production_efficiency_growth_factor = 0.1
+				  union_support_factor                = 0.1
+				  communist_support_factor            = -0.1
+				  democratic_support_factor           = -0.1
+			  }
+			  cancel_if_invalid = no # 如果失效不取消
+		  }
+
+	  }
+}

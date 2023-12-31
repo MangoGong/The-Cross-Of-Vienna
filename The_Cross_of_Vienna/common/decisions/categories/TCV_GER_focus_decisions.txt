@@ -1,0 +1,20 @@
+GER_ZhengFuZongJie_category = { #政府总结
+	icon = TEST
+	picture = GFX_TCV_GER_d_ZhenFuZongJie
+	allowed = {
+		original_tag = GER
+	}
+	visible = {
+		focus_progress = {
+			focus = GER_government_summary
+			progress > 0.001
+		}		
+		focus_progress = {
+			focus = GER_government_summary
+			progress < 1
+		}
+	}
+	priority = { #国策决议位于最高位置
+		base = 10
+	}
+}

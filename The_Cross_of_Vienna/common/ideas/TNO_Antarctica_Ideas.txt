@@ -1,0 +1,271 @@
+ideas = {
+	country = {
+		Antarctica_Territory_Generic_Idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea Antarctica_Territory_Generic_Idea" }
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = Antarctica_Territory_Generic_Idea
+			modifier = {
+				conscription = -1
+				recruitable_population = -1
+				resistance_target = -1
+				production_speed_buildings_factor = -1
+				monthly_population = -1
+				political_power_gain = -0.5
+			}
+		}
+		
+		AAJ_Enforced_Claims = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAJ_Enforced_Claims" }
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = AAJ_Enforced_Claims
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = 0.15
+			}
+		}
+		AAJ_1st_Airborne_Brigade_Idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAJ_1st_Airborne_Brigade_Idea" }
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = AAJ_1st_Airborne_Brigade
+			modifier = {
+				winter_attrition_factor = -0.25
+				acclimatization_cold_climate_gain_factor = 0.4
+				training_time_factor = 0.15
+			}
+		}
+		
+		AAO_McMurdo_Station = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAO_McMurdo_Station" }
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = AAO_McMurdo_Station
+			modifier = {
+				out_of_supply_factor = -0.1
+				naval_attrition = -0.2
+				army_morale_factor = 0.15
+				naval_morale_factor = 0.15
+			}
+		}
+		AAO_OFN_Tensions = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAO_OFN_Tensions" }
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = AAO_OFN_Tensions
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = -0.05
+			}
+		}
+		
+		AAG_Aircraft_Testing_Site = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAG_Aircraft_Testing_Site" }
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = AAG_Aircraft_Testing_Site
+			modifier = {
+				research_sharing_per_country_bonus_factor = 0.05
+				air_weather_penalty = -0.15
+			}
+		}
+		AAG_Precarious_Supply_Situation = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAG_Precarious_Supply_Situation" }
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = AAG_Precarious_Supply_Situation
+			modifier = {
+				no_supply_grace = -24
+				out_of_supply_factor = -0.10
+			}
+		}
+		AAG_Alone_in_the_Cold = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAG_Alone_in_the_Cold" }
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = AAG_Alone_in_the_Cold
+			modifier = {
+				
+			}
+		}
+
+		AAA_Dreams_Of_The_South_Pole = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAA_Dreams_Of_The_South_Pole" }
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = AAA_Dreams_Of_The_South_Pole
+			modifier = {
+				no_supply_grace = 168
+				supply_consumption_factor = -0.25
+			}
+		}
+		
+		AAA_Research_Haven = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAA_Research_Haven" }
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = AAA_Research_Haven
+			modifier = {
+				political_power_gain = 0.25
+				opinion_gain_monthly_factor = 0.15
+			}
+		}
+
+		AAC_Unrecognized_Antarctic_Claims = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAC_Unrecognized_Antarctic_Claims" }
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = AAC_Unrecognized_Antarctic_Claims
+			modifier = {
+				political_power_factor = -0.1
+				stability_factor = 0.05
+			}
+		}
+		
+		AAC_Jealous_Defence = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAC_Jealous_Defence" }
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = AAC_Jealous_Defence
+			modifier = {
+				max_dig_in = 5
+				army_core_defence_factor = 0.10
+			}
+		}
+		
+		AAB_Burgundian_Think_Tank = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAB_Burgundian_Think_Tank" }
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = AAB_Burgundian_Think_Tank
+			modifier = {
+				research_speed_factor = -0.10
+				encryption_factor = 0.35
+			}
+		}
+
+		AAB_Vital_Research = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAB_Vital_Research" }
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = AAB_Vital_Research
+			modifier = {
+				supply_consumption_factor = -0.10
+				custom_modifier_tooltip = AAB_Vital_Research_tt
+			}
+		}
+	}
+}

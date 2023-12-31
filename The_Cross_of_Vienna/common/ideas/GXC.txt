@@ -1,0 +1,67 @@
+ideas = {
+	country = {
+	    # 不信任危机
+	    distrust_crisis = {
+	        allowed = { always = yes } # 这个民族精神可以被任何国家拥有
+	        cancel = { always = no } # 这个民族精神不能被取消
+	        removal_cost = -1 # 这个民族精神没有移除成本
+	        modifier = { # 这个民族精神带来的效果
+	            stability_factor = -0.3 # 稳定度-30%每月
+	            political_power_factor = -0.3 # 政治点数-30%每月
+	            factory_output_factor = -0.2 # 工厂产出-20%
+	            resource_gain_factor = -0.2 # 资源获取率-20%
+	        }
+	        picture = GFX_idea_generic_dissent # 这个民族精神使用的图片，可以自定义
+	    }
+
+	    # 监事会之治
+	    council_rule = {
+	        allowed = { always = yes }
+	        cancel = { always = no }
+	        removal_cost = -1
+	        modifier = {
+	            stability_factor = 0.1 # 稳定度+10%每月
+	        }
+	        picture = GFX_idea_generic_democratic_reformer # 这个民族精神使用的图片，可以自定义
+	    }
+
+	    # “三巨头”
+	    three_giants = {
+	        allowed = { always = yes }
+	        cancel = { always = no }
+	        removal_cost = -1
+	        modifier = {
+	            political_power_factor = -0.05 # 政治点数-5%每月
+	            intelligence_leak_factor = 0.05 # 情报泄露+5%
+	            army_training_time_factor = -0.05 # 训练时间-5%
+	        }
+	        picture = GFX_idea_generic_military_industrial_complex # 这个民族精神使用的图片，可以自定义
+	    }
+
+	    # 华南陆军之魂
+	    south_china_army_spirit = {
+	        allowed = { always = yes }
+	        cancel = { always = no }
+	        removal_cost = -1
+	        modifier = {
+	            land_attack_factor = 0.1 # 陆军单位攻击+10%
+	            entrenchment_speed_factor = 0.1 # 堑壕速度+10%
+	            supply_consumption_factor = -0.15 # 补给消耗-15%
+	            army_leader_xp_gain_factor = -0.3 # 指挥官经验获取-30%
+	        }
+	        picture = GFX_idea_generic_army_tradition # 这个民族精神使用的图片，可以自定义
+	    }
+
+	    # 广西危机
+	    guangxi_crisis = {
+	        allowed = { always = yes }
+	        cancel = { always = no }
+	        removal_cost = -1
+	        modifier = {
+	            monthly_population_factor = 0.05 # 每月人口+50%
+	            stability_factor = -0.4 # 稳定度-40%每月
+	        }
+	        picture = GFX_idea_generic_civil_war # 这个民族精神使用的图片，可以自定义
+	    }
+	}
+}

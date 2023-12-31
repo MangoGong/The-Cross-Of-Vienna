@@ -1,0 +1,6 @@
+﻿capital = 566
+set_research_slots = 2
+set_stability = 0.09
+set_war_support = 0.02
+
+

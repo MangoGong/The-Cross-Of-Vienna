@@ -1,0 +1,797 @@
+ideas = {
+	head_of_government = {
+		AAO_James_R_Reedy_dep = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAO_James_R_Reedy_dep" }
+			allowed = {
+				always = no
+			}
+			available = {
+				
+			}
+			picture = AAO_James_R_Reedy_dep
+			traits = {
+				head_of_government
+				authoritarian_democracy
+				hog_respected_war_hero
+				AAO_James_R_Reedy_dep_desc
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	foreign_minister = {
+		AAO_Herman_Phleger_pol = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAO_Herman_Phleger_pol" }
+			allowed = {
+				always = no
+			}
+			available = {
+				
+			}
+			picture = AAO_Herman_Phleger_pol
+			traits = {
+				foreign_minister
+				conservative_democracy
+				for_seasoned_ambassador
+				AAO_Herman_Phleger_pol_desc
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	economy_minister = {
+		AAO_Howard_Beale_eco = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAO_Howard_Beale_eco" }
+			allowed = {
+				always = no
+			}
+			available = {
+				
+			}
+			picture = AAO_Howard_Beale_eco
+			traits = {
+				economy_minister
+				liberal_democracy
+				eco_administrative_genius
+				eco_political_appointment
+				AAO_Howard_Beale_eco_desc
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	security_minister = {
+		AAO_William_Robertson_sec = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAO_William_Robertson_sec" }
+			allowed = {
+				always = no
+			}
+			available = {
+				
+			}
+			picture = AAO_William_Robertson_sec
+			traits = {
+				security_minister
+				authoritarian_democracy
+				sec_spymaster
+				sec_guerilla_fighter
+				AAO_William_Robertson_sec_desc
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	
+	head_of_government = {
+		AAC_Marcial_Mora_Miranda_dep = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAC_Marcial_Mora_Miranda_dep" }
+			allowed = {
+				always = no
+			}
+			available = {
+				
+			}
+			picture = AAC_Marcial_Mora_Miranda_dep
+			traits = {
+				head_of_government
+				liberal_democracy
+				hog_pragmatic_statesman
+				AAC_Marcial_Mora_Miranda_dep_desc
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	foreign_minister = {
+		AAC_Enrique_Gajardo_Villarroel_pol = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAC_Enrique_Gajardo_Villarroel_pol" }
+			allowed = {
+				always = no
+			}
+			available = {
+				
+			}
+			picture = AAC_Enrique_Gajardo_Villarroel_pol
+			traits = {
+				foreign_minister
+				liberal_democracy
+				for_well_connected
+				AAC_Enrique_Gajardo_Villarroel_pol_desc
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	economy_minister = {
+		AAC_Anibal_Pinto_Santa_Cruz_eco = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAC_Anibal_Pinto_Santa_Cruz_eco" }
+			allowed = {
+				always = no
+			}
+			available = {
+				
+			}
+			picture = AAC_Anibal_Pinto_Santa_Cruz_eco
+			traits = {
+				economy_minister
+				social_democracy
+				eco_balanced_budget_economy
+				AAC_Anibal_Pinto_Santa_Cruz_eco_desc
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	security_minister = {
+		AAC_Sergio_Castillo_Aranguiz_sec = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAC_Sergio_Castillo_Aranguiz_sec" }
+			allowed = {
+				always = no
+			}
+			available = {
+				
+			}
+			picture = AAC_Sergio_Castillo_Aranguiz_sec
+			traits = {
+				security_minister
+				authoritarian_democracy
+				sec_army_instructor
+				AAC_Sergio_Castillo_Aranguiz_sec_desc
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	
+	head_of_government = {
+		AAG_Richard_Heinrich_Schirmacher_dep = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAG_Richard_Heinrich_Schirmacher_dep" }
+			allowed = {
+				always = no
+			}
+			available = {
+				
+			}
+			picture = AAG_Richard_Heinrich_Schirmacher_dep
+			traits = {
+				head_of_government
+				national_socialism
+				sec_air_power_pioneer
+				AAG_Richard_Heinrich_Schirmacher_dep_desc
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	foreign_minister = {
+		AAG_Ernst_Herrmann_pol = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAG_Ernst_Herrmann_pol" }
+			allowed = {
+				always = no
+			}
+			available = {
+				
+			}
+			picture = AAG_Ernst_Herrmann_pol
+			traits = {
+				foreign_minister
+				fascism
+				eco_resource_industrialist
+				AAG_Ernst_Herrmann_pol_desc
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	economy_minister = {
+		AAG_Erich_Schumann_eco = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAG_Erich_Schumann_eco" }
+			allowed = {
+				always = no
+			}
+			available = {
+				
+			}
+			picture = AAG_Erich_Schumann_eco
+			traits = {
+				economy_minister
+				national_socialism
+				eco_theoretical_scientist
+				AAG_Erich_Schumann_eco_desc
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	security_minister = {
+		AAG_Anton_Grasser_sec = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAG_Anton_Grasser_sec" }
+			allowed = {
+				always = no
+			}
+			available = {
+				
+			}
+			picture = AAG_Anton_Grasser_sec
+			traits = {
+				security_minister
+				national_socialism
+				sec_crime_fighter
+				AAG_Anton_Grasser_sec_desc
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	
+	head_of_government = {
+		AAG_Kurt_Diebner_dep = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAG_Kurt_Diebner_dep" }
+			allowed = {
+				always = no
+			}
+			available = {
+				
+			}
+			picture = AAG_Kurt_Diebner_dep
+			traits = {
+				head_of_government
+				#
+				AAG_Kurt_Diebner_dep_desc
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	foreign_minister = {
+		AAG_Carl_Friedrich_von_Weizsacker_pol = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAG_Carl_Friedrich_von_Weizsacker_pol" }
+			allowed = {
+				always = no
+			}
+			available = {
+				
+			}
+			picture = AAG_Carl_Friedrich_von_Weizsacker_pol
+			traits = {
+				foreign_minister
+				#
+				AAG_Carl_Friedrich_von_Weizsacker_pol_desc
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	economy_minister = {
+		AAG_Rudolf_Mentzel_eco = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAG_Rudolf_Mentzel_eco" }
+			allowed = {
+				always = no
+			}
+			available = {
+				
+			}
+			picture = AAG_Rudolf_Mentzel_eco
+			traits = {
+				economy_minister
+				#
+				AAG_Rudolf_Mentzel_eco_desc
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	security_minister = {
+		AAG_Anton_Grasser_GGR_sec = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAG_Anton_Grasser_GGR_sec" }
+			allowed = {
+				always = no
+			}
+			available = {
+				
+			}
+			picture = AAG_Anton_Grasser_sec
+			traits = {
+				security_minister
+				national_socialism
+				sec_crime_fighter
+				AAG_Anton_Grasser_GGR_sec_desc
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	
+	head_of_government = {
+		AAG_Karl_Weiken_dep = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAG_Karl_Weiken_dep" }
+			allowed = {
+				always = no
+			}
+			available = {
+				
+			}
+			picture = AAG_Karl_Weiken_dep
+			traits = {
+				head_of_government
+				#
+				AAG_Karl_Weiken_dep_desc
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	foreign_minister = {
+		AAG_Werner_Dankwort_pol = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAG_Werner_Dankwort_pol" }
+			allowed = {
+				always = no
+			}
+			available = {
+				
+			}
+			picture = AAG_Werner_Dankwort_pol
+			traits = {
+				foreign_minister
+				#
+				AAG_Werner_Dankwort_pol_desc
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	economy_minister = {
+		AAG_Walther_Hofmann_eco = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAG_Walther_Hofmann_eco" }
+			allowed = {
+				always = no
+			}
+			available = {
+				
+			}
+			picture = AAG_Walther_Hofmann_eco
+			traits = {
+				economy_minister
+				#
+				AAG_Walther_Hofmann_eco_desc
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	security_minister = {
+		AAG_Anton_Grasser_SGR_sec = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAG_Anton_Grasser_SGR_sec" }
+			allowed = {
+				always = no
+			}
+			available = {
+				
+			}
+			picture = AAG_Anton_Grasser_sec
+			traits = {
+				security_minister
+				national_socialism
+				sec_crime_fighter
+				AAG_Anton_Grasser_SGR_sec_desc
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	
+	head_of_government = {
+		AAG_Otto_Abetz_dep = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAG_Otto_Abetz_dep" }
+			allowed = {
+				always = no
+			}
+			available = {
+				
+			}
+			picture = AAG_Otto_Abetz_dep
+			traits = {
+				head_of_government
+				#
+				AAG_Otto_Abetz_dep_desc
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	foreign_minister = {
+		AAG_Rudolf_Rahn_pol = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAG_Rudolf_Rahn_pol" }
+			allowed = {
+				always = no
+			}
+			available = {
+				
+			}
+			picture = AAG_Rudolf_Rahn_pol
+			traits = {
+				foreign_minister
+				#
+				AAG_Rudolf_Rahn_pol_desc
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	economy_minister = {
+		AAG_Karl_Maria_Hettlage_eco = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAG_Karl_Maria_Hettlage_eco" }
+			allowed = {
+				always = no
+			}
+			available = {
+				
+			}
+			picture = AAG_Karl_Maria_Hettlage_eco
+			traits = {
+				economy_minister
+				#
+				AAG_Karl_Maria_Hettlage_eco_desc
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	security_minister = {
+		AAG_Erich_Ehrlinger_sec = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAG_Erich_Ehrlinger_sec" }
+			allowed = {
+				always = no
+			}
+			available = {
+				
+			}
+			picture = AAG_Erich_Ehrlinger_sec
+			traits = {
+				security_minister
+				#
+				AAG_Erich_Ehrlinger_sec_desc
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	
+	head_of_government = {
+		AAG_Eberhard_Kinzel_dep = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAG_Eberhard_Kinzel_dep" }
+			allowed = {
+				always = no
+			}
+			available = {
+				
+			}
+			picture = AAG_Eberhard_Kinzel_dep
+			traits = {
+				head_of_government
+				#
+				AAG_Eberhard_Kinzel_dep_desc
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	foreign_minister = {
+		AAG_Hasso_Von_Manteuffel_pol = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAG_Hasso_Von_Manteuffel_pol" }
+			allowed = {
+				always = no
+			}
+			available = {
+				
+			}
+			picture = AAG_Hasso_Von_Manteuffel_pol
+			traits = {
+				foreign_minister
+				#
+				AAG_Hasso_Von_Manteuffel_pol_desc
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	economy_minister = {
+		AAG_Martin_Harlinghausen_eco = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAG_Martin_Harlinghausen_eco" }
+			allowed = {
+				always = no
+			}
+			available = {
+				
+			}
+			picture = AAG_Martin_Harlinghausen_eco
+			traits = {
+				economy_minister
+				#
+				AAG_Martin_Harlinghausen_eco_desc
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	security_minister = {
+		AAG_Ernst_Klasing_sec = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAG_Ernst_Klasing_sec" }
+			allowed = {
+				always = no
+			}
+			available = {
+				
+			}
+			picture = AAG_Ernst_Klasing_sec
+			traits = {
+				security_minister
+				#
+				AAG_Ernst_Klasing_sec_desc
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	
+	head_of_government = {
+		AAJ_Michio_Sugahara_dep = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAJ_Michio_Sugahara_dep" }
+			allowed = {
+				always = no
+			}
+			available = {
+				
+			}
+			picture = AAJ_Michio_Sugahara_dep
+			traits = {
+				head_of_government
+				fascism
+				hog_old_general
+				AAJ_Michio_Sugahara_dep_desc
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	foreign_minister = {
+		AAJ_Takeso_Shimoda_pol = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAJ_Takeso_Shimoda_pol" }
+			allowed = {
+				always = no
+			}
+			available = {
+				
+			}
+			picture = AAJ_Takeso_Shimoda_pol
+			traits = {
+				foreign_minister
+				authoritarian_democracy
+				for_seasoned_ambassador
+				AAJ_Takeso_Shimoda_pol_desc
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	economy_minister = {
+		AAJ_Koichiro_Asakai_eco = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAJ_Koichiro_Asakai_eco" }
+			allowed = {
+				always = no
+			}
+			available = {
+				
+			}
+			picture = AAJ_Koichiro_Asakai_eco
+			traits = {
+				economy_minister
+				authoritarian_democracy
+				for_well_connected
+				AAJ_Koichiro_Asakai_eco_desc
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	security_minister = {
+		AAJ_Koichi_Ono_sec = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAJ_Koichi_Ono_sec" }
+			allowed = {
+				always = no
+			}
+			available = {
+				
+			}
+			picture = AAJ_Koichi_Ono_sec
+			traits = {
+				security_minister
+				fascism
+				sec_secret_police_chief
+				AAJ_Koichi_Ono_sec_desc
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	
+	head_of_government = {
+		AAA_Gustavo_Adolfo_Giro_dep = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAA_Gustavo_Adolfo_Giro_dep" }
+			allowed = {
+				always = no
+			}
+			available = {
+				
+			}
+			picture = AAA_Gustavo_Adolfo_Giró_dep
+			traits = {
+				head_of_government
+				authoritarian_democracy
+				hog_silent_workhorse
+				hog_devoted_follower
+				AAA_Gustavo_Adolfo_Giro_dep_desc
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	foreign_minister = {
+		AAA_Juan_Carlos_Beltramino_pol = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAA_Juan_Carlos_Beltramino_pol" }
+			allowed = {
+				always = no
+			}
+			available = {
+				
+			}
+			picture = AAA_Juan_Carlos_Beltramino_pol
+			traits = {
+				foreign_minister
+				liberal_democracy
+				for_well_connected
+				AAA_Juan_Carlos_Beltramino_pol_desc
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	economy_minister = {
+		AAA_Mario_Luis_Olezza_eco = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAA_Mario_Luis_Olezza_eco" }
+			allowed = {
+				always = no
+			}
+			available = {
+				
+			}
+			picture = AAA_Mario_Luis_Olezza_eco
+			traits = {
+				economy_minister
+				authoritarian_democracy
+				eco_air_superiority_proponent
+				sec_army_instructor
+				AAA_Mario_Luis_Olezza_eco_desc
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	security_minister = {
+		AAA_Hernan_Pujato_sec = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAA_Hernan_Pujato_sec" }
+			allowed = {
+				always = no
+			}
+			available = {
+				
+			}
+			picture = AAA_Hernan_Pujato_sec
+			traits = {
+				security_minister
+				authoritarian_democracy
+				sec_disliked_by_the_military
+				AAA_Hernan_Pujato_sec_desc
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	
+	head_of_government = {
+		AAB_Herbert_Jankuhn_dep = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAB_Herbert_Jankuhn_dep" }
+			allowed = {
+				always = no
+			}
+			available = {
+				
+			}
+			picture = AAB_Herbert_Jankuhn_dep
+			traits = {
+				head_of_government
+				esoteric_nazism
+				AAB_Herbert_Jankuhn_dep_desc
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	foreign_minister = {
+		AAB_Yrjo_Von_Gronhagen_pol = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAB_Yrjo_Von_Gronhagen_pol" }
+			allowed = {
+				always = no
+			}
+			available = {
+				
+			}
+			picture = AAB_Yrjo_Von_Gronhagen_pol
+			traits = {
+				foreign_minister
+				esoteric_nazism
+				AAB_Yrjo_Von_Gronhagen_pol_desc
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	economy_minister = {
+		AAB_Heinz_Brucher_eco = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAB_Heinz_Brucher_eco" }
+			allowed = {
+				always = no
+			}
+			available = {
+				
+			}
+			picture = AAB_Heinz_Brucher_eco
+			traits = {
+				economy_minister
+				esoteric_nazism
+				AAB_Heinz_Brucher_eco_desc
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+	security_minister = {
+		AAB_Otto_Ohlendorf_sec = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AAB_Otto_Ohlendorf_sec" }
+			allowed = {
+				always = no
+			}
+			available = {
+				
+			}
+			picture = AAB_Otto_Ohlendorf_sec
+			traits = {
+				security_minister
+				esoteric_nazism
+				AAB_Otto_Ohlendorf_sec_desc
+			}
+			cancel_if_invalid = no
+			ledger = civilian
+		}
+	}
+}

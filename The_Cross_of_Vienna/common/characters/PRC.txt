@@ -1,0 +1,19 @@
+characters = {
+	PRC_MaoZeDong = { #毛泽东
+		name = "PRC_MaoZeDong"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PRC/PRCMaoZeDong.png"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			id = -1
+			traits={ 
+				#国家领导人特质
+			}
+			expire="1980.1.1.1"
+		}
+		
+	}
+}

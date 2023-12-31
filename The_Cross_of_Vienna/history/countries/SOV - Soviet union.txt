@@ -1,0 +1,20 @@
+capital = 913
+set_research_slots = 2
+set_stability = 0.2
+
+set_popularities = {
+	democratic = 80
+	communism = 5
+	fascism = 10
+	neutrality = 5
+}
+set_politics = {
+	ruling_party = democratic #执政党的意识形态
+	last_election = "1932.11.8" #上次大选时间
+	election_frequency = 48 #大选间隔时间，单位：月
+	elections_allowed = yes #是否有下次大选，no为没有，yes为有
+}
+declare_war_on = {
+	target = SVT
+	type = annex_everything
+}

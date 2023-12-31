@@ -1,0 +1,26 @@
+state={
+	id=913
+	name="STATE_836"
+	provinces={
+		6380 
+	}
+	history={
+		owner = SOV
+		victory_points = {
+			6380 50 
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 7
+			industrial_complex = 3
+			#air_base = 10
+
+		}
+		add_core_of = UNS
+		add_core_of = SOV
+			}
+	state_category=megalopolis
+	manpower=12300000
+	buildings_max_level_factor=15.000
+	local_supplies=0.000
+}

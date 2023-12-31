@@ -1,0 +1,11 @@
+bitmapfonts = {
+
+	bitmapfont_override = {
+		name = "TBE_pixfont"
+		fontfiles = { 
+			"gfx/fonts/ipix_0"	
+		}
+	languages = { "l_english" } 
+	}	
+
+}

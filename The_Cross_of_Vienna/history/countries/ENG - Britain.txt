@@ -1,0 +1,99 @@
+﻿capital = 126
+
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = MAL
+		autonomous_state = autonomy_dominion
+	}
+	set_autonomy = {
+		target = RAJ
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.35
+	}
+	set_autonomy = {
+		target = CAN
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.4
+	}
+	set_autonomy = {
+		target = SAF
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.4
+	}
+	set_autonomy = {
+		target = AST
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = NZL
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = PAK
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = BRM
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
+	else = {
+		puppet = MAL
+		puppet = RAJ
+	}
+}
+
+add_ideas = {
+	YunLuoZhongDeDiGuo
+	DiaoLingDeZhiMingTiXi
+	ZiBenZhuYiHengXing
+	FuBaiDeGuanLiao
+	ChuJiYaZha
+}
+
+
+
+
+
+
+
+create_faction = 英联邦
+add_to_faction = CAN
+add_to_faction = AST
+add_to_faction = NZL
+add_to_faction = SAF
+give_military_access = RAJ
+add_to_faction = RAJ		
+add_to_faction = MAL
+add_to_faction = PAK
+add_to_faction = BRM
+set_popularities = {
+	democratic = 20
+	communism = 5
+	fascism = 5
+	neutrality = 5
+	anarchist = 1
+	economic = 42
+	nazismus = 2
+	militarism = 1
+	neoliberalism = 15
+	funism = 1
+	parentsim = 1
+	fantasim = 1
+	heliosim = 1
+}
+set_politics = {
+	ruling_party = economic #执政党的意识形态
+	last_election = "1932.11.8" #上次大选时间
+	election_frequency = 48 #大选间隔时间，单位：月
+	elections_allowed = yes #是否有下次大选，no为没有，yes为有
+}

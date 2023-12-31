@@ -1,0 +1,1181 @@
+spriteTypes = {	
+	
+	####################################################################################
+	#                                The Cross of Vienna                               #
+	####################################################################################
+
+		SpriteType = {
+			name = "GFX_TCV_boss_shine"
+			texturefile = "gfx/interface/goals/TCV_boss.dds"			
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/TCV_boss.dds"			
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 } 
+			}
+
+			animation = {
+				animationmaskfile = "gfx/interface/goals/TCV_boss.dds"			
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 } 
+			}
+			legacy_lazy_load = no
+		}	
+		SpriteType = {
+		name = "GFX_ITA_XinWangGuoHuiYi_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_XinWangGuoHuiYi.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_XinWangGuoHuiYi.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+			}
+
+			animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_XinWangGuoHuiYi.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+			}
+		legacy_lazy_load = no
+		}	
+		SpriteType = {
+		name = "GFX_TCV_jingji_weiji_shine"
+		texturefile = "gfx/interface/goals/TCV_jingji_weiji.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/TCV_jingji_weiji.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/TCV_jingji_weiji.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+		}	
+
+	######################################## GER #######################################
+
+		SpriteType = { #议会报告
+		name = "GFX_TCV_GER_YiHuiBaoGao_shine"
+		texturefile = "gfx/interface/goals/GER/TCV_GER_YiHuiBaoGao.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GER/TCV_GER_YiHuiBaoGao.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GER/TCV_GER_YiHuiBaoGao.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+		}	
+		SpriteType = {#政府总结
+		name = "GFX_TCV_GER_ZhengFuZongJie_shine"
+		texturefile = "gfx/interface/goals/GER/TCV_GER_ZhengFuZongJie.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GER/TCV_GER_ZhengFuZongJie.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GER/TCV_GER_ZhengFuZongJie.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+		}	
+		SpriteType = {#解决政党混乱
+		name = "GFX_TCV_GER_JieJueZhenDangHunLuan_shine"
+		texturefile = "gfx/interface/goals/GER/TCV_GER_JieJueZhenDangHunLuan.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GER/TCV_GER_JieJueZhenDangHunLuan.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GER/TCV_GER_JieJueZhenDangHunLuan.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+		}	
+		SpriteType = {#军队报告
+		name = "GFX_TCV_GER_JunDuiBaoGao_shine"
+		texturefile = "gfx/interface/goals/GER/TCV_GER_JunDuiBaoGao.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GER/TCV_GER_JunDuiBaoGao.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GER/TCV_GER_JunDuiBaoGao.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+		}	
+		SpriteType = {#解决财政危机
+		name = "GFX_TCV_GER_JieJueCaiZhenWeiJi_shine"
+		texturefile = "gfx/interface/goals/GER/TCV_GER_JieJueCaiZhenWeiJi.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GER/TCV_GER_JieJueCaiZhenWeiJi.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GER/TCV_GER_JieJueCaiZhenWeiJi.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+		}	
+		SpriteType = {#大选前夕
+		name = "GFX_TCV_GER_DaXuanQianYe_shine"
+		texturefile = "gfx/interface/goals/GER/TCV_GER_DaXuanQianYe.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GER/TCV_GER_DaXuanQianYe.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GER/TCV_GER_DaXuanQianYe.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+		}	
+		SpriteType = {#德意志的民主
+		name = "GFX_TCV_GER_DeYiZhiDeMingZhu_shine"
+		texturefile = "gfx/interface/goals/GER/TCV_GER_DeYiZhiDeMingZhu.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GER/TCV_GER_DeYiZhiDeMingZhu.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GER/TCV_GER_DeYiZhiDeMingZhu.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+		}	
+		SpriteType = {#清洗激进派
+		name = "GFX_TCV_GER_QinXiJiJinPai_shine"
+		texturefile = "gfx/interface/goals/GER/TCV_GER_QinXiJiJinPai.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GER/TCV_GER_QinXiJiJinPai.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GER/TCV_GER_QinXiJiJinPai.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+		}	
+		SpriteType = {#财政报告
+		name = "GFX_TCV_GER_CaiZHenBaoGao_shine"
+		texturefile = "gfx/interface/goals/GER/TCV_GER_CaiZHenBaoGao.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GER/TCV_GER_CaiZHenBaoGao.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GER/TCV_GER_CaiZHenBaoGao.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+		}	
+		SpriteType = {#阿登纳总统
+		name = "GFX_TCV_GER_AdennaZongTong_shine"
+		texturefile = "gfx/interface/goals/GER/TCV_GER_AdennaZongTong.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GER/TCV_GER_AdennaZongTong.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GER/TCV_GER_AdennaZongTong.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+		}	
+
+		SpriteType = {#戈培尔主席
+		name = "GFX_TCV_GER_GepeierZhuXi_shine"
+		texturefile = "gfx/interface/goals/GER/TCV_GER_GepeierZhuXi.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GER/TCV_GER_GepeierZhuXi.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GER/TCV_GER_GepeierZhuXi.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+		}	
+		SpriteType = {#隆美尔元帅
+		name = "GFX_TCV_GER_LongmeierYuanShuai_shine"
+		texturefile = "gfx/interface/goals/GER/TCV_GER_LongmeierYuanShuai.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GER/TCV_GER_LongmeierYuanShuai.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GER/TCV_GER_LongmeierYuanShuai.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+		}	
+		SpriteType = {#政府报告
+		name = "GFX_TCV_GER_ZhenFuBaoGao_shine"
+		texturefile = "gfx/interface/goals/GER/TCV_GER_ZhenFuBaoGao.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GER/TCV_GER_ZhenFuBaoGao.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GER/TCV_GER_ZhenFuBaoGao.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+		}	
+
+	######################################## ITA #######################################
+
+		SpriteType = {#加强同盟国的领导
+		name = "GFX_ITA_JiaQiangTongMengGuoLingDao_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_JiaQiangTongMengGuoLingDao.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_JiaQiangTongMengGuoLingDao.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_JiaQiangTongMengGuoLingDao.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+		}	
+		SpriteType = {#建立委员会
+		name = "GFX_ITA_JianLiWeiYuanHui_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_JianLiWeiYuanHui.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_JianLiWeiYuanHui.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_JianLiWeiYuanHui.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+		}	
+		SpriteType = {#旧时代的余孽
+		name = "GFX_ITA_JiuShiDaiDeYuMie_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_JiuShiDaiDeYuMie.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_JiuShiDaiDeYuMie.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_JiuShiDaiDeYuMie.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+		}	
+	
+	
+	
+		SpriteType = {#扩建罗马大学城
+		name = "GFX_ITA_KuoJianLuoMaDaXueChen_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_KuoJianLuoMaDaXueChen.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_KuoJianLuoMaDaXueChen.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_KuoJianLuoMaDaXueChen.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+		}	
+	
+		SpriteType = {#南方工业化
+		name = "GFX_ITA_NanFangGongYeHua_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_NanFangGongYeHua.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_NanFangGongYeHua.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- 动画文件
+			animationrotation = -90.0		# -90顺时针90逆时针（默认）
+			animationlooping = no			# 是或否
+			animationtime = 0.75				# 以秒为单位
+			animationdelay = 0			# 以秒为单位
+			animationblendmode = "add"       #add, multiply, overlay（加法、乘法、叠加）
+			animationtype = "scrolling"      #scrolling, rotating, pulsing （滚动、旋转、脉冲） 
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_NanFangGongYeHua.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- 动画文件
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# 是或否
+			animationtime = 0.75				# 以秒为单位
+			animationdelay = 0			# 以秒为单位
+			animationblendmode = "add"       #add, multiply, overlay（加法、乘法、叠加）
+			animationtype = "scrolling"      #scrolling, rotating, pulsing （滚动、旋转、脉冲）
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+		}	
+	
+		SpriteType = {#扫荡山林
+		name = "GFX_ITA_SaoDangShanLin_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_SaoDangShanLin.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_SaoDangShanLin.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- 动画文件
+			animationrotation = -90.0		# -90顺时针90逆时针（默认）
+			animationlooping = no			# 是或否
+			animationtime = 0.75				# 以秒为单位
+			animationdelay = 0			# 以秒为单位
+			animationblendmode = "add"       #add, multiply, overlay（加法、乘法、叠加）
+			animationtype = "scrolling"      #scrolling, rotating, pulsing （滚动、旋转、脉冲） 
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_SaoDangShanLin.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- 动画文件
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# 是或否
+			animationtime = 0.75				# 以秒为单位
+			animationdelay = 0			# 以秒为单位
+			animationblendmode = "add"       #add, multiply, overlay（加法、乘法、叠加）
+			animationtype = "scrolling"      #scrolling, rotating, pulsing （滚动、旋转、脉冲）
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+		}	
+	
+		SpriteType = {#审视形式
+		name = "GFX_ITA_ShenShiXinShi_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_ShenShiXinShi.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_ShenShiXinShi.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- 动画文件
+			animationrotation = -90.0		# -90顺时针90逆时针（默认）
+			animationlooping = no			# 是或否
+			animationtime = 0.75				# 以秒为单位
+			animationdelay = 0			# 以秒为单位
+			animationblendmode = "add"       #add, multiply, overlay（加法、乘法、叠加）
+			animationtype = "scrolling"      #scrolling, rotating, pulsing （滚动、旋转、脉冲） 
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_ShenShiXinShi.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- 动画文件
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# 是或否
+			animationtime = 0.75				# 以秒为单位
+			animationdelay = 0			# 以秒为单位
+			animationblendmode = "add"       #add, multiply, overlay（加法、乘法、叠加）
+			animationtype = "scrolling"      #scrolling, rotating, pulsing （滚动、旋转、脉冲）
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+		}	
+	
+		SpriteType = {#停止对民主党派的迫害
+		name = "GFX_ITA_TingZhiPoHai_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_TingZhiPoHai.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_TingZhiPoHai.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- 动画文件
+			animationrotation = -90.0		# -90顺时针90逆时针（默认）
+			animationlooping = no			# 是或否
+			animationtime = 0.75				# 以秒为单位
+			animationdelay = 0			# 以秒为单位
+			animationblendmode = "add"       #add, multiply, overlay（加法、乘法、叠加）
+			animationtype = "scrolling"      #scrolling, rotating, pulsing （滚动、旋转、脉冲） 
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_TingZhiPoHai.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- 动画文件
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# 是或否
+			animationtime = 0.75				# 以秒为单位
+			animationdelay = 0			# 以秒为单位
+			animationblendmode = "add"       #add, multiply, overlay（加法、乘法、叠加）
+			animationtype = "scrolling"      #scrolling, rotating, pulsing （滚动、旋转、脉冲）
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+		}	
+	
+		SpriteType = {#维持现状
+		name = "GFX_ITA_WeiChiXianZhuang_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_WeiChiXianZhuang.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_WeiChiXianZhuang.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- 动画文件
+			animationrotation = -90.0		# -90顺时针90逆时针（默认）
+			animationlooping = no			# 是或否
+			animationtime = 0.75				# 以秒为单位
+			animationdelay = 0			# 以秒为单位
+			animationblendmode = "add"       #add, multiply, overlay（加法、乘法、叠加）
+			animationtype = "scrolling"      #scrolling, rotating, pulsing （滚动、旋转、脉冲） 
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_WeiChiXianZhuang.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- 动画文件
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# 是或否
+			animationtime = 0.75				# 以秒为单位
+			animationdelay = 0			# 以秒为单位
+			animationblendmode = "add"       #add, multiply, overlay（加法、乘法、叠加）
+			animationtype = "scrolling"      #scrolling, rotating, pulsing （滚动、旋转、脉冲）
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+		}	
+	
+		SpriteType = {#我们的同盟
+		name = "GFX_ITA_WoMenDeTongMeng_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_WoMenDeTongMeng.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_WoMenDeTongMeng.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- 动画文件
+			animationrotation = -90.0		# -90顺时针90逆时针（默认）
+			animationlooping = no			# 是或否
+			animationtime = 0.75				# 以秒为单位
+			animationdelay = 0			# 以秒为单位
+			animationblendmode = "add"       #add, multiply, overlay（加法、乘法、叠加）
+			animationtype = "scrolling"      #scrolling, rotating, pulsing （滚动、旋转、脉冲） 
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_WoMenDeTongMeng.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- 动画文件
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# 是或否
+			animationtime = 0.75				# 以秒为单位
+			animationdelay = 0			# 以秒为单位
+			animationblendmode = "add"       #add, multiply, overlay（加法、乘法、叠加）
+			animationtype = "scrolling"      #scrolling, rotating, pulsing （滚动、旋转、脉冲）
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+		}	
+	
+		SpriteType = {#小亚细亚补助
+		name = "GFX_ITA_XiaoYaXiYaBuZhu_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_XiaoYaXiYaBuZhu.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_XiaoYaXiYaBuZhu.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- 动画文件
+			animationrotation = -90.0		# -90顺时针90逆时针（默认）
+			animationlooping = no			# 是或否
+			animationtime = 0.75				# 以秒为单位
+			animationdelay = 0			# 以秒为单位
+			animationblendmode = "add"       #add, multiply, overlay（加法、乘法、叠加）
+			animationtype = "scrolling"      #scrolling, rotating, pulsing （滚动、旋转、脉冲） 
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_XiaoYaXiYaBuZhu.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- 动画文件
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# 是或否
+			animationtime = 0.75				# 以秒为单位
+			animationdelay = 0			# 以秒为单位
+			animationblendmode = "add"       #add, multiply, overlay（加法、乘法、叠加）
+			animationtype = "scrolling"      #scrolling, rotating, pulsing （滚动、旋转、脉冲）
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+		}	
+	
+		SpriteType = {#新年
+		name = "GFX_ITA_NewYear_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_NewYear.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_NewYear.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- 动画文件
+			animationrotation = -90.0		# -90顺时针90逆时针（默认）
+			animationlooping = no			# 是或否
+			animationtime = 0.75				# 以秒为单位
+			animationdelay = 0			# 以秒为单位
+			animationblendmode = "add"       #add, multiply, overlay（加法、乘法、叠加）
+			animationtype = "scrolling"      #scrolling, rotating, pulsing （滚动、旋转、脉冲） 
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_NewYear.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- 动画文件
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# 是或否
+			animationtime = 0.75				# 以秒为单位
+			animationdelay = 0			# 以秒为单位
+			animationblendmode = "add"       #add, multiply, overlay（加法、乘法、叠加）
+			animationtype = "scrolling"      #scrolling, rotating, pulsing （滚动、旋转、脉冲）
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+		}	
+	
+		SpriteType = {#新时代的野望
+		name = "GFX_ITA_XinShiDaiDeYeWang_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_XinShiDaiDeYeWang.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_XinShiDaiDeYeWang.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- 动画文件
+			animationrotation = -90.0		# -90顺时针90逆时针（默认）
+			animationlooping = no			# 是或否
+			animationtime = 0.75				# 以秒为单位
+			animationdelay = 0			# 以秒为单位
+			animationblendmode = "add"       #add, multiply, overlay（加法、乘法、叠加）
+			animationtype = "scrolling"      #scrolling, rotating, pulsing （滚动、旋转、脉冲） 
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_XinShiDaiDeYeWang.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- 动画文件
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# 是或否
+			animationtime = 0.75				# 以秒为单位
+			animationdelay = 0			# 以秒为单位
+			animationblendmode = "add"       #add, multiply, overlay（加法、乘法、叠加）
+			animationtype = "scrolling"      #scrolling, rotating, pulsing （滚动、旋转、脉冲）
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+		}	
+	
+		SpriteType = {#修建巴尔干铁路
+		name = "GFX_ITA_XiuJianBaeganTieLu_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_XiuJianBaeganTieLu.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_XiuJianBaeganTieLu.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- 动画文件
+			animationrotation = -90.0		# -90顺时针90逆时针（默认）
+			animationlooping = no			# 是或否
+			animationtime = 0.75				# 以秒为单位
+			animationdelay = 0			# 以秒为单位
+			animationblendmode = "add"       #add, multiply, overlay（加法、乘法、叠加）
+			animationtype = "scrolling"      #scrolling, rotating, pulsing （滚动、旋转、脉冲） 
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_XiuJianBaeganTieLu.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- 动画文件
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# 是或否
+			animationtime = 0.75				# 以秒为单位
+			animationdelay = 0			# 以秒为单位
+			animationblendmode = "add"       #add, multiply, overlay（加法、乘法、叠加）
+			animationtype = "scrolling"      #scrolling, rotating, pulsing （滚动、旋转、脉冲）
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+		}	
+	
+		SpriteType = {#修建小亚细亚铁路
+		name = "GFX_ITA_XiuJianXiaoYaXiYaTieLu_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_XiuJianXiaoYaXiYaTieLu.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_XiuJianXiaoYaXiYaTieLu.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- 动画文件
+			animationrotation = -90.0		# -90顺时针90逆时针（默认）
+			animationlooping = no			# 是或否
+			animationtime = 0.75				# 以秒为单位
+			animationdelay = 0			# 以秒为单位
+			animationblendmode = "add"       #add, multiply, overlay（加法、乘法、叠加）
+			animationtype = "scrolling"      #scrolling, rotating, pulsing （滚动、旋转、脉冲） 
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_XiuJianXiaoYaXiYaTieLu.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- 动画文件
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# 是或否
+			animationtime = 0.75				# 以秒为单位
+			animationdelay = 0			# 以秒为单位
+			animationblendmode = "add"       #add, multiply, overlay（加法、乘法、叠加）
+			animationtype = "scrolling"      #scrolling, rotating, pulsing （滚动、旋转、脉冲）
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+		}	
+	
+		SpriteType = {#修建阿非利加铁路
+		name = "GFX_ITA_XiuJianAfeilijiaTieLu_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_XiuJianAfeilijiaTieLu.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_XiuJianAfeilijiaTieLu.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- 动画文件
+			animationrotation = -90.0		# -90顺时针90逆时针（默认）
+			animationlooping = no			# 是或否
+			animationtime = 0.75				# 以秒为单位
+			animationdelay = 0			# 以秒为单位
+			animationblendmode = "add"       #add, multiply, overlay（加法、乘法、叠加）
+			animationtype = "scrolling"      #scrolling, rotating, pulsing （滚动、旋转、脉冲） 
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_XiuJianAfeilijiaTieLu.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- 动画文件
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# 是或否
+			animationtime = 0.75				# 以秒为单位
+			animationdelay = 0			# 以秒为单位
+			animationblendmode = "add"       #add, multiply, overlay（加法、乘法、叠加）
+			animationtype = "scrolling"      #scrolling, rotating, pulsing （滚动、旋转、脉冲）
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+		}	
+	
+		SpriteType = {#增加民主席位
+		name = "GFX_ITA_ZenJiaMingZhuXiWei_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_ZhaoLanWaiBuDangYuan.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_ZhaoLanWaiBuDangYuan.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- 动画文件
+			animationrotation = -90.0		# -90顺时针90逆时针（默认）
+			animationlooping = no			# 是或否
+			animationtime = 0.75				# 以秒为单位
+			animationdelay = 0			# 以秒为单位
+			animationblendmode = "add"       #add, multiply, overlay（加法、乘法、叠加）
+			animationtype = "scrolling"      #scrolling, rotating, pulsing （滚动、旋转、脉冲） 
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_ZhaoLanWaiBuDangYuan.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- 动画文件
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# 是或否
+			animationtime = 0.75				# 以秒为单位
+			animationdelay = 0			# 以秒为单位
+			animationblendmode = "add"       #add, multiply, overlay（加法、乘法、叠加）
+			animationtype = "scrolling"      #scrolling, rotating, pulsing （滚动、旋转、脉冲）
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+		}	
+	
+		SpriteType = {#招揽外部党员
+		name = "GFX_ITA_ZhaoLanWaiBuDangYuan_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_ZhaoLanWaiBuDangYuan.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_ZhaoLanWaiBuDangYuan.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- 动画文件
+			animationrotation = -90.0		# -90顺时针90逆时针（默认）
+			animationlooping = no			# 是或否
+			animationtime = 0.75				# 以秒为单位
+			animationdelay = 0			# 以秒为单位
+			animationblendmode = "add"       #add, multiply, overlay（加法、乘法、叠加）
+			animationtype = "scrolling"      #scrolling, rotating, pulsing （滚动、旋转、脉冲） 
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_ZhaoLanWaiBuDangYuan.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- 动画文件
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# 是或否
+			animationtime = 0.75				# 以秒为单位
+			animationdelay = 0			# 以秒为单位
+			animationblendmode = "add"       #add, multiply, overlay（加法、乘法、叠加）
+			animationtype = "scrolling"      #scrolling, rotating, pulsing （滚动、旋转、脉冲）
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+		}	
+	
+		SpriteType = {#新世纪总结
+		name = "GFX_ITA_XinShiJiZongJie_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_XinShiJiZongJie.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_XinShiJiZongJie.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- 动画文件
+			animationrotation = -90.0		# -90顺时针90逆时针（默认）
+			animationlooping = no			# 是或否
+			animationtime = 0.75				# 以秒为单位
+			animationdelay = 0			# 以秒为单位
+			animationblendmode = "add"       #add, multiply, overlay（加法、乘法、叠加）
+			animationtype = "scrolling"      #scrolling, rotating, pulsing （滚动、旋转、脉冲） 
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_XinShiJiZongJie.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- 动画文件
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# 是或否
+			animationtime = 0.75				# 以秒为单位
+			animationdelay = 0			# 以秒为单位
+			animationblendmode = "add"       #add, multiply, overlay（加法、乘法、叠加）
+			animationtype = "scrolling"      #scrolling, rotating, pulsing （滚动、旋转、脉冲）
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+		}	
+		SpriteType = {#巴尔干补助发展
+		name = "GFX_ITA_BaeganBuZhuFaZhan_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_BaeganBuZhuFaZhan.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_BaeganBuZhuFaZhan.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- 动画文件
+			animationrotation = -90.0		# -90顺时针90逆时针（默认）
+			animationlooping = no			# 是或否
+			animationtime = 0.75				# 以秒为单位
+			animationdelay = 0			# 以秒为单位
+			animationblendmode = "add"       #add, multiply, overlay（加法、乘法、叠加）
+			animationtype = "scrolling"      #scrolling, rotating, pulsing （滚动、旋转、脉冲） 
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_BaeganBuZhuFaZhan.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- 动画文件
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# 是或否
+			animationtime = 0.75				# 以秒为单位
+			animationdelay = 0			# 以秒为单位
+			animationblendmode = "add"       #add, multiply, overlay（加法、乘法、叠加）
+			animationtype = "scrolling"      #scrolling, rotating, pulsing （滚动、旋转、脉冲）
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+		}	
+		SpriteType = {#继续墨索里尼经济
+		name = "GFX_ITA_JiXuMosuoliniJinJi_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_JiXuMosuoliniJinJi.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_JiXuMosuoliniJinJi.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- 动画文件
+			animationrotation = -90.0		# -90顺时针90逆时针（默认）
+			animationlooping = no			# 是或否
+			animationtime = 0.75				# 以秒为单位
+			animationdelay = 0			# 以秒为单位
+			animationblendmode = "add"       #add, multiply, overlay（加法、乘法、叠加）
+			animationtype = "scrolling"      #scrolling, rotating, pulsing （滚动、旋转、脉冲） 
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_JiXuMosuoliniJinJi.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- 动画文件
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# 是或否
+			animationtime = 0.75				# 以秒为单位
+			animationdelay = 0			# 以秒为单位
+			animationblendmode = "add"       #add, multiply, overlay（加法、乘法、叠加）
+			animationtype = "scrolling"      #scrolling, rotating, pulsing （滚动、旋转、脉冲）
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+		}	
+}
+
+
+
+

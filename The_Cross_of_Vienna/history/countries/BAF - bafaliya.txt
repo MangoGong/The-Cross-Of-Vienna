@@ -1,0 +1,24 @@
+﻿capital = 52
+set_research_slots = 5
+set_stability = 0.96
+set_popularities = {
+	democratic = 48
+	communism = 5
+	fascism = 5
+	neutrality = 5
+	anarchist = 1
+	economic = 14
+	nazismus = 2
+	militarism = 1
+	neoliberalism = 15
+	funism = 1
+	parentsim = 1
+	fantasim = 1
+	heliosim = 1
+}
+set_politics = {
+	ruling_party = democratic #执政党的意识形态
+	last_election = "1932.11.8" #上次大选时间
+	election_frequency = 48 #大选间隔时间，单位：月
+	elections_allowed = yes #是否有下次大选，no为没有，yes为有
+}

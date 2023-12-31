@@ -1,0 +1,56 @@
+ideas = {
+	country = {
+		XuRiDongSheng = { #旭日东升
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = ""
+
+			modifier = {
+				stability_factor = 0.8
+				political_power_factor = 0.1
+			}
+		}
+
+		RiYiFenLieDeJunDui = { #日益分裂的军队
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = ""
+
+			modifier = {
+				
+			}
+		}
+
+		GongRongQuanDeZhuRen = { #共荣圈的主人
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = ""
+
+			modifier = {
+				
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+
+		CaiFaDeYinHuan = { #财阀的隐患
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = ""
+
+			modifier = {
+
+			}
+		}
+	}
+
+}

@@ -1,0 +1,27 @@
+state={
+	id=910
+	name="STATE_835"
+	provinces={
+		6521 
+	}
+	history={
+		owner = GER
+		victory_points = {
+			6521 50 
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 7
+			industrial_complex = 3
+			#air_base = 10
+
+		}
+		add_core_of = UNS
+		add_core_of = GER
+			}
+
+	manpower=3400000
+	buildings_max_level_factor=15.000
+	local_supplies=0.000
+	state_category=megalopolis
+}

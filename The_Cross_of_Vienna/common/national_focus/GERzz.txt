@@ -1,0 +1,1126 @@
+focus_tree={
+	id = GERzz
+	country = {
+		factor = 0
+		modifier = { 
+			add = 10
+			tag = GER
+		}
+	}
+	
+	default = no
+	
+	#持续性国策位置
+	continuous_focus_position = { x = 20 y = 3000 } #原数值{ x = 20 y = 1000 }
+
+	focus={ #政府总结
+		id = GER_government_summary
+		icon = GFX_TCV_GER_ZhengFuZongJie
+		
+		x = 11
+		y = 0
+		cost = 20
+
+		search_filters = {
+		
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			
+		}
+
+		cancel = {
+			has_country_flag = GER_ZhengFuZongJie_out_flag
+		}
+
+		select_effect = {
+			country_event = { id = germany.13 }
+		}
+	}
+	focus={ #议会报告
+		id = GER_parliamentary_report
+		icon = GFX_TCV_GER_YiHuiBaoGao
+
+		prerequisite = { focus = GER_government_summary }
+		x = 9
+		y = 1
+		
+		cost = 20
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {
+		
+		}
+		
+		completion_reward = {
+			country_event = { id = germany.4 }
+		}
+		select_effect = {
+			add_political_power = 10
+		}
+	}
+	focus={ #军队报告
+		id = GER_013
+		icon = GFX_TCV_GER_JunDuiBaoGao
+		prerequisite = { focus = GER_government_summary }
+		x = 13
+		y = 1
+		
+		cost = 20
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		search_filters = {
+		
+		}
+		
+		completion_reward = {
+			
+		}
+		select_effect = {
+			country_event = { id = germany.3 }
+		}
+	}
+	focus={ #财政报告
+		id = GER_012
+		icon = GFX_TCV_GER_CaiZHenBaoGao
+		x = 11
+		y = 1
+		prerequisite = { focus = GER_government_summary }
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			country_event = { id = germany.2 }
+		}
+		select_effect = {
+			add_political_power = 10
+		}
+	}
+	focus={ #政府报告
+		id = GER_021
+		icon = GFX_TCV_GER_ZhenFuBaoGao
+		x = 11
+		y = 2
+		prerequisite={focus=GER_012}
+		prerequisite={focus=GER_parliamentary_report}
+		prerequisite={focus=GER_013}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			add_political_power = 10
+		}
+		select_effect = {
+			country_event = {id=germany.5}
+		}
+	}
+	focus={#德意志的民主
+		id = GER_031
+		icon = GFX_TCV_GER_DeYiZhiDeMingZhu
+		x = 11
+		y = 3
+		prerequisite={focus=GER_021}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			country_event = { id = germany.12 }
+		}
+		select_effect = {
+			add_political_power = 10
+		}
+	}
+	focus={#债务危机
+		id = GER_041
+		icon = GFX_TCV_GER_JieJueCaiZhenWeiJi
+		x = 9
+		y = 4
+		prerequisite={focus=GER_031}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			add_political_power = 10
+		}
+		select_effect = {
+			country_event = {id=germany.11}
+		}
+	}
+	focus={#清洗激进派
+		id = GER_042
+		icon = GFX_TCV_GER_QinXiJiJinPai
+		x = 11
+		y = 4
+		prerequisite={ focus= GER_031 }
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+			country_event = {id=germany.6}
+		}
+	}
+	focus={#肃清政党
+		id = GER_043
+		icon = GFX_TCV_GER_JieJueZhenDangHunLuan
+		x = 13
+		y = 4
+		prerequisite={focus=GER_031}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+			country_event = { id=germany.7 }
+		}
+	}
+	focus={#大选前夕
+		id = GER_051
+		icon = GFX_TCV_GER_DaXuanQianYe
+		x = 11
+		y = 5
+		prerequisite={focus=GER_042}
+		prerequisite={focus=GER_041}
+		prerequisite={focus=GER_043}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			country_event = { id=germany.8}
+		}
+		select_effect = {
+			
+		}
+	}
+	focus={#隆美尔元帅
+		id = GER_1_001
+		icon = GFX_TCV_GER_LongmeierYuanShuai
+		x = 5
+		y = 6
+		prerequisite={focus=GER_051}
+		mutually_exclusive={focus=GER_2_001 focus=GER_3_001 }
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+			country_event = {id=germany.9}
+		}
+	}
+	focus={#阿登纳总统
+		id = GER_2_001
+		icon = GFX_TCV_GER_AdennaZongTong
+		x = 11
+		y = 6
+		prerequisite={focus=GER_051}
+		mutually_exclusive={focus=GER_1_001 focus=GER_3_001 }
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+
+		}
+	}
+	focus={#戈培尔主席
+		id = GER_3_001
+		icon = GFX_TCV_GER_GepeierZhuXi
+		x = 17
+		y = 6
+		prerequisite={focus=GER_051}
+		mutually_exclusive={focus=GER_1_001 focus=GER_2_001 }
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+
+		}
+	}
+	focus={
+		id = GER_1_011
+		icon = GFX_TCV_boss
+		x = 5
+		y = 7
+		prerequisite={focus=GER_1_001}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+
+		}
+	}
+	focus={
+		id = GER_1_021
+		icon = GFX_TCV_boss
+
+		x = 4
+		y = 8
+		prerequisite={focus=GER_1_011}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+
+		}
+	}
+	focus={
+		id = GER_1_022
+		icon = GFX_TCV_boss
+		x = 6
+		y = 8
+		prerequisite={focus=GER_1_011}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+
+		}
+	}
+	focus={
+		id = GER_1_031
+		icon = GFX_TCV_boss
+		x = 5
+		y = 9
+		prerequisite={focus=GER_1_021}
+		prerequisite={focus=GER_1_022}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+
+		}
+	}
+	focus={
+		id = GER_1_041
+		icon = GFX_TCV_boss
+		x = 5
+		y = 10
+		prerequisite={focus=GER_1_031}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+
+		}
+	}
+	focus={
+		id = GER_1_051
+		icon = GFX_TCV_boss
+		x = 2
+		y = 11
+		prerequisite={focus=GER_1_041}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+
+		}
+	}
+	focus={
+		id = GER_1_052
+		icon = GFX_TCV_boss
+		x = 6
+		y = 11
+		prerequisite={focus=GER_1_041}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+
+		}
+	}
+	focus={
+		id = GER_1_064
+		icon = GFX_TCV_boss
+		x = 6
+		y = 12
+		prerequisite={focus=GER_1_052}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+
+		}
+	}
+	focus={
+		id = GER_1_072
+		icon = GFX_TCV_boss
+		x = 6
+		y = 13
+		prerequisite={focus=GER_1_064}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+
+		}
+	}
+	focus={
+		id = GER_1_061
+		icon = GFX_TCV_boss
+		x = 0
+		y = 12
+		prerequisite={focus=GER_1_051}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+
+		}
+	}
+	focus={
+		id = GER_1_062
+		icon = GFX_TCV_boss
+		x = 2
+		y = 12
+		prerequisite={focus=GER_1_051}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+
+		}
+	}
+	focus={
+		id = GER_1_063
+		icon = GFX_TCV_boss
+		x = 4
+		y = 12
+		prerequisite={focus=GER_1_051}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+
+		}
+	}
+	focus={
+		id = GER_1_071
+		icon = GFX_TCV_boss
+		x = 2
+		y = 13
+		prerequisite={focus=GER_1_062 focus=GER_1_061 focus=GER_1_063 }
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+
+		}
+	}
+	focus={
+		id = GER_1_081
+		icon = GFX_TCV_boss
+		x = 2
+		y = 14
+		prerequisite={focus=GER_1_071}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+
+		}
+	}
+	focus={
+		id = GER_1_091
+		icon = GFX_TCV_boss
+		x = 5
+		y = 15
+		prerequisite={focus=GER_1_081}
+		prerequisite={focus=GER_1_072}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+
+		}
+	}
+	focus={
+		id = GER_1_101
+		icon = GFX_TCV_boss
+		x = 4
+		y = 16
+		prerequisite={focus=GER_1_091}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+
+		}
+	}
+	focus={
+		id = GER_1_102
+		icon = GFX_TCV_boss
+		x = 6
+		y = 16
+		prerequisite={focus=GER_1_091}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+
+		}
+	}
+	focus={
+		id = GER_1_111
+		icon = GFX_TCV_boss
+		x = 4
+		y = 17
+		prerequisite={focus=GER_1_101}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+
+		}
+	}
+	focus={
+		id = GER_1_112
+		icon = GFX_TCV_boss
+		x = 6
+		y = 17
+		prerequisite={focus=GER_1_102}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+
+		}
+	}
+	focus={
+		id = GER_1_121
+		icon = GFX_TCV_boss
+		x = 5
+		y = 18
+		prerequisite={focus=GER_1_111 focus=GER_1_112 }
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+
+		}
+	}
+	focus={
+		id = GER_1_131
+		icon = GFX_TCV_boss
+		x = 4
+		y = 19
+		prerequisite={focus=GER_1_121}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+
+		}
+	}
+	focus={
+		id = GER_1_132
+		icon = GFX_TCV_boss
+		x = 6
+		y = 19
+		prerequisite={focus=GER_1_121}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+
+		}
+	}
+	focus={
+		id = GER_1_141
+		icon = GFX_TCV_boss
+		x = 5
+		y = 20
+		prerequisite={focus=GER_1_131}
+		prerequisite={focus=GER_1_132}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+
+		}
+	}
+	focus={
+		id = GER_2_1_001
+		icon = GFX_TCV_boss
+		x = 9
+		y = 7
+		prerequisite={focus=GER_2_001}
+		mutually_exclusive={focus=GER_2_2_001 }
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+
+		}
+	}
+	focus={
+		id = GER_2_2_001
+		icon = GFX_TCV_boss
+		x = 13
+		y = 7
+		prerequisite={focus=GER_2_001}
+		mutually_exclusive={focus=GER_2_1_001 }
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+
+		}
+	}
+	focus={
+		id = GER_2_1_011
+		icon = GFX_TCV_boss
+		x = 8
+		y = 8
+		prerequisite={focus=GER_2_1_001}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+
+		}
+	}
+	focus={
+		id = GER_2_1_012
+		icon = GFX_TCV_boss
+		x = 10
+		y = 8
+		prerequisite={focus=GER_2_1_001}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+
+		}
+	}
+	focus={
+		id = GER_2_2_011
+		icon = GFX_TCV_boss
+		x = 12
+		y = 8
+		prerequisite={focus=GER_2_2_001}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+
+		}
+	}
+	focus={
+		id = GER_2_2_012
+		icon = GFX_TCV_boss
+		x = 14
+		y = 8
+		prerequisite={focus=GER_2_2_001}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+
+		}
+	}
+	focus={
+		id = GER_2_1_021
+		icon = GFX_TCV_boss
+		x = 8
+		y = 9
+		prerequisite={focus=GER_2_1_011}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+
+		}
+	}
+	focus={
+		id = GER_2_1_022
+		icon = GFX_TCV_boss
+		x = 10
+		y = 9
+		prerequisite={focus=GER_2_1_012}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+
+		}
+	}
+	focus={
+		id = GER_2_1_031
+		icon = GFX_TCV_boss
+		x = 8
+		y = 10
+		prerequisite={focus=GER_2_1_021}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+
+		}
+	}
+	focus={
+		id = GER_2_1_032
+		icon = GFX_TCV_boss
+		x = 10
+		y = 10
+		prerequisite={focus=GER_2_1_022}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+
+		}
+	}
+	focus={
+		id = GER_2_2_021
+		icon = GFX_TCV_boss
+		x = 12
+		y = 9
+		prerequisite={focus=GER_2_2_011}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+
+		}
+	}
+	focus={
+		id = GER_2_2_022
+		icon = GFX_TCV_boss
+		x = 14
+		y = 9
+		prerequisite={focus=GER_2_2_012}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+
+		}
+	}
+	focus={
+		id = GER_2_2_031
+		icon = GFX_TCV_boss
+		x = 12
+		y = 10
+		prerequisite={focus=GER_2_2_021}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+
+		}
+	}
+	focus={
+		id = GER_2_2_032
+		icon = GFX_TCV_boss
+		x = 14
+		y = 10
+		prerequisite={focus=GER_2_2_022}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+
+		}
+	}
+	focus={
+		id = GER_2_1_041
+		icon = GFX_TCV_boss
+		x = 8
+		y = 11
+		prerequisite={focus=GER_2_1_031}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+
+		}
+	}
+	focus={
+		id = GER_2_1_042
+		icon = GFX_TCV_boss
+		x = 10
+		y = 11
+		prerequisite={focus=GER_2_1_032}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+
+		}
+	}
+	focus={
+		id = GER_2_2_041
+		icon = GFX_TCV_boss
+		x = 12
+		y = 11
+		prerequisite={focus=GER_2_2_031}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+
+		}
+	}
+	focus={
+		id = GER_2_2_042
+		icon = GFX_TCV_boss
+		x = 14
+		y = 11
+		prerequisite={focus=GER_2_2_032}
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+		
+		}
+		completion_reward = {
+			
+		}
+		select_effect = {
+
+		}
+	}
+}

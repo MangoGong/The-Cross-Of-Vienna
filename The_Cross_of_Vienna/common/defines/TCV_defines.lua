@@ -1,0 +1,9 @@
+NDefines.NGame.START_DATE = "1959.1.1.1"
+NDefines.NGame.END_DATE = "1984.12.31.1"
+NDefines_Graphics.NGraphics.MOON_HEIGHT = 0 -- higher means softer shadows and more intense light
+NDefines_Graphics.NGraphics.SUN_HEIGHT  = 0 -- higher means softer shadows and more intense light
+NDefines_Graphics.NGraphics.MOON_HEIGHT_WATER = 0  -- higher means softer shadows and more intense light
+NDefines_Graphics.NGraphics.SUN_HEIGHT_WATER  = 0 -- higher means softer shadows and more intense light
+NDefines_Graphics.NGraphics.MOON_LATITUDE = 0 -- NOT USED
+NDefines_Graphics.NGraphics.SUN_LATITUDE  = 0
+NDefines_Graphics.NGraphics.MINIMUM_PROVINCE_SIZE_IN_PIXELS = 1

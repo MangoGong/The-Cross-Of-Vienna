@@ -1,0 +1,12 @@
+﻿capital = 594
+
+set_research_slots = 2
+set_stability = 0.09
+set_war_support = 0.02
+add_ideas = { 
+  distrust_crisis # 不信任危机民族精神
+  council_rule # 监事会之治民族精神
+  three_giants # “三巨头”民族精神
+  south_china_army_spirit # 华南陆军之魂民族精神
+  guangxi_crisis # 广西危机民族精神
+}
