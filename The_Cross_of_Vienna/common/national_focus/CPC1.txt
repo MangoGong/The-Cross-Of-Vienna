@@ -1,0 +1,99 @@
+focus_tree = {
+	id = CPC1
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = PRC
+		}
+	}
+	default = no
+	focus = {
+		id = 人事已尽，天命难违
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 5
+		y = 0
+
+	}
+	focus = {
+		id = 总结二次长征
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = 人事已尽，天命难违
+		}
+		x = 5
+		y = 1
+
+	}
+	focus = {
+		id = 落叶生根
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = 总结二次长征
+		}
+		x = 5
+		y = 2
+
+	}
+	focus = {
+		id = 寻访蒙古共产党
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = 落叶生根
+		}
+		x = 3
+		y = 3
+
+	}
+	focus = {
+		id = 凝聚联共残党
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = 落叶生根
+		}
+		x = 7
+		y = 3
+
+	}
+	focus = {
+		id = 两党合并
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = 寻访蒙古共产党
+		}
+		x = 3
+		y = 4
+
+	}
+	focus = {
+		id = 吸纳优秀党员
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = 凝聚联共残党
+		}
+		x = 7
+		y = 4
+
+	}
+	focus = {
+		id = 离魂不识归乡路，南望金山烟尘飞
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = 两党合并
+		}
+		prerequisite = {
+			focus = 吸纳优秀党员
+		}
+		x = 5
+		y = 5
+
+	}
+}

@@ -1,5 +1,5 @@
 [![pix6A4U.png](https://s11.ax1x.com/2024/01/05/pix6A4U.png)](https://imgse.com/i/pix6A4U)
-# 当前版本：0.1.8(beta)
+# 当前版本：0.1.8.1(beta)
 ## 本项目已从Gitee转移至GitHub进行维护，原Gitee仓库已停止维护，您可以star此仓库以关注此模组的最新进展。
 
 [![pix6CBq.png](https://s11.ax1x.com/2024/01/05/pix6CBq.png)](https://imgse.com/i/pix6CBq)
@@ -25,4 +25,4 @@
 2.  新建 Pull Request
 3.  进入QQ群786650774共同开发（急需代码、美工、文案等人才）
 
-最后编辑 2024/01/05 17:24
+最后编辑 2024/01/23 22:24

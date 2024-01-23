@@ -1,0 +1,127 @@
+focus_tree = {
+	id = CPC2
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = PRC
+		}
+	}
+	default = no
+	focus = {
+		id = 两年计划
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 18
+		y = 1
+
+	}
+	focus = {
+		id = 修缮西部工厂
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = 两年计划
+		}
+		x = 15
+		y = 2
+
+	}
+	focus = {
+		id = 条条红铁
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = 修缮西部工厂
+		}
+		x = 14
+		y = 3
+
+	}
+	focus = {
+		id = 自炉出
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = 修缮西部工厂
+		}
+		x = 16
+		y = 3
+
+	}
+	focus = {
+		id = 增加金属产量
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = 条条红铁
+		}
+		prerequisite = {
+			focus = 自炉出
+		}
+		x = 15
+		y = 4
+
+	}
+	focus = {
+		id = 建立农村供销社
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = 两年计划
+		}
+		x = 21
+		y = 2
+
+	}
+	focus = {
+		id = 地地有牛耕
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = 建立农村供销社
+		}
+		x = 20
+		y = 3
+
+	}
+	focus = {
+		id = 家家有粮吃
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = 建立农村供销社
+		}
+		x = 22
+		y = 3
+
+	}
+	focus = {
+		id = 完善公有制体系
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = 地地有牛耕
+		}
+		prerequisite = {
+			focus = 家家有粮吃
+		}
+		x = 21
+		y = 4
+
+	}
+	focus = {
+		id = 完成两年计划
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = 增加金属产量
+		}
+		prerequisite = {
+			focus = 完善公有制体系
+		}
+		x = 18
+		y = 5
+
+	}
+}
